@@ -1,0 +1,11 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+"viral segment Unknown","NC_003461.1",120,1694,"+",935258,"N","Hpv1gp01","NP_604433.1",524,"nucleoprotein"
+"viral segment Unknown","NC_003461.1",1809,2468,"+",935259,"C'","Hpv1gp03","NP_604434.1",219,"C\\' protein"
+"viral segment Unknown","NC_003461.1",1844,3550,"+",935260,"P","Hpv1gp02","NP_604435.1",568,"phosphoprotein"
+"viral segment Unknown","NC_003461.1",1854,2468,"+",935261,"C","Hpv1gp04","NP_604436.1",204,"C protein"
+"viral segment Unknown","NC_003461.1",1923,2468,"+",935262,"Y1","Hpv1gp05","NP_604437.1",181,"Y1 protein"
+"viral segment Unknown","NC_003461.1",1941,2468,"+",935263,"Y2","Hpv1gp06","NP_604438.1",175,"putative Y2 protein"
+"viral segment Unknown","NC_003461.1",3669,4715,"+",935264,"M","Hpv1gp07","NP_604439.1",348,"matrix protein"
+"viral segment Unknown","NC_003461.1",5088,6755,"+",935265,"F","Hpv1gp08","NP_604440.1",555,"F glycoprotein"
+"viral segment Unknown","NC_003461.1",6903,8630,"+",935266,"HN","Hpv1gp09","NP_604441.1",575,"HN glycoprotein"
+"viral segment Unknown","NC_003461.1",8772,15443,"+",935267,"L","Hpv1gp10","NP_604442.1",2223,"L polymerase protein"

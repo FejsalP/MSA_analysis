@@ -1,0 +1,5 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+"viral segment Unknown","NC_007455.1",253,2172,"+",3711585,"NS1","HBoV_gp1","YP_338086.1",639,"NS1"
+"viral segment Unknown","NC_007455.1",2410,3069,"+",3711586,"NP-1","HBoV_gp2","YP_338087.1",219,"NP-1"
+"viral segment Unknown","NC_007455.1",3056,5071,"+",3711587,"VP1","HBoV_gp3","YP_338088.1",671,"VP1"
+"viral segment Unknown","NC_007455.1",3443,5071,"+",3711588,"VP2","HBoV_gp4","YP_338089.1",542,"VP2"

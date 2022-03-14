@@ -1,0 +1,7 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+viral segment,EU326526.1,111,1658,+,,NP,-,ABY47602.1,515,nucleocapsid protein
+viral segment,EU326526.1,1784,3595,+,,P,-,ABY47603.1,603,phosphoprotein
+viral segment,EU326526.1,3753,4814,+,,M,-,ABY47604.1,353,matrix potein
+viral segment,EU326526.1,5072,6691,+,,F,-,ABY47605.1,539,fusion protein
+viral segment,EU326526.1,6806,8524,+,,HN,-,ABY47606.1,572,hemagglutinin-neuraminidase
+viral segment,EU326526.1,8571,15347,+,,L,-,ABY47607.1,2258,RNA polymerase

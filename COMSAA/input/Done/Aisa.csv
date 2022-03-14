@@ -1,0 +1,12 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+"viral segment","KY249672.1",99,518,"+",,,"-","APW78783.1",139,"NS1"
+"viral segment","KY249672.1",626,1000,"+",,,"-","APW78784.1",124,"NS2"
+"viral segment","KY249672.1",1138,2313,"+",,,"-","APW78785.1",391,"N"
+"viral segment","KY249672.1",2346,3071,"+",,,"-","APW78786.1",241,"P"
+"viral segment","KY249672.1",3261,4031,"+",,,"-","APW78787.1",256,"M"
+"viral segment","KY249672.1",4300,4497,"+",,,"-","APW78788.1",65,"SH"
+"viral segment","KY249672.1",4687,5619,"+",,,"-","APW78789.1",310,"G"
+"viral segment","KY249672.1",5717,7441,"+",,,"-","APW78790.1",574,"F"
+"viral segment","KY249672.1",7668,8255,"+",,,"-","APW78791.1",195,"M2-1"
+"viral segment","KY249672.1",8221,8493,"+",,,"-","APW78792.1",90,"M2-2"
+"viral segment","KY249672.1",8559,15065,"+",,,"-","APW78793.1",2168,"L"

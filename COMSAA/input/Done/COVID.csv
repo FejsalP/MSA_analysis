@@ -1,0 +1,11 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+"viral segment","MT192772.1",266,21555,"+",,"orf1ab","-","QIK50437.1",7096,"orf1ab polyprotein"
+"viral segment","MT192772.1",21563,25384,"+",,"S","-","QIK50438.1",1273,"surface glycoprotein"
+"viral segment","MT192772.1",25393,26220,"+",,"ORF3a","-","QIK50439.1",275,"ORF3a protein"
+"viral segment","MT192772.1",26245,26472,"+",,"E","-","QIK50440.1",75,"envelope protein"
+"viral segment","MT192772.1",26523,27191,"+",,"M","-","QIK50441.1",222,"membrane glycoprotein"
+"viral segment","MT192772.1",27202,27387,"+",,"ORF6","-","QIK50442.1",61,"ORF6 protein"
+"viral segment","MT192772.1",27394,27759,"+",,"ORF7a","-","QIK50443.1",121,"ORF7a protein"
+"viral segment","MT192772.1",27894,28259,"+",,"ORF8","-","QIK50444.1",121,"ORF8 protein"
+"viral segment","MT192772.1",28274,29533,"+",,"N","-","QIK50445.1",419,"nucleocapsid phosphoprotein"
+"viral segment","MT192772.1",29558,29674,"+",,"ORF10","-","QIK50446.1",38,"ORF10 protein"

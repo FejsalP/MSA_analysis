@@ -1,0 +1,2062 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+adenovirus_chinstrap_penguin      CAATCAAAATTGATACCGCATGTCCGGGAGCTAAAATCTGCTCGAGTATTTTTGGTGTAG
+adenovirus_gentoo_penguin_1       CAATCAAAATTGATACCGCATGTTCGGGAGCTAAAATCTGCTCGAGTATTTTTGGTGTAG
+adenovirus_gentoo_penguin_2       CAATCAAAATTGATACCGCATGTTCGGGAGCTAAAATCTGCTCGAGTATTTTTGGTGTAG
+                                  *********************** ************************************
+
+adenovirus_chinstrap_penguin      AATTGTGCTTATCTGGTTAATTTTGAGGTGATTTTTGCTGAATGTGTTGAAATTGATCGA
+adenovirus_gentoo_penguin_1       AATTGTGCTTATCTGGCTAATTTTGAGGTGATTTTTGTTGAATGTGTTGAAATTGATCGA
+adenovirus_gentoo_penguin_2       AATTGTGCTTATCTGGCTAATTTTGAGGTGATTTTTGTTGAATGTGTTGAAATTGATCGA
+                                  **************** ******************** **********************
+
+adenovirus_chinstrap_penguin      TTTAATACTTGTTTGACTGCTGTAATTTTTACAGATTTTTGGGTAAAACTTGTTTTAATT
+adenovirus_gentoo_penguin_1       TTTAATACTTGTTTGACTGCTGTAATTTTTACAGATTTTTGGGTAAAACTTGATTTAATT
+adenovirus_gentoo_penguin_2       TTTAATACTTGTTTGACTGCTGTAATTTTTACAGATTTTTGGGTAAAACTTGATTTAATT
+                                  **************************************************** *******
+
+adenovirus_chinstrap_penguin      CTGAATTCAGCCTAGTCATGTGGTTTTTACGTGTTAGGGAACTTTTTATAGGGTATTTCA
+adenovirus_gentoo_penguin_1       CTGAATTCAGTCTAGTCATGTGGTTTTTACGTGTTAGGGAAGTTTTTATAGGCTATTTCA
+adenovirus_gentoo_penguin_2       CTGAATTCAGTCTAGTCATGTGGTTTTTACGTGTTAGGGAAGTTTTTATAGGCTATTTCA
+                                  ********** ****************************** ********** *******
+
+adenovirus_chinstrap_penguin      TTACTGTTCCGGTAAGGAGGTGCTCTCCGCGCATATTTTTCCTGGGGTAAGATGGATTTT
+adenovirus_gentoo_penguin_1       TTACTGTTCCGGGAAGGAGGTGATCTCCGCGCATATTTTTCCTGGGGTAAGATGGATTTT
+adenovirus_gentoo_penguin_2       TTACTGTTCCGGGAAGGAGGTGATCTCCGCGCATATTTTTCCTGGGGTAAGATGGATTTT
+                                  ************ ********* *************************************
+
+adenovirus_chinstrap_penguin      CCCTTTTTCTAGATTAAGGTATTAGTCATAAATAAAGTGTATAAAGCTAGTATAAATATG
+adenovirus_gentoo_penguin_1       CCCTTTTTCTAGATTAAGGTATTAGTCATAAATAAAGT-----------GTATAAATATG
+adenovirus_gentoo_penguin_2       CCCTTTTTCTAGATTAAGGTATTAGTCATAAATAAAGT-----------GTATAAATATG
+                                  **************************************           ***********
+
+adenovirus_chinstrap_penguin      GGTGGTTAGTTAGGGGTTTTATCATTTTCAGCTGGAGCTTTGTCAGCACGGTCTTTCAGC
+adenovirus_gentoo_penguin_1       GGTGGTTAGTTAGGGGTTTTGTCATTTTCACCTGGAGCTTTGTCTGCACGGTCTTTCAGC
+adenovirus_gentoo_penguin_2       GGTGGTTAGTTAGGGGTTTTGTCATTTTCACCTGGAGCTTTGTCTGCACGGTCTTTCAGC
+                                  ******************** ********* ************* ***************
+
+adenovirus_chinstrap_penguin      AAAGATGGACTTGATGCATGCAGGCTTGTGTTCTATTGACTCAGAAAGAACAACATCTCT
+adenovirus_gentoo_penguin_1       AAAGATGGACTTGATGCATGCAGGATTGTGTTCTATTGACTTAGAGAGAACAACATCTCT
+adenovirus_gentoo_penguin_2       AAAGATGGACTTGATGCATGCAGGATTGTGTTCTATTGACTTAGAGAGAACAACATCTCT
+                                  ************************ **************** *** **************
+
+adenovirus_chinstrap_penguin      TATGAGACGTTTGATAAGCAGAATGGATTTCTGGAATAGAATACAGTTCATGATTGGGAT
+adenovirus_gentoo_penguin_1       TATGAGACGTTTGATAAGCAGAATGGATTTCTGGAATAGAATACAGTTCATGATTGGGAT
+adenovirus_gentoo_penguin_2       TATGAGACGTTTGATAAGCAGAATGGATTTCTGGAATAGAATACAGTTCATGATTGGGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTTTTTACCTTTTACTGTGAAAGTTGTGATTAATAGACCTCATTGGACTTTGACTATGAC
+adenovirus_gentoo_penguin_1       GTTTTTACCTTTTACTGTGAAAGTTGTGATTAATAGACCTCATTGGACTTTGACTATGAG
+adenovirus_gentoo_penguin_2       GTTTTTACCTTTTACTGTGAAAGTTGTGATTAATAGACCTCATTGGACTTTGACTATGAG
+                                  *********************************************************** 
+
+adenovirus_chinstrap_penguin      CTTTTCTGTGCAGAGACTATAACTATGTTATGGACTTTATATTTTTCAGAAATGACTTTC
+adenovirus_gentoo_penguin_1       CTTTTCTGTGCAGAGACTATAACTATGTTATGGACTTTATATTTTTCAGAAATGACTTTC
+adenovirus_gentoo_penguin_2       CTTTTCTGTGCAGAGACTATAACTATGTTATGGACTTTATATTTTTCAGAAATGACTTTC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATGTATCTATTGGGGGCCGGTTATTGTGAACGTTGTAAACAACTTTGTACACAAAGAACC
+adenovirus_gentoo_penguin_1       ATGTATCTCTTGGGGGCCGGTTATTGTGAACGTTGTAAACAACTTTGTACACAAAGAACC
+adenovirus_gentoo_penguin_2       ATGTATCTCTTGGGGGCCGGTTATTGTGAACGTTGTAAACAACTTTGTACACAAAGAACC
+                                  ******** ***************************************************
+
+adenovirus_chinstrap_penguin      AGAAGAAGAACATCTTATAAGAGGACTTCCAAACCAGCTCACTTGAAATATGTGCGGTAT
+adenovirus_gentoo_penguin_1       AGAAGAAGAACGTCTTATAAGAGGACCTCCAAACCAGCTCACTTGAAATATGTGCGGTAT
+adenovirus_gentoo_penguin_2       AGAAGAAGAACGTCTTATAAGAGGACCTCCAAACCAGCTCACTTGAAATATGTGCGGTAT
+                                  *********** ************** *********************************
+
+adenovirus_chinstrap_penguin      TATCCTGGCACAGTTGTTACTCCTGGTTGGGATGGTATTGTTAAGCCTAGTACTGTGCCT
+adenovirus_gentoo_penguin_1       TATCCTGGCACAGTTGTTACTCCTGGTTGGGATGGTATTGTTAACCCTAGTACTGTGCCT
+adenovirus_gentoo_penguin_2       TATCCTGGCACAGTTGTTACTCCTGGTTGGGATGGTATTGTTAACCCTAGTACTGTGCCT
+                                  ******************************************** ***************
+
+adenovirus_chinstrap_penguin      ACAGTTCCGCAATATTGGACATATGCCAGAGCTGTTGCTGAGCGTGCTAAGCGTACTATG
+adenovirus_gentoo_penguin_1       ACAGTTCCGCAATATTGGACATATGCCAGAGCTGTTGCTGAGCGTGCTAAGCGTACTATG
+adenovirus_gentoo_penguin_2       ACAGTTCCGCAATATTGGACATATGCCAGAGCTGTTGCTGAGCGTGCTAAGCGTACTATG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCTGTTCCTGCAAGCGGAACTGAAGTTGGAGGAGTTGTTGTCATGTCTGGGGTTTCAAGA
+adenovirus_gentoo_penguin_1       GCTGTTCCTGCAAGCGGAACTGAAGTTGGAGGAGTTGCTGTCATGTCTGGGGTTTCAAGA
+adenovirus_gentoo_penguin_2       GCTGTTCCTGCAAGCGGAACTGAAGTTGGAGGAGTTGCTGTCATGTCTGGGGTTTCAAGA
+                                  ************************************* **********************
+
+adenovirus_chinstrap_penguin      AAACGAAAAAGTTCAGACGATTAAATTGTCAATAAAGTAAAGTTTTTTATTGATCAGTTT
+adenovirus_gentoo_penguin_1       AAACGAAAAAGTTCAGACGATTAAATTGTCAATAAAGTAAAGTTTTTTATTGATCAGTTT
+adenovirus_gentoo_penguin_2       AAACGAAAAAGTTCAGACGATTAAATTGTCAATAAAGTAAAGTTTTTTATTGATCAGTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTCTTTTACATTTTTCTCTTTGATACCGCCGCCGGTTTTTAAGCTTGCACATATGTACAT
+adenovirus_gentoo_penguin_1       GTCTTTTACATTTTTCTCTTTGATACCGCTGCCGGTTTTTAAGCTTGCACATATGTACAT
+adenovirus_gentoo_penguin_2       GTCTTTTACATTTTTCTCTTTGATACCGCCGCCGGTTTTTAAGCTTGCACATATGTACAT
+                                  ***************************** ******************************
+
+adenovirus_chinstrap_penguin      TGCATATTCTATTTACACTATCCAGAAGTAAACTTTGTAAATCTAAACATAGTGGATAAA
+adenovirus_gentoo_penguin_1       TGCATATTCTATTTACACTATCCAGAAGTAAACTTTGTAAATCTAAACATAGTGGGTAAA
+adenovirus_gentoo_penguin_2       TGCATATTCTATTTACACTATCCAGAAGTAAACTTTGTAAATCTAAACATAGTGGGTAAA
+                                  ******************************************************* ****
+
+adenovirus_chinstrap_penguin      CATGCTGTCCACCATCTAGTATTGCACACCATTTAAAAGATTCACGCGCGGGGCAGGTAT
+adenovirus_gentoo_penguin_1       CATGCTGTCCACCATCTAGTATTGCACACCATTTAAAAGATTCACGCGCGGGGCAGGTAT
+adenovirus_gentoo_penguin_2       CATGCTGTCCACCATCTAGTATTGCACACCATTTAAAAGATTCACGCGCGGGGCAGGTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATACATTACAAATGAATACTTACTATTTTTGTCAGATACTATGCTGTTCATCAATACAG
+adenovirus_gentoo_penguin_1       TATACATTACAAATGAATACTTACTATTTTTGTCAGATACTATGCTGTTCATCAATACAG
+adenovirus_gentoo_penguin_2       TATACATTACAAATGAATACTTACTATTTTTGTCAGATACTATGCTGTTCATCAATACAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTTTACAGCATGGTCCAGCCCGCCACTTCTGTTATGTACAAAATTTGATAATTGAAGTG
+adenovirus_gentoo_penguin_1       TTTTTACAGCATGGTCCAGCCCGCCACTTCTGTTATGTACAAAATTTGATAATTGAAGTG
+adenovirus_gentoo_penguin_2       TTTTTACAGCATGGTCCAGCCCGCCACTTCTGTTATGTACAAAATTTGATAATTGAAGTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCTGATTTTTTGTTGACAGAATATGCAGTTTTGCTTGAGTTTTAAGGTCCATGATGTTGT
+adenovirus_gentoo_penguin_1       GCTGATTTTTTGTTGACAGAATATGCAGTTTTGCTTGAGTTTTAAGGTCCATGATGTTGT
+adenovirus_gentoo_penguin_2       GCTGATTTTTTGTTGACAGAATATGCAGTTTTGCTTGAGTTTTAAGGTCCATGATGTTGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCCATGTCCAGATATTGGGTTTACATTATGTAAAACAACAAACATATAGAATGGATAGC
+adenovirus_gentoo_penguin_1       TTCCATGTCCAGATATTGGGTTTACATTATGTAAAACAACAAACATATAGAATGGATAGC
+adenovirus_gentoo_penguin_2       TTCCATGTCCAGATATTGGGTTTACATTATGTAAAACAACAAACATATAGAATGGATAGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CATACTTACTGGATAATTTTGATGGTAGGCTGCAATACAAAGGGCTAATATTTGGTTTTT
+adenovirus_gentoo_penguin_1       CATACTTACTGGATAATTTTGATGGTAGGCTGCAATACAAAGGGCTAATATTTGGTTTTT
+adenovirus_gentoo_penguin_2       CATACTTACTGGATAATTTTGATGGTAGGCTGCAATACAAAGGGCTAATATTTGGTTTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTATTAATTTTTGCATGCATTCATCAAGTACAACACAAATAGGACCTCTTTTAGCATATT
+adenovirus_gentoo_penguin_1       GTATTAATTTTTGCATGCATTCATCAAGTACAACACAAAGAGGACCTCTTTTAGCATATT
+adenovirus_gentoo_penguin_2       GTATTAATTTTTGCATGCATTCATCAAGTACAACACAAAGAGGACCTCTTTTAGCATATT
+                                  *************************************** ********************
+
+adenovirus_chinstrap_penguin      GACTAAAAATTGAGTTTTCATTATTTACATCTAAGTTTTCTGGAGTAATAACATCATCAA
+adenovirus_gentoo_penguin_1       GACTAAAAATTGAGTTCTCATTATTTACATCTAAGTTTTCTGGAGTAATAACATCATCAA
+adenovirus_gentoo_penguin_2       GACTAAAAATTGAGTTCTCATTATTTACATCTAAGTTTTCTGGAGTAATAACATCATCAA
+                                  **************** *******************************************
+
+adenovirus_chinstrap_penguin      AGGCACATTCTATGAATTCAATAGTAAATACTCTAGTTGTTGGATATATGGTGTCATTTG
+adenovirus_gentoo_penguin_1       AGGCACATTCTATGAATTCAATAGTAAATACTCTAGTTGTTGGATATATGGTGTCATTTG
+adenovirus_gentoo_penguin_2       AGGCACATTCTATGAATTCAATAGTAAATACTCTAGTTGTTGGATATATGGTGTCATTTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGCTGATGAGTAATTTCCTTCTTGTAGTTGAGTTTTCCATAAAATTACTTCATCGTGTG
+adenovirus_gentoo_penguin_1       CTGCTGATGAGTAATTTCCTTCTTGTAGTTGAGTTTTCCATAAAATTACTTCATCGTGTG
+adenovirus_gentoo_penguin_2       CTGCTGATGAGTAATTTCCTTCTTGTAGTTGAGTTTTCCATAAAATTACTTCATCGTGTG
+                                   ***********************************************************
+
+adenovirus_chinstrap_penguin      AAATTGTTCCTTTAGATGGAGTTATAAAGATTACAGCTTCTGGCATAGGTATAATCTTTT
+adenovirus_gentoo_penguin_1       AAATTGTTCCTTTAGATGGAGTTATAAAGATTACAGCTTCTGGCATAGGTATAATCTTTT
+adenovirus_gentoo_penguin_2       AAATTGTTCCTTTAGATGGAGTTATAAAGATTACAGCTTCTGGCATAGGTATAATCTTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGTAGCCAAGTAGGTTTCTTATAAGTTGACTTTTTCCACATCCTGTTGGTCCTATGACTA
+adenovirus_gentoo_penguin_1       TGTAGCCAAGTAGGTTTCTTATAAGTTGACTTTTTCCACATCCTGTTGGTCCTATGACTA
+adenovirus_gentoo_penguin_2       TGTAGCCAAGTAGGTTTCTTATAAGTTGACTTTTTCCACATCCTGTTGGTCCTATGACTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AACTTATAAGTGGGTAGGATTCCATATTTATAGATGGTAATTCTTGGTTCTGGAGGAATT
+adenovirus_gentoo_penguin_1       AACTTATAAGTGGATAGGATTCCATATTTATAGATGGTAATTCTTGGTTTTGGAGGAATT
+adenovirus_gentoo_penguin_2       AACTTATAAGTGGATAGGATTCCATATTTATAGATGGTAATTCTTGGTTTTGGAGGAATT
+                                  ************* *********************************** **********
+
+adenovirus_chinstrap_penguin      TTGCATTGACGGTTTCAATTTCATTAAATTTTCTCATATTTGTTCTTAGGTCTATTCCAG
+adenovirus_gentoo_penguin_1       TTGCATTGACGGTTTCAATTTCATTAAATTTTCTCATATTTGTTCTTAGGTCTATTCCAG
+adenovirus_gentoo_penguin_2       TTGCATTGACGGTTTCAATTTCATTAAATTTTCTCATATTTGTTCTTAGGTCTATTCCAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATTATAGCTTTCAAATTCTTTAAAACTGGGTAGATCACAAGGTGGTAAGATACTGGAAT
+adenovirus_gentoo_penguin_1       AATTATAGCTTTCAAATTCTTTAAAACTGGGTAGATCACAAGGTGGTAAGATACTGGAAT
+adenovirus_gentoo_penguin_2       AATTATAGCTTTCAAATTCTTTAAAACTGGGTAGATCACAAGGTGGTAAGATACTGGAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGATGTTGTCAACAGCAGACTTCCACTTAGATACTTTCTCATAGAACTCTTCAACTTCAT
+adenovirus_gentoo_penguin_1       TGATGTTGTCAACAGCAGACTTCCACTTAGATACTTTCTCATAGAACTCTTCAACTTCAT
+adenovirus_gentoo_penguin_2       TGATGTTGTCAACAGCAGACTTCCACTTAGATACTTTCTCATAGAACTCTTCAACTTCAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CCGTCATCTTCAAATTCCTGTGTAAGAAATAATGGTGTTACTCTAGGATTTGGGTGGTAC
+adenovirus_gentoo_penguin_1       CCGTCATCTTCAAATTCCTGTGTAAGAAATAATGGTGTTACTCTAGGATTTGGGTGGTAC
+adenovirus_gentoo_penguin_2       CCGTCATCTTCAAATTCCTGTGTAAGAAATAATGGTGTTACTCTAGGATTTGGGTGGTAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATGTCATATGGGATCATAGTGCAGTCAGATAGGAAATATAAAGTAGGATCATTCCACGGT
+adenovirus_gentoo_penguin_1       ATGTCATATGGGATCATAGTGCAGTCAGATAGGAAATATAAAGTAGGATCATTCCACGGT
+adenovirus_gentoo_penguin_2       ATGTCATATGGGATCATAGTGCAGTCAGATAGGAAATATAAAGTAGGATCATTCCACGGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTAAGTTCTCTAATTAATTCAATTTCATGTATGCTAAATGCTGAAAATTTGCCATATGAC
+adenovirus_gentoo_penguin_1       CTAAGTTCTCTAATTAATTCAATTTCATGTATGCTAAATGCTGAAAATTTGCCATATGAC
+adenovirus_gentoo_penguin_2       CTAAGTTCTCTAATTAATTCAATTTCATGTATGCTAAATGCTGAAAATTTGCCATATGAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTACAAAGTGTTCGTTTGAAAGCTGTACGAGCAGTGGTGAATTTCTTCTCTGGATTTGAT
+adenovirus_gentoo_penguin_1       TTACAAAGTGTTCGTTTGAAAGCTGTACGAGCAGTGGTGAATTTCTTCTCTGGATTTGAT
+adenovirus_gentoo_penguin_2       TTACAAAGTGTTCGTTTGAAAGCTGTACGAGCAGTGGTGAATTTCTTCTCTGGATTTGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GAGGAATTGTGATAGTTGAAGCAGGCGTTCAGTATTTCAAATGTAATGTCAGTTGTGCAA
+adenovirus_gentoo_penguin_1       GAGGAATTGTGATAGTTGAAGCAGGCGTTCAGTATTTCAAATGTAATGTCAGTTGTGCAA
+adenovirus_gentoo_penguin_2       GAGGAATTGTGATAGTTGAAGCAGGCGTTCAGTATTTCAAATGTAATGTCAGTTGTGCAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGACCTTTTGCTCTGAGTTTACCGGGTTTGGAAATTTTACACGTAGAACACGTGATTGAT
+adenovirus_gentoo_penguin_1       TGACCTTTTGCTCTGAGTTTACCGGGTTTGGAAATTTTACACGTAGAACACGTGATTGAT
+adenovirus_gentoo_penguin_2       TGACCTTTTGCTCTGAGTTTACCGGGTTTGGAAATTTTACACGTAGAACACGTGATTGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTAGTGCATATAATTTGGGTGCTAAAAATATGCTTTCAGTACTGCAGGCTGGTTTCCCA
+adenovirus_gentoo_penguin_1       TTTAGTGCATATAATTTGGGTGCTAAAAATATGCTTTCACTACTGCAGGCTGGTTTCTCA
+adenovirus_gentoo_penguin_2       TTTAGTGCATATAATTTGGGTGCTAAAAATATGCTTTCACTACTGCAGGCTGGTTTCTCA
+                                  *************************************** ***************** **
+
+adenovirus_chinstrap_penguin      CAGTGATCACACCACGTTTCACACTCAACAGCCCATGTGATTTCTGGAACATTTTGGTTA
+adenovirus_gentoo_penguin_1       CAGTGATCACACCACGTTTCACACTCAACAGCCCATGTGATTTCTGGAACATTTTGGTTA
+adenovirus_gentoo_penguin_2       CAGTGATCACACCACGTTTCACACTCAACAGCCCATGTGATTTCTGGAACATTTTGGTTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATATTAACTTTGAATTCTTAGTTTTTAGTCTGTGAGATCCGAATTTTATCATTCTTTCA
+adenovirus_gentoo_penguin_1       AATATTAACTTTGAATTCTTGGTTTTTAGTCTGTGAGATCCGAATTTTATCATTCTTTCA
+adenovirus_gentoo_penguin_2       AATATTAACTTTGAATTCTTGGTTTTTAGTCTGTGAGATCCGAATTTTATCATTCTTTCA
+                                  ******************** ***************************************
+
+adenovirus_chinstrap_penguin      TGTCCTTCTTGAGTTAAGAATAAGCTGTCTGTATCTCCGTATATGGATCTAATAGATTTG
+adenovirus_gentoo_penguin_1       TGTCCTTCTTGAGTTAAGAATAAGCTGTCTGTATCTCCGTATATGGATCTAATAGATTTG
+adenovirus_gentoo_penguin_2       TGTCCTTCTTGAGTTAAGAATAAGCTGTCTGTATCTCCGTATATGGATCTAATAGATTTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTTGAATTGGAATATGGTATTGATCACCATATAGAATTTCTGTCCAATCACTCATAAAA
+adenovirus_gentoo_penguin_1       TTTTGAATTGGAATATGGTATTGATCACCATATAGAATTTCTGTCCAATCACTCATAAAA
+adenovirus_gentoo_penguin_2       TTTTGAATTGGAATATGGTATTGATCACCATATAGAATTTCTGTCCAATCACTCATAAAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCTCTGGTCCATGCTAAGACAAAACTTGCTAGTTGAGTTGGATATCGTTTATTTGATGGA
+adenovirus_gentoo_penguin_1       GCTCTGGTCCATGCTAAGACAAAACTTGCTAGTTGAGTTGGATATCGTTTATTTGATGGA
+adenovirus_gentoo_penguin_2       GCTCTGGTCCATGCTAAGACAAAACTTGCTAGTTGAGTTGGATATCGTTTATTTGATGGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGTTCATTAGTTGATTTCAACATGTAGATTGTGAGGTTGTCTGATGTAACGTCAAGGATG
+adenovirus_gentoo_penguin_1       TGTTCATTAGTTGATTTTAACATGTAGATTGTGAGGTTGTCTGATGTAACGTCAAGGATG
+adenovirus_gentoo_penguin_2       TGTTCATTAGTTGATTTTAACATGTAGATTGTGAGGTTGTCTGATGTAACGTCAAGGATG
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      TTGAATGGTTTATAGGTTTGTGAGTGGGTGGATCTTGCTATTTTAAATTCTGATACACTT
+adenovirus_gentoo_penguin_1       TTGAATGGTTTATAGGTTTGTGAGTGGGTGGATCTTGCTATTTTAAACTCTGATACACTT
+adenovirus_gentoo_penguin_2       TTGAATGGTTTATAGGTTTGTGAGTGGGTGGATCTTGCTATTTTAAACTCTGATACACTT
+                                  *********************************************** ************
+
+adenovirus_chinstrap_penguin      TCATCTAGAAACTCTAGTCCTGTGAACGGACTTGCGAGCTCGTCATCTGTGTCTAGAGAC
+adenovirus_gentoo_penguin_1       TCATCTAGAAACTCTAGTCCTGTGAACGGACTTGCGAGCTCGTCATCTGTGTCTAGAGAC
+adenovirus_gentoo_penguin_2       TCATCTAGAAACTCTAGTCCTGTGAACGGACTTGCGAGCTCGTCATCTGTGTCTAGAGAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTGTCAGTATCTTGTTTTTCTTTTAACATAAATTTGAGGTCTGTAATTGTTGTACACGGT
+adenovirus_gentoo_penguin_1       CTGTCAGTATCTTGTTTTTCTTTTAACATAAATTTGAGGTCTGTAATTGTTGTACACGGT
+adenovirus_gentoo_penguin_2       CTGTCAGTATCTTGTTTTTCTTTTAACATAAATTTGAGGTCTGTAATTGTTGTACACGGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGGTGATTTGTTGGTATTGTTGTAATGTTTTCTATTTTCAGCTCGTTGTTATTGAGTTGT
+adenovirus_gentoo_penguin_1       AGGTGATTTGTTGGTATTGTTGTAATGTTTTCTATTTTCAGCTCGTTGTTATTGAGTTGT
+adenovirus_gentoo_penguin_2       AGGTGATTTGTTGGTATTGTTGTAATGTTTTCTATTTTCAGCTCGTTGTTATTGAGTTGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTTTTACTTTTTCTGAAATTGATTGCTCAAAAACGGTAATATCATTGTTTTCTCTTGTT
+adenovirus_gentoo_penguin_1       TTTTTTACTTTTTCTGAAATTGATTGCTCAAAAACGGTAATATCATTGTTTTCTCTTGTT
+adenovirus_gentoo_penguin_2       TTTTTTACTTTTTCTGAAATTGATTGCTCAAAAACGGTAATATCATTGTTTTCTCTTGTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCAAAGCTTCCATATAGTGCATTACTTAGGAGCTTGCTTATAGCTCTCTTTACTTCATTG
+adenovirus_gentoo_penguin_1       GCAAAGCTTCCATATAGTGCATTACTTAGGAGCTTGCTTATAGCTCTCTTTACTTCATTG
+adenovirus_gentoo_penguin_2       GCAAAGCTTCCATATAGTGCATTACTTAGGAGCTTGCTTATAGCTCTCTTTACTTCATTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGCTCTAAAGTAGCTTTTTCTTTTGCTAGTATGTTTACTTTTACATATTCAGAACAGCAT
+adenovirus_gentoo_penguin_1       TGCTCTAAAGTAGCTTTTTCTTTTGCTAGTATGTTTACTTTTACATATTCAGAACAGCAT
+adenovirus_gentoo_penguin_2       TGCTCTAAAGTAGCTTTTTCTTTTGCTAGTATGTTTACTTTTACATATTCAGAACAGCAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTGTTCCATTCTGGGAAAACGGTATTCATTTTATTTGGTAGAATTTTGACCCGCCATCCT
+adenovirus_gentoo_penguin_1       GTGTTCCATTCTGGGAAAACGGTATTCATTTTATTTGGTAGAATTTTGACCCGCCATCCT
+adenovirus_gentoo_penguin_2       GTGTTCCATTCTGGGAAAACGGTATTCATTTTATTTGGTAGAATTTTGACCCGCCATCCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTGTTGTGCAGTGTTATTATGTCAATTGATGTAACTATTTCATCATGCAGTGGTTCATTT
+adenovirus_gentoo_penguin_1       CTGTTGTGCAGTGTTATTATGTCAATTGATGTAACTATTTCATCATGCAGTGGTTCATTT
+adenovirus_gentoo_penguin_2       CTGTTGTGCAGTGTTATTATGTCAATTGATGTAACTATTTCATCATGCAGTGGTTCATTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTCCAACATAAACGTCCGCTTTTTTTTGAACATAGTGGTGGTAAAACGTCTAATAATTCT
+adenovirus_gentoo_penguin_1       GTCCAACATAAACGTCCGCTTTTTTTTGAACATAGTGGTGGTAAAACGTCTAATAATTCT
+adenovirus_gentoo_penguin_2       GTCCAACATAAACGTCCGCTTTTTTTTGAACATAGTGGTGGTAAAACGTCTAATAATTCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GGTGGTGGGGGTAAAGCATCAATTGCTACAATCATTGGTTTTATATCTTCAAAGTATGAT
+adenovirus_gentoo_penguin_1       GGTGGTGGGGGTAAAGCATCAATTGCTACAATCATTGGTTTTATATCTTCAAAGTATGAT
+adenovirus_gentoo_penguin_2       GGTGGTGGGGGTAAAGCATCAATTGCTACAATCATTGGTTTTATATCTTCAAAGTATGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGCTTGCTTGTTCTCTGTAGTAGTAGATTGAATTTTTCAATTTCTTGTACTCTTTCTGTT
+adenovirus_gentoo_penguin_1       AGCTTGCTTGTTCTCTGTAGTAGTAGATTGAATTTTTCAATTTCTTGTACTCTTTCTGTT
+adenovirus_gentoo_penguin_2       AGCTTGCTTGTTCTCTGTAGTAGTAGATTGAATTTTTCAATTTCTTGTACTCTTTCTGTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCTCCAACTGGTATTCCATATGGCATCGGATGAGTTAAGGCACTAGCATACATTCCACAA
+adenovirus_gentoo_penguin_1       TCTCCAACTGGTATTCCATATGGCATGGGATGAGTTAAGGCACTAGCATACATTCCACAA
+adenovirus_gentoo_penguin_2       TCTCCAACTGGTATTCCATATGGCATGGGATGAGTTAAGGCACTAGCATACATTCCACAA
+                                  ************************** *********************************
+
+adenovirus_chinstrap_penguin      ATGTCATAGACATACAAATTTTTCTTGAAAACACCTAAGAATGTTGGATAACATCTACCA
+adenovirus_gentoo_penguin_1       ATGTCATAAACATACAAATTTTTCTTGAAAACACCTAAGAATGTTGGATAACATCTACCA
+adenovirus_gentoo_penguin_2       ATGTCATAAACATACAAATTTTTCTTGAAAACACCTAAGAATGTTGGATAACATCTACCA
+                                  ******** ***************************************************
+
+adenovirus_chinstrap_penguin      CCTCGTACTGATTGTCTGATAAATGTGTACATTTCATCTGACGGTGCTACTATTTTTGGT
+adenovirus_gentoo_penguin_1       CCCCGTACTGATTGTCTGATAAATGTGTACATTTCATCTGACGGTGCTACTATATTTGGT
+adenovirus_gentoo_penguin_2       CCCCGTACTGATTGTCTGATAAATGTGTACATTTCATCTGACGGTGCTACTATATTTGGT
+                                  ** ************************************************** ******
+
+adenovirus_chinstrap_penguin      AGTTTATTGTATTTTATTCCGTGAGCTTTGAAATGTAATTGTCTGAATATAGCATGTGAA
+adenovirus_gentoo_penguin_1       AGTTTATTGTATTTTATTCCGTGAGTTTTGAAATGTAATTGTCTGAATATAGCATGTGAA
+adenovirus_gentoo_penguin_2       AGTTTATTGTATTTTATTCCGTGAGTTTTGAAATGTAATTGTCTGAATATAGCATGTGAA
+                                  ************************* **********************************
+
+adenovirus_chinstrap_penguin      TTTGATGAAATTGTTGGTCTTTTGAATATGTTGAAATTGCACTGCAAATTGAATTCTTCT
+adenovirus_gentoo_penguin_1       TTTGATGAAATTGTTGGTCTCTTGAATATGTTGAAATTGCACTGCAAATTGAATTCTTCT
+adenovirus_gentoo_penguin_2       TTTGATGAAATTGTTGGTCTCTTGAATATGTTGAAATTGCACTGCAAATTGAATTCTTCT
+                                  ******************** ***************************************
+
+adenovirus_chinstrap_penguin      TTGATAAATGTGTTGAATGTTTCTAGAAGTTTTTTAGTAAGTTCCACTGTGACTTGTACA
+adenovirus_gentoo_penguin_1       TTGATAAATGTGTTGAATGTTTCTAGAAGTTTTTTAGTAAGTTCCACTGTGACTTGTACA
+adenovirus_gentoo_penguin_2       TTGATAAATGTGTTGAATGTTTCTAGAAGTTTTTTAGTAAGTTCCACTGTGACTTGTACA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCCTGCATGCAATATGAAATCAGTTCTTCTGTAATGTCATAGGTAAGCATATTTTTACTC
+adenovirus_gentoo_penguin_1       TCCTGGATGCAATATGAAATAAGTTCTTCTGTAATGTCATAGGTAAGCATATTTTTATTC
+adenovirus_gentoo_penguin_2       TCCTGGATGCAATATGAAATAAGTTCTTCTGTAATGTCATAGGTAAGCATATTTTTATTC
+                                  ***** ************** ************************************ **
+
+adenovirus_chinstrap_penguin      TTCCATATTTCTTTTTGTTCTTTATATTCATTTTCATCTTTCCAATAACGTAGGTCTGGA
+adenovirus_gentoo_penguin_1       TTCCATATTTCTTTTTGTTCTTTATATTCATTTTCATCTTTCCAATAACGCAGGTCTGGA
+adenovirus_gentoo_penguin_2       TTCCATATTTCTTTTTGTTCTTTATATTCATTTTCATCTTTCCAATAACGCAGGTCTGGA
+                                  ************************************************** *********
+
+adenovirus_chinstrap_penguin      AAAGAGCTTTCATCTTTGTAAAATGTGTTAGTAGAAAAATATTCATTTACAGCTTTATAT
+adenovirus_gentoo_penguin_1       AAAGAGCTTTCATCTTTGTAAAATGTGTTAGTAGAAAAATATTCATTTACAGCTTTATAT
+adenovirus_gentoo_penguin_2       AAAGAGCTTTCATCTTTGTAAAATGTGTTAGTAGAAAAATATTCATTTACAGCTTTATAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GGACAACTTCCCTTGTGTGTTTTTAAGTTGTAGGCATCTGCAGCATTTTTAAGAGATGTG
+adenovirus_gentoo_penguin_1       GGACAACTTCCTTTGTGTGTTTTTAAGTTGTAGGCATTTGCAGCATTTTTAAGAGATGTG
+adenovirus_gentoo_penguin_2       GGACAACTTCCTTTGTGTGTTTTTAAGTTGTAGGCATTTGCAGCATTTTTAAGAGATGTG
+                                  *********** ************************* **********************
+
+adenovirus_chinstrap_penguin      TGAGTAAGTTGGTATGTATCTCTAACCATACATTTAACATATATGTGTTTTACTGACTTT
+adenovirus_gentoo_penguin_1       TGAGTAAGTTGGTATGTATCTCTAACCATACATTTAACATATATGTGTTTTACTGACTTT
+adenovirus_gentoo_penguin_2       TGAGTAAGTTGGTATGTATCTCTAACCATACATTTAACATATATGTGTTTTACTGACTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAATGTGGCTTTCCATTTTTGGCATCTTCTAGCATTTCAGCCGTGTTTTTTTGTTGTTCT
+adenovirus_gentoo_penguin_1       AAATGTGGCTTTCCATTTTTGGCATCTTCTAGCATTTCAGCCGTGTTTTTTTGTTGTTCT
+adenovirus_gentoo_penguin_2       AAATGTGGCTTTCCATTTTTGGCATCTTCTAGCATTTCAGCCGTGTTTTTTTGTTGTTCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCTTGGGCTACATAAAATTCTGGGTATGGGAATTTGATAGTTATATCATTGAAAAGAATT
+adenovirus_gentoo_penguin_1       TCTTGGGCTACATAAAATTCTGGGTATGGGAATTTGATAGTTATATCATTGAAAAGAATT
+adenovirus_gentoo_penguin_2       TCTTGGGCTACATAAAATTCTGGGTATGGGAATTTGATAGTTATATCATTGAAAAGAATT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTCCTTGTCTTGGCATGAAATTTCTGTCAAAAGTTAAAAGTGGACTAATTTGAAAATTG
+adenovirus_gentoo_penguin_1       TTTCCTTGTCTTGGCATGAAATTTCTGTCAAAAGTTAAAAGTGGACTAATTTGAAAATTG
+adenovirus_gentoo_penguin_2       TTTCCTTGTCTTGGCATGAAATTTCTGTCAAAAGTTAAAAGTGGACTAATTTGAAAATTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCATGTTGTAATATTTGTGTGGCTAATAGAATCTCATCGAAAGATTGAATATTGTGTCCG
+adenovirus_gentoo_penguin_1       TCATGTTGTAATATTTGTGTGGCTAATAGAATCTCATCGAAAGACTGAATATTGTGTCCG
+adenovirus_gentoo_penguin_2       TCATGTTGTAATATTTGTGTGGCTAATAGAATCTCATCGAAAGACTGAATATTGTGTCCG
+                                  ******************************************** ***************
+
+adenovirus_chinstrap_penguin      ATCACATAGAATTCAATGAAAACTGCTTTTATTTTTAAAGATAGTATTAAGTTTTTCTCT
+adenovirus_gentoo_penguin_1       ATCACATAGAATTCAATGAAAAGTGCTTTTATTTTTAAAGATAGTATTAAGTTTTTCTCT
+adenovirus_gentoo_penguin_2       ATCACATAGAATTCAATGAAAAGTGCTTTTATTTTTAAAGATAGTATTAAGTTTTTCTCT
+                                  ********************** *************************************
+
+adenovirus_chinstrap_penguin      TCATTTATGTTGATATCAAATATTGATTCTAAATTGTGTTGCTTTACAAAGTCATCTAGA
+adenovirus_gentoo_penguin_1       TCATTTATGTTGATATCAAATATTGATTCTAAATTGTGTTGCTTTACAAAGTCATCTAGA
+adenovirus_gentoo_penguin_2       TCATTTATGTTGATATCAAATATTGATTCTAAATTGTGTTGCTTTACAAAGTCATCTAGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATCTCTGTGTTTTCTTTAGTTAAGATGTGTTTCAAGAAATAATTTGTTAGTTCTAACAGA
+adenovirus_gentoo_penguin_1       ATCTCTGTGTTTTCTTTAGTTAAGATGTGTTTCAAGAAATAATTTGTGAGTTCTAATAGA
+adenovirus_gentoo_penguin_2       ATCTCTGTGTTTTCTTTAGTTAAGATGTGTTTCAAGAAATAATTTGTGAGTTCTAATAGA
+                                  *********************************************** ******** ***
+
+adenovirus_chinstrap_penguin      ATGTTGTTTCTGAGAAGTCTAAATTTAGTACTTATAAAATTTTTTTCTTTGCTCATCCAC
+adenovirus_gentoo_penguin_1       ATATTGTTTCTGAGAAGTCTAAATTTAGTACTTATAAAATTTTTTTCTTTGCTCATCCAC
+adenovirus_gentoo_penguin_2       ATATTGTTTCTGAGAAGTCTAAATTTAGTACTTATAAAATTTTTTTCTTTGCTCATCCAC
+                                  ** *********************************************************
+
+adenovirus_chinstrap_penguin      ATGTAACATTGGTTTCTCACTTGAATAGTTTTGTCCTTGGAGATTTCTTTTTCTGCAATG
+adenovirus_gentoo_penguin_1       ATGTAACATTGGTTTCTCACTTGAATAGTTTTGTCTTTTGAGATTTCTTTTTCTGCAATG
+adenovirus_gentoo_penguin_2       ATGTAACATTGGTTTCTCACTTGAATAGTTTTGTCTTTTGAGATTTCTTTTTCTGCAATG
+                                  *********************************** ** *********************
+
+adenovirus_chinstrap_penguin      TTCACAAGGTGTTTGTCTCCAAAAATGGAGAAACAGAGTAACAAGGGAACAAGTACGGTT
+adenovirus_gentoo_penguin_1       TTCACAAGGTGTTTGTCTCCAAAAATGGAGAAACAGAGTAACAAGGGAACAAGTACGGTT
+adenovirus_gentoo_penguin_2       TTCACAAGGTGTTTGTCTCCAAAAATGGAGAAACAGAGTAACAAGGGAACAAGTACGGTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CCTTCTTTCTCAGCTAAGGTGTAAGTTTCTATATCGTATATTAAAAATAGCTTGTGTGTG
+adenovirus_gentoo_penguin_1       CCTTCTTTCTCAGCTAAGGTGTAAGTTTCTATATCGTATATTAAAAATAGCTTGTGTGTG
+adenovirus_gentoo_penguin_2       CCTTCTTTCTCAGCTAAGGTGTAAGTTTCTATATCGTATATTAAAAATAGCTTGTGTGTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGTCATGTTCTCCAATTGGTTGGAAAGTAATACTTTCCCAATATGTTCTAGAAGATGCA
+adenovirus_gentoo_penguin_1       TTGTCATGTTCTCCAATTGGTTGGAAAGTAATACTTTCCCAATATGTTCTAGAAGATGCA
+adenovirus_gentoo_penguin_2       TTGTCATGTTCTCCAATTGGTTGGAAAGTAATACTTTCCCAATATGTTCTAGAAGATGCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTTTGTTATAGTAGAATGATGCTCGGTTATAATGACAAGTGTGAGTATGGCTATAAATT
+adenovirus_gentoo_penguin_1       ATTTTGTTATAGTAGAATGATGCTCGGTTATAATGACAAGTGTGAGTATGGCTATAAATT
+adenovirus_gentoo_penguin_2       ATTTTGTTATAGTAGAATGATGCTCGGTTATAATGACAAGTGTGAGTATGGCTATAAATT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTGCCACAGGCTGTACATTTTTGTTGTTTGATCCATGTTTTTATCCATGATATTGTTCCT
+adenovirus_gentoo_penguin_1       CTGCCACAGGCTGTACATTTTTGTTGTTTGATCCATGTTTTTATCCATGATATTGTTCCT
+adenovirus_gentoo_penguin_2       CTGCCACAGGCTGTACATTTTTGTTGTTTGATCCATGTTTTTATCCATGATATTGTTCCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGTCTTGCAGGAAATCTAATTCTAAACTATTACCCACGTTTATTATCTCTTGTTGAATA
+adenovirus_gentoo_penguin_1       TTGTCTTGCAGGAAATCCAATTCTAAGCTATTACCCACGTTTATTATCTCTTGTTGAATA
+adenovirus_gentoo_penguin_2       TTGTCTTGCAGGAAATCCAATTCTAAGCTATTACCCACGTTTATTATCTCTTGTTGAATA
+                                  ***************** ******** *********************************
+
+adenovirus_chinstrap_penguin      ACGACACATCCTGTTAATCTTTTCCAAATTGTTATTTTTTTCACGGGTAAATGTTTTAGT
+adenovirus_gentoo_penguin_1       ACAACACATCCTGTTAATCTTTTCCAAATTGTTATTTTTTTCACGGGTAAATGTTTTAGT
+adenovirus_gentoo_penguin_2       ACAACACATCCTGTTAATCTTTTCCAAATTGTTATTTTTTTCACGGGTAAATGTTTTAGT
+                                  ** *********************************************************
+
+adenovirus_chinstrap_penguin      AGTTCCAGTGGTGATTTTGTAGGTGAGTATTTGCAAGAGATTAATATATATGATTCACAA
+adenovirus_gentoo_penguin_1       AGTTCCAGTGGTGATTTTGTAGGTGAGTATTTGCAAGAGATTAATATATATGATTCACAA
+adenovirus_gentoo_penguin_2       AGTTCCAGTGGTGATTTTGTAGGTGAGTATTTGCAAGAGATTAATATATATGATTCACAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTTTTCTTTGATTTAGCTATTTTTTTACAATTGAAAAAGTTATAGGTCCATGATATTTCA
+adenovirus_gentoo_penguin_1       GTTTTCTTTGATTTAGCTATTTTTTTACAATTGAAAAAGTTATAGGTCCATGATATTTCA
+adenovirus_gentoo_penguin_2       GTTTTCTTTGATTTAGCTATTTTTTTACAATTGAAAAAGTTATAGGTCCATGATATTTCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTAATACATCTTTGATATTTTTTGAGTATAATTGCAATCGGTATGGGATCTCATTTTGT
+adenovirus_gentoo_penguin_1       ATTAATACATCTTTGATATTTTTTGTGTATAATTGCAATCGGTATGGGATCTCATTTTGT
+adenovirus_gentoo_penguin_2       ATTAATACATCTTTGATATTTTTTGTGTATAATTGCAATCGGTATGGGATCTCATTTTGT
+                                  ************************* **********************************
+
+adenovirus_chinstrap_penguin      GTGGTAAATATATATTGACTCATCTTGGTTGTCTTAAACGTCTCATTTCTTGACTTCTGA
+adenovirus_gentoo_penguin_1       GTGGTAAATATATATTGACTCATCTTGGTTGTCTTAAACGTCTCATTTCTTGACTTCTGA
+adenovirus_gentoo_penguin_2       GTGGTAAATATATATTGACTCATCTTGGTTGTCTTAAACGTCTCATTTCTTGACTTCTGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTTGTGTTGCATTAGCAATTATTTGTCTGTTTGTGGCTGTAGTAACCAGACCTATTGGCT
+adenovirus_gentoo_penguin_1       CTTGTGTTGCATTAACAATGATTTGTCTGTTTGTGGCTGTAGTAACCAGACCTATTGGTT
+adenovirus_gentoo_penguin_2       CTTGTGTTGCATTAACAATGATTTGTCTGTTTGTGGCTGTAGTAACCAGACCTATTGGTT
+                                  ************** **** ************************************** *
+
+adenovirus_chinstrap_penguin      TAATTTTAAATGCTATTTGTACTGTGTGAACTAAACTTTCATTTAATCTTGCTTGGTTGA
+adenovirus_gentoo_penguin_1       TGATTTTAAATGCTATTTGTACTGTGTGAACTAAACTTTCATTTAATCTTGCTTGGTTGA
+adenovirus_gentoo_penguin_2       TGATTTTAAATGCTATTTGTACTGTGTGAACTAAACTTTCATTTAATCTTGCTTGGTTGA
+                                  * **********************************************************
+
+adenovirus_chinstrap_penguin      TTAGATCGTTAGGATCTCCAGATTCTGGTCTATGTGAGAGTGAGGAGAGTAGATCCTCTT
+adenovirus_gentoo_penguin_1       TTAGATCGTTAGGATCTCCAGATTCTGGTCTATGTGAGAGTGAGGAGAGTAGATCCTCTT
+adenovirus_gentoo_penguin_2       TTAGATCGTTAGGATCTCCAGATTCTGGTCTATGTGAGAGTGAGGAGAGTAGATCCTCTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTTCTATTGCTGTTTCAATGCTGTCCGGACGTCGGTCACAGATTGTGAGAATATCTCTAA
+adenovirus_gentoo_penguin_1       CTTCTATTGCTGTTTCAATGCTGTCCGGATGTCGGTCACAGATTGTGAGAATATCTCTAA
+adenovirus_gentoo_penguin_2       CTTCTATTGCTGTTTCAATGCTGTCCGGATGTCGGTCACAGATTGTGAGAATATCTCTAA
+                                  ***************************** ******************************
+
+adenovirus_chinstrap_penguin      TGATTGTTCTGAAAATTCTGAGGAATGGAGATATATTATTGTTAGTCCATACTCTGTGTA
+adenovirus_gentoo_penguin_1       TGATTGTTCTGAAAATTCTGAGGAATGGAGATATATTATTGTTAGTCCACACTCTGTGTA
+adenovirus_gentoo_penguin_2       TGATTGTTCTGAAAATTCTGAGGAATGGAGATATATTATTGTTAGTCCACACTCTGTGTA
+                                  ************************************************* **********
+
+adenovirus_chinstrap_penguin      AATTGACATTGCCTGAGGTATCTCTCCCTGTTATAATTACTTGCACATATTGAAAATTTA
+adenovirus_gentoo_penguin_1       AATTGACATTGCCTGAGGTATCTCTCCCTGTTATAATTACTTGCACATATTGAAAATTTA
+adenovirus_gentoo_penguin_2       AATTGACATTGCCTGAGGTATCTCTCCCTGTTATAATTACTTGCACATATTGAAAATTTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CATAGCGTCTGAACAAAACATTTAGGTTAAGCAGAGCGTGATAATAAAAAAGTGTGCTGC
+adenovirus_gentoo_penguin_1       CATAGCGTCTGAACAAAACATTTAGGTTAAGCAAAGCGTGATAATAAAAAAGTGTGCTGC
+adenovirus_gentoo_penguin_2       CATAGCGTCTGAACAAAACATTTAGGTTAAGCAAAGCGTGATAATAAAAAAGTGTGCTGC
+                                  ********************************* **************************
+
+adenovirus_chinstrap_penguin      TTATATGTTCCATGATAAAAAAATAGAAAAAGAACCGCCTTATATATTCAGGGGTTATTC
+adenovirus_gentoo_penguin_1       TTATATGTTCCATGATAAAAAAATAGAAAAAGAACCGCCTTATATATTCAGGGGTTATTC
+adenovirus_gentoo_penguin_2       TTATATGTTCCATGATAAAAAAATAGAAAAAGAACCGCCTTATATATTCAGGGGTTATTC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCCTTCCTCATTTGCTCTAGTTAAAGTATTGTAAAATTGAGTACCAAAAGTGAAAATTT
+adenovirus_gentoo_penguin_1       TTCCTTCCTCATTTGCTCTAGTTAAAGTATTGTAAAATTGAGTACCAAAAGTGAAAATTT
+adenovirus_gentoo_penguin_2       TTCCTTCCTCATTTGCTCTAGTTAAAGTATTGTAAAATTGAGTACCAAAAGTGAAAATTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CATGTTCTCTGGCTGCTGGAGATAATTCTAATCTTAAGTCGTTTAGGACTAATTGTAAAA
+adenovirus_gentoo_penguin_1       CATGTTCTCTGGCTGCTGGAGATAATTCTAATCTTAAGTCGTTTAGGACTAATTGTAAAA
+adenovirus_gentoo_penguin_2       CATGTTCTCTGGCTGCTGGAGATAATTCTAATCTTAAGTCGTTTAGGACTAATTGTAAAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCTTAGAATTTCATTTCCTAACATTGCTTCTTCTTCTTCTTCTCTTACTTCACTAGGAC
+adenovirus_gentoo_penguin_1       TTCTTAGAATTTCATTTCCTAACATTGCTTCTTCTTCTTCTTCTCTTACTTCACTAGGAC
+adenovirus_gentoo_penguin_2       TTCTTAGAATTTCATTTCCTAACATTGCTTCTTCTTCTTCTTCTCTTACTTCACTAGGAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTTCACCTGCATCCTCTTCTTCTTCTTCTGGAATTTGAGGAGGACGTCTGATACGTCTTA
+adenovirus_gentoo_penguin_1       CTTCACCTGCATCTTCTTCTTCCTCTTCTGGAATTTGAGGAGGACGTCTGATACGTCTTA
+adenovirus_gentoo_penguin_2       CTTCACCTGCATCTTCTTCTTCCTCTTCTGGAATTTGAGGAGGACGTCTGATACGTCTTA
+                                  ************* ******** *************************************
+
+adenovirus_chinstrap_penguin      TAAGAGGTAAGCTGTCAATAAATCTTTGTACAATTTGTCCTCTATTTCTTCTCATATTTT
+adenovirus_gentoo_penguin_1       TAAGAGGTAAGCTGTCAATAAATCTTTGTACAATTTGTCCTCTATTTCTTCTCATATTTT
+adenovirus_gentoo_penguin_2       TAAGAGGTAAGCTGTCAATAAATCTTTGTACAATTTGTCCTCTATTTCTTCTCATATTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CAGTGATAGCTCTTTGGTTTTCACGTTGTCTAAGGAATGGCAAGTCTGTTCTAGTTCCGC
+adenovirus_gentoo_penguin_1       CAGTGATAGCTCTTTGGTTTTCACGTTGTCTAAGGAATGGCAAGTCTGTTCTAGTTCCGC
+adenovirus_gentoo_penguin_2       CAGTGATAGCTCTTTGGTTTTCACGTTGTCTAAGGAATGGCAAGTCTGTTCTAGTTCCGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCTAAGTCTAGCACCTCCTTTAATGTTTTTTATCCATGTTGGAAATTTAGAGTCTAGAG
+adenovirus_gentoo_penguin_1       TTCTAAGTCTAGCACCTCCTTTAATGTTTTTTATCCATGTTGGAAACTTAGAGTCTAGAG
+adenovirus_gentoo_penguin_2       TTCTAAGTCTAGCACCTCCTTTAATGTTTTTTATCCATGTTGGAAACTTAGAGTCTAGAG
+                                  ********************************************** *************
+
+adenovirus_chinstrap_penguin      CGTTTAAGGCTAAGACAAAACATTTAGAGAAATTTTGGTCTATTTCAGGTTGCCAGTTTT
+adenovirus_gentoo_penguin_1       CGTTTAAGGCTAAGACAAAACATTTAGAGAAATTTTGGTCTATTTCAGGTTGCCAGTTTT
+adenovirus_gentoo_penguin_2       CGTTTAAGGCTAAGACAAAACATTTAGAGAAATTTTGGTCTATTTCAGGTTGCCAGTTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GGTATTTTGCTTGAAGACCTTGAATTAAGTTCTCCTGTAAAGGTATGTAAGTTTTGTTTG
+adenovirus_gentoo_penguin_1       GGTATTTTGCTTGAAGAGCTTGAATTAAGTTCTCCTGTAAAGGTATGTAAGTTTTGTTTG
+adenovirus_gentoo_penguin_2       GGTATTTTGCTTGAAGAGCTTGAATTAAGTTCTCCTGTAAAGGTATGTAAGTTTTGTTTG
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      GATTAAATTTCCAATCGTATAAAAATTTAGCAATTAATTTTACTACAGAGTTAATTGCTG
+adenovirus_gentoo_penguin_1       GATTAAATTTCCAATCGTATAAAAATTTAGCAATTAATTTTACTACAGAGTTAATTGCTG
+adenovirus_gentoo_penguin_2       GATTAAATTTCCAATCGTATAAAAATTTAGCAATTAATTTTACTACAGAGTTAATTGCTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGAGGGTGTTTAAATCTTTGTCAGTTTCATATTCATATCTTTGCTGTAGAGCAAAGTTAT
+adenovirus_gentoo_penguin_1       TGAGGGTGTTTAAATCTTTGTCAGTTTCATATTCATATCTTTGCTGTAGAGCAAAGTTAT
+adenovirus_gentoo_penguin_2       TGAGGGTGTTTAAATCTTTGTCAGTTTCATATTCATATCTTTGCTGTAGAGCAAAGTTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCCTGAAATGAAGTCATTTAATGTTGTAATGTGGTGGTTATTTAAACTTTCTTGTAATG
+adenovirus_gentoo_penguin_1       TTCGTGAAATGAAGTCATTTAATGTTGTAATGTGGTGGTTATTTAAACTTTCTTGTAATG
+adenovirus_gentoo_penguin_2       TTCCTGAAATGAAGTCATTTAATGTTGTAATGTGGTGGTTATTTAAACTTTCTTGTAATG
+                                  *** ********************************************************
+
+adenovirus_chinstrap_penguin      TAATGTTTTCTATTGCTTCTGGTTGGAGAGAGATGCCTCTGCCTTGTATATTTTCTCTTG
+adenovirus_gentoo_penguin_1       TAATGTTTTCTATTGCTTCTGGTTGGAGAGAGATTCCTCTGCCTTGTATATTTTCTCTTG
+adenovirus_gentoo_penguin_2       TAATGTTTTCTATTGCTTCTGGTTGGAGAGAGATTCCTCTGCCTTGTATATTTTCTCTTG
+                                  ********************************** *************************
+
+adenovirus_chinstrap_penguin      ATTCTATATCAGCTCGTATTCTTTGCATAATTATATCATCTTGAATTTCTAAAAAGTTAG
+adenovirus_gentoo_penguin_1       ATTCTATATCAGCTCGTATTCTTTGCATAATTATATCATCTTGAATTTCTAAAAAGTTAG
+adenovirus_gentoo_penguin_2       ATTCTATATCAGCTCGTATTCTTTGCATAATTATATCATCTTGAATTTCTAAAAAGTTAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTTCGAAATTTGGTCCTGATAACATTGCAACATTTGATGTGTCAATTGAGTATGAACAAT
+adenovirus_gentoo_penguin_1       CTTCGAAATTTGGTCCTGATAACATTGCAACATTTGATGTGTCAATTGAGTATGAACAAT
+adenovirus_gentoo_penguin_2       CTTCGAAATTTGGTCCTGATAACATTGCAACATTTGATGTGTCAATTGAGTATGAACAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CACTTAAAATTGTCCAGAAGTTTCTAGGTCTTCTAGTAGCTCCTTGATCTATTTCATATG
+adenovirus_gentoo_penguin_1       CACTTAAAATTGTCCAGAAGTTTCTAGGTCTTCTAGTAGCCCCTTGATCTATTTCATATG
+adenovirus_gentoo_penguin_2       CACTTAAAATTGTCCAGAAGTTTCTAGGTCTTCTAGTAGCCCCTTGATCTATTTCATATG
+                                  **************************************** *******************
+
+adenovirus_chinstrap_penguin      TTAACCTTGTGTATGTTCTTTGGCTGAATCTGTAGTTGTTATTTACATTGAATAAGTATG
+adenovirus_gentoo_penguin_1       TCAACCTTGTGTATGTTCTTTGGCTGAATCTGTAGTTGTTATTTACGTTGAATAAGTATG
+adenovirus_gentoo_penguin_2       TCAACCTTGTGTATGTTCTTTGGCTGAATCTGTAGTTGTTATTTACGTTGAATAAGTATG
+                                  * ******************************************** *************
+
+adenovirus_chinstrap_penguin      CATAGCCAATGAGTAGATGAGGTGTAGGAAGACCATTCAGTGGAGGATCTTGAACAGCAG
+adenovirus_gentoo_penguin_1       CATATCCAATGAGTAGATGAGGTGTAGGAAGACCATTCAGTGGAGGATCTTGAACAGCAG
+adenovirus_gentoo_penguin_2       CATATCCAATGAGTAGATGAGGTGTAGGAAGACCATTCAGTGGAGGATCTTGAACAGCAG
+                                  **** *******************************************************
+
+adenovirus_chinstrap_penguin      GCCCTTGTGGTGCTAAATTTTCTAACATTTTGATTTGGTAATTGAAGAATCTACTGCACC
+adenovirus_gentoo_penguin_1       GCCCTTGTGGTGCTAAATTTTCTAACATTTTGATTTGGTAATTGAAGAATCTACTGCACC
+adenovirus_gentoo_penguin_2       GCCCTTGTGGTGCTAAATTTTCTAACATTTTGATTTGGTAATTGAAGAATCTACTGCACC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTTCAAACCAGGAATAGTTTTAAGAAACATAGGAATGTTAGCTTGGTCCGTATATTGTG
+adenovirus_gentoo_penguin_1       ATTTCAAACCAGGAATAGTTTTAAGAAACATAGGAATGTTAGCTTGGTCCGTATATTGTG
+adenovirus_gentoo_penguin_2       ATTTCAAACCAGGAATAGTTTTAAGAAACATAGGAATGTTAGCTTGGTCCGTATATTGTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTAAATGCATAAATCTTATAGTGTCTTCTTCTTGGTTAGTTAGACGGGCATAATTGTTTA
+adenovirus_gentoo_penguin_1       TTAAATGCATAAATCTTATAGTGTCTTCTTCTTGGTTAGTTAGACGGGCATAATTGTTTA
+adenovirus_gentoo_penguin_2       TTAAATGCATAAATCTTATAGTGTCTTCTTCTTGGTTAGTTAGACGGGCATAATTGTTTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCTGAAAGAAAGACATTTGTCTTTCAGATGCAATCCATTTTGAAATCAATGCAGTCAGAT
+adenovirus_gentoo_penguin_1       TCTGAAAGAAAGACATTTGTCTTTCAGATGCAATCCATTTTGAAATCAATGCAGTCAGAT
+adenovirus_gentoo_penguin_2       TCTGAAAGAAAGACATTTGTCTTTCAGATGCAATCCATTTTGAAATCAATGCAGTCAGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGAGGTAGACTAGAAGCATCTGTACCACCACCACCTATCTCGTCAGACCCAGAAACCCCG
+adenovirus_gentoo_penguin_1       AGAGGTAGACTAGAAGCATCTGTACCACCACCACCTATCTCGTCAGACCCAGAAACCCCG
+adenovirus_gentoo_penguin_2       AGAGGTAGACTAGAAGCATCTGTACCACCACCACCTATCTCGTCAGACCCAGAAACCCCG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGCAAGTTTTAACTGAGCAAATGGAGAAGGAAGAATCTAAAGTGCCTCAAAATAATCTT
+adenovirus_gentoo_penguin_1       TTGCAAGTTTTAACTGAGCAAATGGAGAAGGAAGAATCTAAAGTGCCTCAAAATAATCTT
+adenovirus_gentoo_penguin_2       TTGCAAGTTTTAACTGAGCAAATGGAGAAGGAAGAATCTAAAGTGCCTCAAAATAATCTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTAGGGATGGGAATGTTAATGAGCATTTACGAGATTTGAGATATTATAGTGGTAAAGCT
+adenovirus_gentoo_penguin_1       TTTAGGGATGGGAATGTTAATGAGCATTTACGAGATTTGAGATATTATAGTGGTAAAGCT
+adenovirus_gentoo_penguin_2       TTTAGGGATGGGAATGTTAATGAGCATTTACGAGATTTGAGATATTATAGTGGTAAAGCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTAAATTTAGATCCAGATACTAAGTTAAAGTCTACAGATTTTAGAGAAGAGTTTCCATGC
+adenovirus_gentoo_penguin_1       GTAAATTTAGATCCAGACACTAAGTTAAAGTCTACAGATTTTAGAGAAGAGTTTCCATGC
+adenovirus_gentoo_penguin_2       GTAAATTTAGATCCAGACACTAAGTTAAAGTCTACAGATTTTAGAGAAGAGTTTCCATGC
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      TATTCCAAAGGAGAGAATTTTATGAAAGCTGCAACTTTGAAGAGGGATGCTGATTATACA
+adenovirus_gentoo_penguin_1       TATTCCAAAGGAGAGAATTTTATGAAAGCTGCAACTTTGAAGAGGGATGCTGATTATACA
+adenovirus_gentoo_penguin_2       TATTCCAAAGGAGAGAATTTTATGAAAGCTGCAACTTTGAAGAGGGATGCTGATTATACA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GAAATGTATGAAACATCTGCTCAGGATACTGATAATAACTTTTATAAAATGGTTCTTTTG
+adenovirus_gentoo_penguin_1       GAAATGTATGAAACATCTGCTCAGGATGCTGATAATAACTTTTATAAAATGGTTCTCTTG
+adenovirus_gentoo_penguin_2       GAAATGTATGAAACATCTGCTCAGGATGCTGATAATAACTTTTATAAAATGGTTCTCTTG
+                                  *************************** **************************** ***
+
+adenovirus_chinstrap_penguin      AGACCAGAGACTATTTTTGGATTGTACTATTTTGAAAGTATATTGAAAAATTTGATAAAA
+adenovirus_gentoo_penguin_1       AGACCAGAGACTATTTTTGGATTGTATTATTTTGAAAGTATATTGAAAAATTTGATAAAA
+adenovirus_gentoo_penguin_2       AGACCAGAGACTATTTTTGGATTGTATTATTTTGAAAGTATATTGAAAAATTTGATAAAA
+                                  ************************** *********************************
+
+adenovirus_chinstrap_penguin      GATCCTACTAATACTACTTTCCTTAGAAGATTATGTGCTTTAGCTGTAGAGTGGAATGGT
+adenovirus_gentoo_penguin_1       GATCCTACTAATACTACTTTCCTTAGAAGATTATGTGCTTTAGCTGTAGAGTGGAATGGT
+adenovirus_gentoo_penguin_2       GATCCTACTAATACTACTTTCCTTAGAAGATTATGTGCTTTAGCTGTAGAGTGGAATGGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGATTAAAAGGTTTCATTCCTGAACTAACAGATGAACGTCATGGCTGGCTTAGAGATTTA
+adenovirus_gentoo_penguin_1       AGATTAAAAGGTTTCATTCCTGAACTAACAGATGAACGTCATGGCTGGCTTAGAGATTTA
+adenovirus_gentoo_penguin_2       AGATTAAAAGGTTTCATTCCTGAACTAACAGATGAACGTCATGGCTGGCTTAGAGATTTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATCACTCTTTTAGCTGCTATTTGTAGGTCTTGTATAACTGTAGAAGAACAAGTGGCTGCA
+adenovirus_gentoo_penguin_1       ATCACTCTTTTAGCTGCTATTTGCAGGTCTTGTATAACTGTAGAAGAACAAGTGGCTGCA
+adenovirus_gentoo_penguin_2       ATCACTCTTTTAGCTGCTATTTGCAGGTCTTGTATAACTGTAGAAGAACAAGTGGCTGCA
+                                  *********************** ************************************
+
+adenovirus_chinstrap_penguin      ATTAATACCAGTCTAGTTGAAATGGCATTGAATTTTTCTTCAGCTGCTGCAGTTTTACCA
+adenovirus_gentoo_penguin_1       ATTAATACTAGTCTAGTTGAAATGGCATTGAATTTTTCTTCAGCTGCTGCAGTTTTACCG
+adenovirus_gentoo_penguin_2       ATTAATACTAGTCTAGTTGAAATGGCATTGAATTTTTCTTCAGCTGCTGCAGTTTTACCG
+                                  ******** ************************************************** 
+
+adenovirus_chinstrap_penguin      TCAGCGGCTTTAGGTGTACAAACTAGGAGCATTTTGAGTTCAGTTTGTAAAGAGATATTA
+adenovirus_gentoo_penguin_1       TCAGCGGCTTTAGGTGTACAAACTAGGAGCATTTTGAGTTCAGTTTGTAAAGAGATATTA
+adenovirus_gentoo_penguin_2       TCAGCGGCTTTAGGTGTACAAACTAGGAGCATTTTGAGTTCAGTTTGTAAAGAGATATTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CAGAACATGTGTCAGATTGGAGTATGTAAGGATAATTACAGAAGCGGGTTGCAATTTTAT
+adenovirus_gentoo_penguin_1       CAGAACATGTGTCAGATTGGAGTATGTAAGGATAATTACAGAAGCGGGTTGCAATTTTAT
+adenovirus_gentoo_penguin_2       CAGAACATGTGTCAGATTGGAGTATGTAAGGATAATTACAGAAGCGGGTTGCAATTTTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCAGATCAGCCTGGAATCTCACAAAGTATATACTTTTCTAGTTTGAAAGACGTACTTCAA
+adenovirus_gentoo_penguin_1       GCAGATCAGCCTGGAATCTCACAAAGTATATACTTTTCTAGTTTGAAAGACGTACTTCAA
+adenovirus_gentoo_penguin_2       GCAGATCAGCCTGGAATCTCACAAAGTATATACTTTTCTAGTTTGAAAGACGTACTTCAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCAAACAGAAGAAATGTCTTCTAAGGATATTCTTGCAGACATCCTAAAGGGAGATGCTCC
+adenovirus_gentoo_penguin_1       TCAAACAGAAGAAATGTCTTCTAAGGATATTCTTGCAGACATCCTAAAGGGAGATGCTCC
+adenovirus_gentoo_penguin_2       TCAAACAGAAGAAATGTCTTCTAAGGATATTCTTGCAGACATCCTAAAGGGAGATGCTCC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATTTTGTCTAAGAATTTTAAGCATTTGCCGTTAGCTAATAAGTTAATTGAATTGGAAAA
+adenovirus_gentoo_penguin_1       AATTTTGTCTAAGAATTTTAAGCATTTGCCGTTAGCTAATAAGTTAATTGAATTGGAAAA
+adenovirus_gentoo_penguin_2       AATTTTGTCTAAGAATTTTAAGCATTTGCCGTTAGCTAATAAGTTAATTGAATTGGAAAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGCTGTTGTGCAGCCAAAAAAAACTGATACACCAACCTTGTTGAATTATGTAGTTAGTCA
+adenovirus_gentoo_penguin_1       AGCTGTTGTGCAGCCAAAAAAAACTGATACACCAACCTTGTTGAATTATGTAGTTAGTCA
+adenovirus_gentoo_penguin_2       AGCTGTTGTGCAGCCAAAAAAAACTGATACACCAACCTTGTTGAATTATGTAGTTAGTCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACTTGTTAGAAATGGAGCCATTTATCCAGAGGAGGCTTCAGCTGTATATAGTAGGCTTTT
+adenovirus_gentoo_penguin_1       ACTTGTTAGAAATGGAGCCATTTATCCAGAGGAGGCTTCAGCTGTATATAGTAGGCTTTT
+adenovirus_gentoo_penguin_2       ACTTGTTAGAAATGGAGCCATTTATCCAGAGGAGGCTTCAGCTGTATATAGTAGGCTTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GGATAGGGTTGTGAAGTTTAATTCCATACGGAATCATAATAGCTTGGAGAGTTTAGTTAA
+adenovirus_gentoo_penguin_1       GGATAGGGTTGTGAAGTTTAATTCCATACGGAATCATAATAGCTTGGAGAGTTTAGTAAA
+adenovirus_gentoo_penguin_2       GGATAGGGTTGTGAAGTTTAATTCCATACGGAATCATAATAGCTTGGAGAGTTTAGTAAA
+                                  ********************************************************* **
+
+adenovirus_chinstrap_penguin      TGACATTCAACAAGGCCAGAAAAGTGTTGTTATGCAAAGCTTGTCTAGTAGCAAGAGTAT
+adenovirus_gentoo_penguin_1       TGACATTCAACAAGGCCAGAAAAGTGTTGTTATGCAAAGCTTGTCTAGTAGCAAGAGTAT
+adenovirus_gentoo_penguin_2       TGACATTCAACAAGGCCAGAAAAGTGTTGTTATGCAAAGCTTGTCTAGTAGCAAGAGTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GAGTAATTTGGTTGTTTTGCAAGCTTTTTTACAAAGATTACCAAAAACTGTGTCAAAAGG
+adenovirus_gentoo_penguin_1       GAGTAATTTGGTTGTTTTGCAAGCTTTTTTACAAAGATTACCAAAAACTGTGTCAAAAGG
+adenovirus_gentoo_penguin_2       GAGTAATTTGGTTGTTTTGCAAGCTTTTTTACAAAGATTACCAAAAACTGTGTCAAAAGG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCAACAAAATTATGAATCATTTAAGGGATTGCTTAAGCAGTTTGTCATTGATTATAATCA
+adenovirus_gentoo_penguin_1       TCAACAAAATTATGAATCATTTAAGGGATTGCTTAAGCAGTTTGTCATTGATTATAATCA
+adenovirus_gentoo_penguin_2       TCAACAAAATTATGAATCATTTAAGGGATTGCTTAAGCAGTTTGTCATTGATTATAATCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTTATTGAGGTTTTTAGGTCAGGTCCTGATACATTTTTGCAGTATAATTTTGGACCAGC
+adenovirus_gentoo_penguin_1       ATTTATTGAGGTTTTTAGGTCAGGCCCTGATACATTTTTGCAGTATAATTTTGGACCAGC
+adenovirus_gentoo_penguin_2       ATTTATTGAGGTTTTTAGGTCAGGCCCTGATACATTTTTGCAGTATAATTTTGGACCAGC
+                                  ************************ ***********************************
+
+adenovirus_chinstrap_penguin      AGTTCAGAAGATTAATCTAACTCAGGCTTTTAATAACTTGAATAATATTTGGGGAGCTAT
+adenovirus_gentoo_penguin_1       AGTTCAGAAGATTAATCTAACTCAGGCTTTTAATAACTTGAATAATATTTGGGGAGCTAT
+adenovirus_gentoo_penguin_2       AGTTCAGAAGATTAATCTAACTCAGGCTTTTAATAACTTGAATAATATTTGGGGAGCTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGTTAGGTCTGAAAATGAGATACCGTCTTTGACGGCTTTATTGCAACCACAGACTAGATA
+adenovirus_gentoo_penguin_1       TGTTAGGTCTGAAAATGAGATACCGTCTTTGACGGCTTTATTGCAACCACAGACTAGATA
+adenovirus_gentoo_penguin_2       TGTTAGGTCTGAAAATGAGATACCGTCTTTGACGGCTTTATTGCAACCACAGACTAGATA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTAATTCTTCTATTATCTCCAATTGCTATTGAACAGTATTTTCTTAGGGATAGTTTCAT
+adenovirus_gentoo_penguin_1       TTTAATTCTTCTATTATCTCCAATTGCTATTGAACAGTATTTTCTTAGGGATAGTTTCAT
+adenovirus_gentoo_penguin_2       TTTAATTCTTCTATTATCTCCCATTGCTATTGAACAGTATTTTCTTAGGGATAGTTTCAT
+                                  ********************* **************************************
+
+adenovirus_chinstrap_penguin      TTGGTATATGTTTAAGTTGTATAAAAATACTGTTGTTCCTCCAATGAGTTCTGAACCAGT
+adenovirus_gentoo_penguin_1       TTGGTATATGTTTAAGTTGTACAAAAATACTGTTGTTCCTCCAATGAGTTCTGAACCAGT
+adenovirus_gentoo_penguin_2       TTGGTATATGTTTAAGTTGTACAAAAATACTGTTGTTCCTCCAATGAGTTCTGAACCAGT
+                                  ********************* **************************************
+
+adenovirus_chinstrap_penguin      AGAAGAGTTAGGTAATGTAATTGCATCTTTAGGTCCTAGCTATGATCAATTGAAGTTGAA
+adenovirus_gentoo_penguin_1       AGAAGAGTTAGGCAATGTAATTGCATCTTTAGGTCCTAGCTATGATCAATTGAAGTTGAA
+adenovirus_gentoo_penguin_2       AGAAGAGTTAGGCAATGTAATTGCATCTTTAGGTCCTAGCTATGATCAATTGAAGTTGAA
+                                  ************ ***********************************************
+
+adenovirus_chinstrap_penguin      ACAGGGATTGAATTATTTGGTAACTAATCAGCAGATGGAATACAAACCTAAAGTTCCTGA
+adenovirus_gentoo_penguin_1       ACAGGGATTGAATTATTTGGTAACTAATCAGCAGATGGAATACAAACCTAAAGTTCCTGA
+adenovirus_gentoo_penguin_2       ACAGGGATTGAATTATTTGGTAACTAATCAGCAGATGGAATACAAACCTAAAGTTCCTGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTAACAAAAGAAGAAGAGGCTTTATTGAGATATGTTCAGACATTACTTAGAACAAAGGC
+adenovirus_gentoo_penguin_1       TTTAACAAAAGAAGAAGAGGCTTTATTGAGATATGTTCAGACATTACTTAGAACAAAGGC
+adenovirus_gentoo_penguin_2       TTTAACAAAAGAAGAAGAGGCTTTATTGAGATATGTTCAGACATTACTTAGAACAAAGGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGTTAATGGCAGTAGACAAATTAAGCAGGCTGATCTCGATAATGTTATTCAGAATTTAAA
+adenovirus_gentoo_penguin_1       AGTTAATGGCAGTAGACAAATTAAGCAGGCTGATCTTGATAATGTTATTCAGAATTTAAA
+adenovirus_gentoo_penguin_2       AGTTAATGGCAGTAGACAAATTAAGCAGGCTGATCTTGATAATGTTATTCAGAATTTAAA
+                                  ************************************ ***********************
+
+adenovirus_chinstrap_penguin      TCCTTCAGCTTTTCAGGGAAATATAGATTTCCTAAACAGATTATTTGATTTTTTTAGTAA
+adenovirus_gentoo_penguin_1       TCCTTCAGCTTTTCAGGGAAATATAGATTTCCTAAACAGATTATTTGATTTTTTTAGTAA
+adenovirus_gentoo_penguin_2       TCCTTCAGCTTTTCAGGGAAATATAGATTTCCTAAACAGATTATTTGATTTTTTTAGTAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATATTGCAATTAAGACCTGAATTAATGACAAGAATAATTTTTGATTCCGAGTGGAAATT
+adenovirus_gentoo_penguin_1       AATATTGCAATTAAGACCTGAATTAATGACAAGAATAATTTTTGATTCCGAGTGGAAATT
+adenovirus_gentoo_penguin_2       AATATTGCAATTAAGACCTGAATTAATGACAAGAATAATTTTTGATTCCGAGTGGAAATT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACCTCCAGCTTTTTTTTTGAAAAAAGTTTTAACACCACAAGATTTAGATAGCTTCCCTCC
+adenovirus_gentoo_penguin_1       ACCTCCAGCTTTTTTTTTGAAAAAAGTTTTAACACCACAAGATTTAGATAGCTTCCCTCC
+adenovirus_gentoo_penguin_2       ACCTCCAGCTTTTTTTTTGAAAAAAGTTTTAACACCACAAGATTTAGATAGCTTCCCTCC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACCTAGACCAATTCCAGATCCTAATATAAATCCAGGTGTAGTTGAATCTCAGCCTTCAGT
+adenovirus_gentoo_penguin_1       GCCTAGACCAATTCCAGATCCTAATATAAATCCAGTTGTAGTTGAATCTCAGCCTTTAGT
+adenovirus_gentoo_penguin_2       GCCTAGACCAATTCCAGATCCTAATATAAATCCAGTTGTAGTTGAATCTCAGCCTTTAGT
+                                   ********************************** ******************** ***
+
+adenovirus_chinstrap_penguin      ACCTGTACCAGCACCTAGAAGGCAGAGACCAAGATCTACTGCTAGTCCAATGCCATTACC
+adenovirus_gentoo_penguin_1       ACCTGTTCCAGCACCTAGAAGGCAGAGACCAAGATCTACTGCTAGTCCAATGCCACTACC
+adenovirus_gentoo_penguin_2       ACCTGTTCCAGCACCTAGAAGGCAGAGACCAAGATCTACTGCTAGTCCAATGCCACTACC
+                                  ****** ************************************************ ****
+
+adenovirus_chinstrap_penguin      AAGAAATGTATATAGGGAGAGAACATCATTTTTCAGTGATACAGATACTGATACAGAGAC
+adenovirus_gentoo_penguin_1       AAGAAATGTATATAGGGAGAGAACATCATTTTTTAGTGATACAGATACTGATACAGAGAC
+adenovirus_gentoo_penguin_2       AAGAAATGTATATAGGGAGAGAACATCATTTTTTAGTGATACAGATACTGATACAGAGAC
+                                  ********************************* **************************
+
+adenovirus_chinstrap_penguin      AGATTTAGATGCTTTGCCAGTGTTGAGGAGAAGGAGAGTAGCAGCTGATAGAAATCCTGT
+adenovirus_gentoo_penguin_1       AGATTTAGATGCTTTGCCAGTGTTGAGAAGAAGGAGAGTAGCAGCTGATAGAAATCCTGT
+adenovirus_gentoo_penguin_2       AGATTTAGATGCTTTGCCAGTGTTGAGAAGAAGGAGAGTAGCAGCTGATAGAAATCCTGT
+                                  *************************** ********************************
+
+adenovirus_chinstrap_penguin      AGATGTTGATAATTTAACATCAGCATTTAATAGATTGTCAGGAAGAGGGCTTGAGAGTTT
+adenovirus_gentoo_penguin_1       AGATGTTGATAATTTAACATCAGCATTTAATAGATTGTCAGGAAGAGGGCTTGAGAGTTT
+adenovirus_gentoo_penguin_2       AGATGTTGATAATTTAACATCAGCATTTAATAGATTGTCAGGAAGAGGGCTTGAGAGTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTGCTTAGAAGCATTAGAAGTAGAGCACGTAATATAAATGTTAGACCATACTGACCAAT
+adenovirus_gentoo_penguin_1       ATTGCTTAGAAGCATTAGAAGTAGAGCACGTAATATAAATGTTAGACCATACTGACCAAT
+adenovirus_gentoo_penguin_2       ATTGCTTAGAAGCATTAGAAGTAGAGCACGTAATATAAATGTTAGACCATACTGACCAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCCTGGTTCATTTTAGATGCAGTCTTCAACTCCAAGTAGAATTTATGCACCAACCGAAGG
+adenovirus_gentoo_penguin_1       TCCTGGTTCATTTTAGATGCAGTCTTCAACTCCAACTAGAATTTATGCACCAACGGAAGG
+adenovirus_gentoo_penguin_2       TCCTGGTTCATTTTAGATGCAGTCTTCAACTCCAACTAGAATTTATGCACCAACCGAAGG
+                                  *********************************** ****************** *****
+
+adenovirus_chinstrap_penguin      CAGAAACAGTATTATATACAGCAACTTGCCTCCTGTTCAAGATACAACAAAAATTTTCTA
+adenovirus_gentoo_penguin_1       CAGAAACAGTATTATATACAGCAACTTGCCTCCTGTTCAAGATACAACAAAAATTTTCTA
+adenovirus_gentoo_penguin_2       CAGAAACAGTATTATATACAGCAACTTGCCTCCTGTTCAAGATACAACAAAAATTTTCTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATAGATAACAAAGCTATTGATATAGAAGCTTACAATCAGGATAAAGATCACTCTAACTT
+adenovirus_gentoo_penguin_1       TATAGATAACAAAGCTATTGATATAGAAGCTTACAATCAGGATAAAGATCACTCTAACTT
+adenovirus_gentoo_penguin_2       TATAGATAACAAAGCTATTGATATAGAAGCTTACAATCAGGATAAAGATCACTCTAACTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTATACAAATATTATTCAAACACAAAATATTAGTGGGTCTGATTCTAGTACACAGCAAAT
+adenovirus_gentoo_penguin_1       TTATACAAATATTATTCAAACACAAAATATTAGTGGGTCTGATTCTAGTACACAGCAAAT
+adenovirus_gentoo_penguin_2       TTATACAAATATTATTCAAACACAAAATATTAGTGGGTCTGATTCTAGTACACAGCAAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCATTTAGATGATAGGTCAAGATGGGGTGGGGAACTTCACACAAGTTTAAGGACTTGTGC
+adenovirus_gentoo_penguin_1       TCATTTAGATGATAGGTCAAGATGGGGTGGGGAACTTCACACAAGTTTAAGGACTTGTGC
+adenovirus_gentoo_penguin_2       TCATTTAGATGATAGGTCAAGATGGGGTGGGGAACTTCACACAAGTTTAAGGACTTGTGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTGAATTGTACAGAATTTTTTAATTCAAATAGTTGTAGAATTAAAATGATGAGTTCTAA
+adenovirus_gentoo_penguin_1       TTTGAATTGTACAGAATTTTTTAATTCAAATAGTTGTAGAATTAAAATGATGAGTTCTAA
+adenovirus_gentoo_penguin_2       TTTGAATTGTACAGAATTTTTTAATTCAAATAGTTGTAGAATTAAAATGATGAGTTCTAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AACTCCAGAAAAGTATGATTGGTTTGATTTAGTTATTCCGGAAGGAAATTATGTTTTGAA
+adenovirus_gentoo_penguin_1       AACTCCAGAAAAGTATGATTGGTTTGATTTAGTTATTCCAGAAGGAAATTATGTTTTGAA
+adenovirus_gentoo_penguin_2       AACTCCAGAAAAGTATGATTGGTTTGATTTAGTTATTCCAGAAGGAAATTATGTTTTGAA
+                                  *************************************** ********************
+
+adenovirus_chinstrap_penguin      TGAGTTTATTGACCTGTTAAATGAGGCTGTTCTTGCAATATATTTGGCTAATGGAAGACA
+adenovirus_gentoo_penguin_1       TGAGTTTATTGACCTGTTAAATGACGCTGTTCTTGGAATATATTTGGCTAATGGAAGACA
+adenovirus_gentoo_penguin_2       TGAGTTTATTGACCTGTTAAATGACGCTGTTCTTGGAATATATTTGGCTAATGGAAGACA
+                                  ************************ ********** ************************
+
+adenovirus_chinstrap_penguin      AAATGGGGTACTTGAAGCTGACATAGGGATTAAATTTGACACACGAAATTTTGGTCTGGG
+adenovirus_gentoo_penguin_1       AAATGGGGTACTTGAAGCTGACATAGGGATTAAATTTGACACACGAAATTTTGGTCTGGG
+adenovirus_gentoo_penguin_2       AAATGGGGTACTTGAAGCTGACATAGGGATTAAATTTGACACACGAAATTTTGGTCTGGG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CAAGGATCCTGTTACTAATTTGATAACTCCAGGAAAATATTTGTTTAAAGGTTATCATGC
+adenovirus_gentoo_penguin_1       CAAGGATCCTGTTACTAATTTGATAACTCCAGGAAAATATTTGTTTAAAGGTTACCATGC
+adenovirus_gentoo_penguin_2       CAAGGATCCTGTTACTAATTTGATAACTCCAGGAAAATATTTGTTTAAAGGTTACCATGC
+                                  ****************************************************** *****
+
+adenovirus_chinstrap_penguin      AGATATTGTGCTATTACCTGGTTGTGCTGTGGACTTTTCTCAGTCAAGACTTGGTAATAT
+adenovirus_gentoo_penguin_1       AGATATTGTGTTATTACCTGGTTGTGCTGTGGACTTTTCTCAGTCAAGACTTGGTAATAT
+adenovirus_gentoo_penguin_2       AGATATTGTGTTATTACCTGGTTGTGCTGTGGACTTTTCTCAGTCAAGACTTGGTAATAT
+                                  ********** *************************************************
+
+adenovirus_chinstrap_penguin      TTTAGGTATAAGAAAACGAGAAACTTACCAAGAGGGTTTTATAATTACATATGAGGACTT
+adenovirus_gentoo_penguin_1       TTTAGGTATAAGAAAACGAGAAACTTACCAAGAGGGTTTTATAATTACATATGATGACTT
+adenovirus_gentoo_penguin_2       TTTAGGTATAAGAAAACGAGAAACTTACCAAGAGGGTTTTATAATTACATATGATGACTT
+                                  ****************************************************** *****
+
+adenovirus_chinstrap_penguin      GGAAAAAGGTAATATTCCTGCATTACTTGATACTAAAGCTTGGAATGATAATGAAGAAGT
+adenovirus_gentoo_penguin_1       GGAAAAAGGTAATATTCCTGCATTACTTGATACTAAAGCTTGGAATGATAATGAAGAAGT
+adenovirus_gentoo_penguin_2       GGAAAAAGGTAATATTCCTGCATTACTTGATACTAAAGCTTGGAATGATAATGAAGAAGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TAAACCAGTAGATAAAGATCCTCAAGGTAGAATTTACCATGTAATACAAGTTGATGGAAA
+adenovirus_gentoo_penguin_1       TAAAGCAGTAGATAAAGATCCTCAAGGCAGAATTTACCATGTAATACAAGTTGATGGAAA
+adenovirus_gentoo_penguin_2       TAAAGCAGTAGATAAAGATCCTCAAGGCAGAATTTACCATGTAATACAAGTTGATGGAAA
+                                  **** ********************** ********************************
+
+adenovirus_chinstrap_penguin      ACCTGTAACTAAGTATAGGTCTTTTGTTCTTGCATATAATACCAAAGGGAGCATTGCACG
+adenovirus_gentoo_penguin_1       ACCTGTAACTAAGTATAGGTCTTTTGTTCTTGCATATAATACCAAAGGGAGTATTGCACG
+adenovirus_gentoo_penguin_2       ACCTGTAACTAAGTATAGGTCTTTTGTTCTTGCATATAATACCAAAGGGAGTATTGCACG
+                                  *************************************************** ********
+
+adenovirus_chinstrap_penguin      TTCAAAATATTTGCTTTGTCATAGTGATATAACAGGTGGTTTGAATCAATTGTATTGGTC
+adenovirus_gentoo_penguin_1       TTCAAAATATTTGCTTTGTCATAGTGATATAACAGGTGGTTTGAATCAATTGTATTGGTC
+adenovirus_gentoo_penguin_2       TTCAAAATATTTGCTTTGTCATAGTGATATAACAGGTGGTTTGAATCAATTGTATTGGTC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATGCCAGATTCTTACAAACCACCTGTATCTTTCAAACAGGAAACAAAACTTGATAAACT
+adenovirus_gentoo_penguin_1       AATGCCAGATTCTTACAAACCACCTGTATCTTTCAAACAGGAAACAAAACTTGATAAACT
+adenovirus_gentoo_penguin_2       AATGCCAGATTCTTACAAACCACCTGTATCTTTCAAACAGGAAACAAAACTTGATAAACT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCCTGTGGTTGGGATGCAGCTTTTTCCATTTGTGGCTAAGACAGTTTTCTCTGGAGCTTC
+adenovirus_gentoo_penguin_1       GCCTGTGGTTGGGATGCAGCTTTTTCCATTTGTGGCTAAGTCAGTTTTCTCTGGAGCTTC
+adenovirus_gentoo_penguin_2       GCCTGTGGTTGGGATGCAGCTTTTTCCATTTGTGGCTAAGTCAGTTTTCTCTGGAGCTTC
+                                  **************************************** *******************
+
+adenovirus_chinstrap_penguin      TGTATATAATCAGTTGATTGAAGGACAGACAAATCAGTGTCAGATATTTAATCGGTTTTA
+adenovirus_gentoo_penguin_1       TGTATATAATCAGTTGATTGAAGGGCAGACAAATCAGTGTCAGATCTTTAATCGGTTTTA
+adenovirus_gentoo_penguin_2       TGTATATAATCAGTTGATTGAAGGGCAGACAAATCAGTGTCAGATCTTTAATCGGTTTTA
+                                  ************************ ******************** **************
+
+adenovirus_chinstrap_penguin      TGATAATGAAATAATGAGACAGCCTCCATGTATAAATCAAACTATGGTGGCTGAAAATGT
+adenovirus_gentoo_penguin_1       TGATAATGAAATAATGAGACAGCCTCCATGTATAAATCAAACTATGGTGGCTGAAAATGT
+adenovirus_gentoo_penguin_2       TGATAATGAAATAATGAGACAGCCTCCATGTATAAATCAAACTATGGTGGCTGAAAATGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCCCATGAATGTTAATCAGGGAACAATACCGATATTTTCAACTCTTCCAGGAGTTCAAAG
+adenovirus_gentoo_penguin_1       GCCCATGAATGTTAATCAGGGAACAATACCGATATTTTCAACTCTTCCAGGAGTTCAAAG
+adenovirus_gentoo_penguin_2       GCCCATGAATGTTAATCAGGGAACAATACCGATATTTTCAACTCTTCCAGGAGTTCAAAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGTGGTTGTCGAAGACGATAGGAGAAGAACTGTACCCTACGTTACCAAGTCACTTGCTAC
+adenovirus_gentoo_penguin_1       AGTGGTTGTCGAAGACGATAGGAGAAGAACTGTACCCTACGTTACCAAGTCACTTGCTAC
+adenovirus_gentoo_penguin_2       AGTGGTTGTCGAAGACGATAGGAGAAGAACTGTACCCTACGTTACCAAGTCACTTGCTAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGTCTTACCGAAGGTTTTGTCTAGTAATACGTTACAGTAAATGACATCAATTGTTTATTC
+adenovirus_gentoo_penguin_1       TGTCTTACCGAAGGTTTTGTCTAGTAACACGTTACAGTAAATGACATCAATTGTTTATTC
+adenovirus_gentoo_penguin_2       TGTCTTACCGAAGGTTTTGTCTAGTAACACGTTACAGTAAATGACATCAATTGTTTATTC
+                                  *************************** ********************************
+
+adenovirus_chinstrap_penguin      TCCTGCAGATAGTAGAGGTTGGGGTTTTGGCAATTCAAGTATGAGAGACTATTATTTGAT
+adenovirus_gentoo_penguin_1       TCCTGCAGATAGTAGAGGTTGGGGTTTTGGCAATTCAAGTATGAGAGACTATTATTTGAT
+adenovirus_gentoo_penguin_2       TCCTGCAGATAGTAGAGGTTGGGGTTTTGGCAATTCAAGTATGAGAGACTATTATTTGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGGTGGGGCATTGGAACCATCTGATATTTATACTGTTAGGGTACGTGAACATTGGAGACG
+adenovirus_gentoo_penguin_1       TGGTGGGGCATTGGAACCATCTGATATTTATACTGTTAGGGTACGTGAACATTGGAGACG
+adenovirus_gentoo_penguin_2       TGGTGGGGCATTGGAACCATCTGATATTTATACTGTTAGGGTACGTGAACATTGGAGACG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TAAACAGAGGAGGAAGTCAGCTGCTGTACAAGCAACACCTGTTGTAGTTGCTCCTGTCCG
+adenovirus_gentoo_penguin_1       TAAACAGAGGAGGAAGTCAGCTGCTGTACAAGCAACACCTGTTGTAGTTGCTCCTGTCCG
+adenovirus_gentoo_penguin_2       TAAACAGAGGAGGAAGTCAGCTGCTGTACAAGCAACACCTGTTGTAGTTGCTCCTGTCCG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CCGTCCCAGAAGGAGAAGAGCTGTTGGTGTACAAGTTCCTTCAACCAGAGTTCTAAGATC
+adenovirus_gentoo_penguin_1       CCGTCCCAGAAGGAGAAGAGCTGTTGGTGTACAAGTTCCTTCAACCAGAGTTCTAAGATC
+adenovirus_gentoo_penguin_2       CCGTCCCAGAAGGAGAAGAGCTGTTGGTGTACAAGTTCCTTCAACCAGAGTTCTAAGATC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGCAACCCGTAGGCTAGCACCTGTTGTTCCTGCACTTCCTGCACCTGCTGTTGTTCCTGC
+adenovirus_gentoo_penguin_1       AGCAACCCGTAGGCTAGCACCTGTTGTTCCTGCACTTCCTGCACCTGCTGTTGTTCCTGC
+adenovirus_gentoo_penguin_2       AGCAACCCGTAGGCTAGCACCTGTTGTTCCTGCACTTCCTGCACCTGCTGTTGTTCCTGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACTTCCAGCACCAGTAGCACCTGTGGCAGCAGCTATCCCAACAGTTTCAGCACCAGTGAA
+adenovirus_gentoo_penguin_1       ACTTCCAGCACCAGTAGCACCTGTGGCAGCAGCTATCCCAACAGTTTCAGCACCAGTGAA
+adenovirus_gentoo_penguin_2       ACTTCCAGCACCAGTAGCACCTGTGGCAGCAGCTATCCCAACAGTTTCAGCACCAGTGAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAGGCGCAGAATAGGTTAAATAATGTTTGAAAATTTAGCACCCAGAAGAGGTCTGTCTAC
+adenovirus_gentoo_penguin_1       AAGGCGCAGAATAGGTTAAATAATGTTTGAAAATTTAGCACCCAGAAGAGGTCTGTCTAC
+adenovirus_gentoo_penguin_2       AAGGCGCAGAATAGGTTAAATAATGTTTGAAAATTTAGCACCCAGAAGAGGTCTGTCTAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TAAAATGAAAGCAGTTCATTTTAACAGAGAAATGAGAGGTGGATTTATTGCAAGTTTGAT
+adenovirus_gentoo_penguin_1       TAAAATGAAAGCAGTTCATTTTAACAGAGAAATGAGAGGTGGATTTATTGCAAGTTTGAT
+adenovirus_gentoo_penguin_2       TAAAATGAAAGCAGTTCATTTTAACAGAGAAATGAGAGGTGGATTTATTGCAAGTTTGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCCTATTATAAGTTCTTTGATTACTGCAGCACCGGCTATTGCCAGCACTGTTATTGCAGC
+adenovirus_gentoo_penguin_1       TCCTATTATAAGTTCTTTGATTACTGCAGCACCGGCTATTGCCAGCACTGTTATTGCAGC
+adenovirus_gentoo_penguin_2       TCCTATTATAAGTTCTTTGATTACTGCAGCACCGGCTATTGCCAGCACTGTTATTGCAGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TAGAAATTCTAAGTAGTTTCTTTTTTTTTTCAGAATGTATGCAAATTTAGCTCCACGTCT
+adenovirus_gentoo_penguin_1       TAGAAATTCTAAGTAGTTTCTTTTTTTTTTCAGAATGTATGCAAATTTAGCTCCACGTCT
+adenovirus_gentoo_penguin_2       TAGAAATTCTAAGTAGTTTCTTTTTTTTTTCAGAATGTATGCAAATTTAGCTCCACGTCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGGACAAACTTCATTTGAAGCTTTATCAGTAGGATCTACTGACCTACGTGGAGGAAAGAT
+adenovirus_gentoo_penguin_1       TGGACAAACTTCATTTGAAGCTTTATCAGTAGGATCTACTGACCTACGTGGAGGAAAGAT
+adenovirus_gentoo_penguin_2       TGGACAAACTTCATTTGAAGCTTTATCAGTAGGATCTACTGACCTACGTGGAGGAAAGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TAATTGGGGCTCTTTAGGTTCTTCCATTTCAAATGCTTTTAGAACTACTGGTAGATTTAT
+adenovirus_gentoo_penguin_1       TAATTGGGGCTCTTTAGGTTCTTCCATTTCAAATGCTTTTAGAACTACTGGTAGATTTAT
+adenovirus_gentoo_penguin_2       TAATTGGGGCTCTTTAGGTTCTTCCATTTCAAATGCTTTTAGAACTACTGGTAGATTTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAGTAATGCAGCTTCTAAATTTGCTAATAGTAGGACTTTTAGAGACATTCAATCTGGGAT
+adenovirus_gentoo_penguin_1       AAGCAATGCAGCTTCTAAATTTGCTAATAGTAGGACTTTTAAAGACATTCATTCTGGGAT
+adenovirus_gentoo_penguin_2       AAGCAATGCAGCTTCTAAATTTGCTAATAGTAGGACTTTTAAAGACATTCAATCTGGGAT
+                                  *** ************************************* ********* ********
+
+adenovirus_chinstrap_penguin      TAATGATAGTGGTTTAGTTAGAAATGTAGCTGGATTAGCTGGTGATACAATTAATAGTTT
+adenovirus_gentoo_penguin_1       TAATGATAGCGGTTTAGTTAGAAATGTAGCTGGATTAGCTGGTGATACAATTAATAGTTT
+adenovirus_gentoo_penguin_2       TAATGATAGCGGTTTAGTTAGAAATGTAGCTGGATTAGCTGGTGATACAATTAATAGTTT
+                                  ********* **************************************************
+
+adenovirus_chinstrap_penguin      AGTTGATCTAGGTAGGCTAAAAGTTGATTCAGAATTGCAACGCTTAAGGAATAGTGTTCT
+adenovirus_gentoo_penguin_1       AGTTGATCTAGGTAGGCTAAAAGTTGATTCAGAATTGCAACGCTTACGGAATAGTGTTCT
+adenovirus_gentoo_penguin_2       AGTTGATCTAGGTAGGCTAAAAGTTGATTCAGAATTGCAACGCTTACGGAATAGTGTTCT
+                                  ********************************************** *************
+
+adenovirus_chinstrap_penguin      AAATACTATTCCTGCAGATCAACTGGCTCAAATTTTACAAAATTACCAGCAGACGCATGA
+adenovirus_gentoo_penguin_1       AAATACTATTCCTGCAGATCAACTGGCTCAAATTTTACAAAATTACCAGCAGACGCATGA
+adenovirus_gentoo_penguin_2       AAATACTATTCCTGCAGATCAACTGGCTCAAATTTTACAAAATTACCAGCAGACGCATGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TAGAGTAACTATTCAGGAGCCAGAACCTCTTCCATTGCCAGCTCCTGTTATTCAACCTAG
+adenovirus_gentoo_penguin_1       TAGAGTAACTATTCAGGAGCCAGAACCTCTTCCATTGCCAGCTCCTGTTATTCAACCTAG
+adenovirus_gentoo_penguin_2       TAGAGTAACTATTCAGGAGCCAGAACCTCTTCCATTGCCAGCTCCTGTTATTCAACCTAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAAAAGACCTTTAATTGAAGAGGTAGAAGATGATGTAGATGTTGAACCTGTACCAATTGT
+adenovirus_gentoo_penguin_1       AAAAAGACCTTTAATTGAAGAGGTAGAAGATGATGTAGATGTTGAACCTGTACCAATTGT
+adenovirus_gentoo_penguin_2       AAAAAGACCTTTAATTGAAGAGGTAGAAGATGATGTAGATGTTGAACCTGTACCAATTGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCCTGTACCTGCTGTTCCTATACAAGCTGTATCACCTCCTCCTACACCTGTTTATACAGT
+adenovirus_gentoo_penguin_1       TCCTGTACCTGCTGTTCCTATACAAGCTGTCTCACCTCCTCCTACACCTGTTTATACAGT
+adenovirus_gentoo_penguin_2       TCCTGTACCTGCTGTTCCTATACAAGCTGTCTCACCTCCTCCTACACCTGTTTATACAGT
+                                  ****************************** *****************************
+
+adenovirus_chinstrap_penguin      TCCAACAAAACGTATTAGGGGCACTGGTAATGCAGAGTGGCAGATACACCTTAATAATAT
+adenovirus_gentoo_penguin_1       TCCAACAAAACGTATTAGGGGCACTGGTAATGCAGAGTGGCAGATACACCTTAATAATAT
+adenovirus_gentoo_penguin_2       TCCAACAAAACGTATTAGGGGCACTGGTAATGCAGAGTGGCAGATACACCTTAATAATAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTTGGGTCAAGGTGTCAGATATACGAGTTCCAATCAATGTTATTAATTTTTTAGATGGAC
+adenovirus_gentoo_penguin_1       GTTGGGTCAAGGTGTCAGATATACGAGTTCCAATCAATGTTATTAATTTTTTAGATGGAC
+adenovirus_gentoo_penguin_2       GTTGGGTCAAGGTGTCAGATATACGAGTTCCAATCAATGTTATTAATTTTTTAGATGGAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTTCAAATGGCACGCCAAAGCTTGATATTTTCCACATAGCTGGACAAGATGCTTCAGAA
+adenovirus_gentoo_penguin_1       ATTTCAAATGGCACGCCAAAGCTTGATATTTTCCACATAGCTGGACAAGATGCTTCAGAA
+adenovirus_gentoo_penguin_2       ATTTCAAATGGCACGCCAAAGCTTGATATTTTCCACATAGCTGGACAAGATGCTTCAGAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATCTGTCAGAAAATCTGGTTAATTTCATCTCGAGTACAGAATCTTACTTTCCAATTAAT
+adenovirus_gentoo_penguin_1       TATCTGTCAGAAAATCTGGTTAATTTCATCTCGAGTACAGAATCTTACTTTCCAATTAAT
+adenovirus_gentoo_penguin_2       TATCTGTCAGAAAATCTGGTTAATTTCATCTCGAGTACAGAATCTTACTTTCCAATTAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAGAAGTTTAGAGAAACAGTAGTTGCACCTACCAAAAATGTTACAACTGAACAATCTCAG
+adenovirus_gentoo_penguin_1       AAGAAGTTTAGAGAAACAGTAGTTGCACCTACCAAAAACGTTACAACTGAACAATCTCAA
+adenovirus_gentoo_penguin_2       AAGAAGTTTAGAGAAACAGTAGTTGCACCTACCAAAAATGTTACAACTGAACAATCTCAG
+                                  ************************************** ******************** 
+
+adenovirus_chinstrap_penguin      AGGCTTCAAGTTAGAATTGTACCAACTTTAACTCAAGATTTAGAAAATAGTTTTACTGCA
+adenovirus_gentoo_penguin_1       AGGCTTCAAGTTAGAATTGTACCAACTCTAACTCAAGATTTAGAAAATAGTTTTACTGCA
+adenovirus_gentoo_penguin_2       AGGCTTCAAGTTAGAATTGTACCAACTTTAACTCAAGATTTAGAAAATAGTTTTACTGCA
+                                  *************************** ********************************
+
+adenovirus_chinstrap_penguin      AGATTTACTATTGCTGTTGGTGATGGTAGGGTTCTTGATATGGGTAGTACATATTTTGAT
+adenovirus_gentoo_penguin_1       AGATTTACTATTGCTGTTGGTGATGGTAGGGTTCTTGATATGGGTAGCACATATTTTGAT
+adenovirus_gentoo_penguin_2       AGATTTACTATTGCTGTTGGTGATGGTAGGGTTCTTGATATGGGTAGTACATATTTTGAT
+                                  *********************************************** ************
+
+adenovirus_chinstrap_penguin      ATTAGGGGTTTTTTGGATAGAGGTCATAGCTTTAAACCTTATGGCGGGACAGCATACAAC
+adenovirus_gentoo_penguin_1       ATTAGGGGTTTTTTGGATAGAGGCCATAGCTTTAAGCCTTATGGCGGGACAGCATACAAC
+adenovirus_gentoo_penguin_2       ATTAGGGGTTTTTTGGATAGAGGTCATAGCTTTAAACCTTATGGCGGGACAGCATACAAC
+                                  *********************** *********** ************************
+
+adenovirus_chinstrap_penguin      TCTATGGCTCCAAGGTCAGCTCAATTTAATAATATTAGAAAACTCACTCAAACAACGACT
+adenovirus_gentoo_penguin_1       TCTATGGCTCCAAGGTCAGCTCAATTTAATAATATTAGAAAACTCACTCAAACAACGACT
+adenovirus_gentoo_penguin_2       TCTATGGCTCCAAGGTCAGCTCAATTTAATAATATTAGAAAACTCACTCAAACAACGACT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGTCAGCACAACTTAGTAACATCTATGCTGTAGCTACTAGTTCAAATGCTTGTCAGGCA
+adenovirus_gentoo_penguin_1       TTGTCAGCACAACTTAGTAACATCTATGCTGTATCTACTAGTGGAAATGCTTGTCAGGCA
+adenovirus_gentoo_penguin_2       TTGTCAGCACAACTTAGTAACATCTATGCTGTAGCTACTAGTTCAAATGCTTGTCAGGCA
+                                  ********************************* ********  ****************
+
+adenovirus_chinstrap_penguin      GCAAAGACTACCAGTGATAGTTTTACAAATGATAAACCATCTCCACATACGGGTTTGCTT
+adenovirus_gentoo_penguin_1       GCAAAGACTACCAGTGATAGTTTTACAAATGATAAACCATCTCCACATACGGGTTTGCTT
+adenovirus_gentoo_penguin_2       GCAAAGACTACCAGTGATAGTTTTACAAATGATAAACCATCTCCACATACGGGTTTGCTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GATTCTACTTTTAGTCCTGCTACTGAAGGTGGGTATGGTAGAGCTGTGATTATGGATGAT
+adenovirus_gentoo_penguin_1       GATTCTACTTTTAGTCCTGCTACTGAAGGTGGGTCTGGTAGAGCTGTGATTATGGATGAC
+adenovirus_gentoo_penguin_2       GATTCTACTTTTAGTCCTGCTACTGAAGGTGGGTATGGTAGAGCTGTGATTATGGATGAT
+                                  ********************************** ************************ 
+
+adenovirus_chinstrap_penguin      AATGCTAAAGAAACAACTTGTTATGGAGCTTATGCTAAGGCTACAAATTCAAATGGACAA
+adenovirus_gentoo_penguin_1       AATGCTAAAGAAACAACTTGTTATGGAGCTTATGCTAAGGCTACAAATTCAAACGGACAA
+adenovirus_gentoo_penguin_2       AATGCTAAAGAAACAACTTGTTATGGAGCTTATGCTAAGGCTACAAATTCAAATGGACAA
+                                  ***************************************************** ******
+
+adenovirus_chinstrap_penguin      CAAATTGCTGCAGGACAAAGTGTGCAGAAAAAATTTACAAATGCTGGACTAAGAA---GT
+adenovirus_gentoo_penguin_1       CAAATTGCTGCAGGACAAAGTGTGCAGAAAAAATTTACAAATGCTGGACTAAGAACAGGT
+adenovirus_gentoo_penguin_2       CAAATTGCTGCAGGACAAAGTGTGCAGAAAAAATTTACAAATGCTGGACTAAGAA---GT
+                                  *******************************************************   **
+
+adenovirus_chinstrap_penguin      TCAGGTACTTCCTGTACAGGAGCAATAGCAGCAGAAAAATTTGCAGTAACTTACCCTGAC
+adenovirus_gentoo_penguin_1       TCAGGTACTTCCTGTACAGGAGCAATAGCAGCAGAAAAATTTGCAGTAACTTACCCTGAC
+adenovirus_gentoo_penguin_2       TCAGGTACTTCCTGTACAGGAGCAATAGCAGCAGAAAAATTTGCAGTAACTTACCCTGAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACAAGAATAGTGGCATATGATGATTCAGATAAACTGGCAACTAGAATGGGCTCCAGGACA
+adenovirus_gentoo_penguin_1       ACAAGAATAGTGGCATATGATGATGCAGATAAACTGGCAACTAGAATGGGCTCCAGGACA
+adenovirus_gentoo_penguin_2       ACAAGAATAGTGGCATATGATGATTCAGATAAACTGGCAACTAGAATGGGCTCCAGGACA
+                                  ************************ ***********************************
+
+adenovirus_chinstrap_penguin      AACTTCATTGGTTTTAGGGATAATTTTATAGGGTTAATGTATTACGATAATGGTGCTCAT
+adenovirus_gentoo_penguin_1       AACTTCATTGGTTTTAGGGATAATTTTATAGGGTTAATGTATTACGATAATGGTGCTCAT
+adenovirus_gentoo_penguin_2       AACTTCATTGGTTTTAGGGATAATTTTATAGGGTTAATGTATTACGATAATGGTGCTCAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGTGGTTCATTAGCTACAGAGACTGGAGATATAAATCTTGTAGAACAGTTGCAGGACAGG
+adenovirus_gentoo_penguin_1       AGTGGTTCATTAGCTACAGAGACTGGAGATATAAATCTTGTAGAACAGTTGCAGGACAGG
+adenovirus_gentoo_penguin_2       AGTGGTTCATTAGCTACAGAGACTGGAGATATAAATCTTGTAGAACAGTTGCAGGACAGG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATACAGAAATTAGCTATCAGTATATGCTGGCAGATTTAATGAGCAGACAACATTATTTC
+adenovirus_gentoo_penguin_1       AATACAGAAATTAGTTATCAGTATATGCTGGCAGATTTAATGAGCAGACAACATTATTTC
+adenovirus_gentoo_penguin_2       AATACAGAAATTAGCTATCAGTATATGCTGGCAGATTTAATGAGCAGACAACATTATTTC
+                                  ************** *********************************************
+
+adenovirus_chinstrap_penguin      AGTCAGTGGAATCAAGCAGTTGATGATTATGATTTGAATGTTCGGGTTTTGACAAATAGC
+adenovirus_gentoo_penguin_1       AGTCAGTGGAATCAAGCAGTTGATGATTATGATTTGAATGTTCGGGTTTTGACAAATAGC
+adenovirus_gentoo_penguin_2       AGTCAGTGGAATCAAGCAGTTGATGATTATGATTTGAATGTTCGGGTTTTGACAAATAGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GGTTATGAAGAGGGACCCCCTGGATATGTCTTTCCCAGTGTAGGAATGGGAAACTATCCT
+adenovirus_gentoo_penguin_1       GGTTATGAAGAGGGACCCCCTGGATATGTCTTTCCCAGTGTAGGAATGGGAAACTATCCT
+adenovirus_gentoo_penguin_2       GGTTATGAAGAGGGACCCCCTGGATATGTCTTTCCCAGTGTAGGAATGGGAAACTATCCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCTGAACCTTTGTTTATAGGGCAGTTGGTTGAAACTACTGGGAGTAATACTGCAACTCAA
+adenovirus_gentoo_penguin_1       TCTGAACCTTTGTTTATAGGGCAGATGGTTGAAAATAGTGGGGGTAATACTTCAACTCAA
+adenovirus_gentoo_penguin_2       TCTGAACCTTTGTTTATAGGGCAGTTGGTTGAAACTACTGGGAGTAATACTGCAACTCAA
+                                  ************************ ********* ** **** ******** ********
+
+adenovirus_chinstrap_penguin      ACACAAAACACTAGTGCTGTTGTAGGATTTGGTAGTGTTCCTACAATGGAAATGAATGTG
+adenovirus_gentoo_penguin_1       ACACAAAACACTAGTGCTGTTGTAGGATTTGGTAGTGTTCCTACAATGGAAATGAATGTG
+adenovirus_gentoo_penguin_2       ACACAAAACACTAGTGCTGTTGTAGGATTTGGTAGTGTTCCTACAATGGAAATGAATGTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATGCTTATCTTCAACGTTGTTGGCTTTATGCTAATGTAGCAGAGTATCTGCCTGATGAG
+adenovirus_gentoo_penguin_1       AATGCTTATCTTCAACGTTGTTGGCTTTATGCTAATGTAGCAGAGTATCTGCCTGATGAG
+adenovirus_gentoo_penguin_2       AATGCTTATCTTCAACGTTGTTGGCTTTATGCTAATGTAGCAGAGTATCTGCCTGATGAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATAAGACTAAAGTTACAGGTGCTACAGAAACAGATCCTCATACTTATGCTTATATGAAT
+adenovirus_gentoo_penguin_1       TATAAGACTAAAGTTACAGGTACTACAGAAACAGATCCTCATACTTATGCTTATATGAAT
+adenovirus_gentoo_penguin_2       TATAAGACTAAAGTTACAGGTGCTACAGAAACAGATCCTCATACTTATGCTTATATGAAT
+                                  ********************* **************************************
+
+adenovirus_chinstrap_penguin      GCCATGCTTCCAAATATAAATGTAGTTGATTTGTTTACTAACATTGGGGGCAGATATAGT
+adenovirus_gentoo_penguin_1       GCCATGCTTCCAAATATAAATGTAGTTGATTTGTTTACTAACATTGGGGGCAGATATAGT
+adenovirus_gentoo_penguin_2       GCCATGCTTCCAAATATAAATGTAGTTGATTTGTTTACTAACATTGGGGGCAGATATAGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGGACTGCATGGATAATGTTAATCCTTTTAATCATCACAGAAACCGTGGGCTGCAGTAC
+adenovirus_gentoo_penguin_1       TTGGACTGCATGGATAATGTTAATCCCTTTAATCATCACAGAAACCGTGGGCTGCAGTAC
+adenovirus_gentoo_penguin_2       TTGGACTGCATGGATAATGTTAATCCTTTTAATCATCACAGAAACCGTGGGCTGCAGTAC
+                                  ************************** *********************************
+
+adenovirus_chinstrap_penguin      AGGAGTCAACTGTTGGGAAATGGCAGATACTGTAATTTTCACATTCAAGTTCCCCAGAAA
+adenovirus_gentoo_penguin_1       AGGAGTCAACTGTTGGGAAATGGCAGATACTGTAATTTTCACATTCAAGTTCCCCAGAAA
+adenovirus_gentoo_penguin_2       AGGAGTCAACTGTTGGGAAATGGCAGATACTGTAATTTTCACATTCAAGTTCCCCAGAAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTTTTGCGGTTCGAAATTTGCTGTTGACTCCTGGAACATACTCTTATGAGTGGTGGTTC
+adenovirus_gentoo_penguin_1       TTTTTTGCGGTTAGAAATTTGCTGTTGACTCCTGGAACATACTCTTATGAGTGGTGGTTC
+adenovirus_gentoo_penguin_2       TTTTTTGCGGTTCGAAATTTGCTGTTGACTCCTGGAACATACTCTTATGAGTGGTGGTTC
+                                  ************ ***********************************************
+
+adenovirus_chinstrap_penguin      AGGAAAGACCCTAATGTAGTGTTGCAATCTACTATGGGAAATGATCTTAGGAAGGATGGA
+adenovirus_gentoo_penguin_1       AGGAAAGACCCTAATGTAGTGTTGCAATCAACTATGGGAAATGATCTTAGGAAGGATGGA
+adenovirus_gentoo_penguin_2       AGGAAAGACCCTAATGTAGTGTTGCAATCTACTATGGGAAATGATCTTAGGAAGGATGGA
+                                  ***************************** ******************************
+
+adenovirus_chinstrap_penguin      GCAAGCATTCATTATACAAGTATAAATTTGTTTGCTAGTTTCTTTCCAATGGATCATGCA
+adenovirus_gentoo_penguin_1       GCAAGCATTCATTATACAAGTATAAACTTGTTTGCTAGTTTCTTTCCAATGGATCATGCA
+adenovirus_gentoo_penguin_2       GCAAGCATTCATTATACAAGTATAAATTTGTTTGCTAGTTTCTTTCCAATGGATCATGCA
+                                  ************************** *********************************
+
+adenovirus_chinstrap_penguin      ACTTGCAGTGAGCTAATTTTGATGCTGAGAAATGATCAAAATGATCAGTCTTTTATGGAT
+adenovirus_gentoo_penguin_1       ACTTGCAGTGAGCTAATTTTGATGCTGAGAAATGATCAAAATGATCAGTCTTTTATGGAT
+adenovirus_gentoo_penguin_2       ACTTGCAGTGAGCTAATTTTGATGCTGAGAAATGATCAAAATGATCAGTCTTTTATGGAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATATGGGAGCAAAGAATAATCTCTATATAGTACCACCAAATCAGACCAATTTGCAGATA
+adenovirus_gentoo_penguin_1       TATATGGGAGCAAAGAATAATCTCTATATAGTACCACCAAATCAGACCAATTTGCAGATA
+adenovirus_gentoo_penguin_2       TATATGGGAGCAAAGAATAATCTCTATATAGTACCACCAAATCAGACCAATTTGCAGATA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GAGATTCCTTCTAGATCTTGGACTGCTTTTAGAGGCTGGAGTTTTAATAGAGTTAAAGCT
+adenovirus_gentoo_penguin_1       GAGATTCCTTCTAGATCTTGGACTGCTTTTAGAGGCTGGAGTTTTAATAGAGTTAAAGCT
+adenovirus_gentoo_penguin_2       GAGATTCCTTCTAGATCTTGGACTGCTTTTAGAGGCTGGAGTTTTAATAGAGTTAAAGCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCTGAAACACCAGCAGTGTGGTCAACTTATGATGTAAATTTCAGGTACAGTGGCAGTATT
+adenovirus_gentoo_penguin_1       GCTGAAACACCAGCAGTCTGGTCAACTTATGATGTAAATTTCAGGTACAGTGGCAGTATT
+adenovirus_gentoo_penguin_2       GCTGAAACACCAGCAGTCTGGTCAACTTATGATGTAAATTTCAGGTACAGTGGCAGTATT
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      CCTTATCTAGATGGGACTTTTTATTTATCTCACACTTTTAATTCTATGTCAATTACTTTT
+adenovirus_gentoo_penguin_1       CCTTATTTAGATGGGACTTTTTATTTATCTCACACTTTTAATTCTATGTCAATTACTTTT
+adenovirus_gentoo_penguin_2       CCTTATTTAGATGGGACTTTTTATTTATCTCACACTTTTAATTCTATGTCAATTACTTTT
+                                  ****** *****************************************************
+
+adenovirus_chinstrap_penguin      GATTCAGCAATATCATGGCCAGGAAATGATAGAATGCTGATTCCTAATTATTTTGAGATA
+adenovirus_gentoo_penguin_1       GATTCAGCAATATCATGGCCAGGAAATGATAGAATGCTGATTCCTAATTATTTTGAGATA
+adenovirus_gentoo_penguin_2       GATTCAGCAATATCATGGCCAGGAAATGATAGAATGCTGATTCCTAATTATTTTGAGATA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAGAGACGGGTAGATAGTGAAGGCTATACTACCAGTCAATCAAATATAACTAAAGATTTT
+adenovirus_gentoo_penguin_1       AAGAGACGGGTAGATAGTGAAGGCTATACTACCAGTCAATCAAATATAACTAAAGACTTT
+adenovirus_gentoo_penguin_2       AAGAGACGGGTAGATAGTGAAGGCTATACTACCAGTCAATCAAATATAACTAAAGACTTT
+                                  ******************************************************** ***
+
+adenovirus_chinstrap_penguin      TATCTAATTCAAATGTCAGCAAATTATAATCAGGGCTATCATGGATATAGCTTTCCTGCT
+adenovirus_gentoo_penguin_1       TATCTAATTCAAATGTCAGCAAATTATAATCAGGGCTATCATGGATATAGCTTTCCTGCT
+adenovirus_gentoo_penguin_2       TATCTAATTCAAATGTCAGCAAATTATAATCAGGGCTATCATGGATATAGCTTTCCTGCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GACAAAACTTATAGACAGTATGATTTTATTTCAAATTTTGATCCTATGTCTATTCAAGTA
+adenovirus_gentoo_penguin_1       GACAAAACTTATAGACAGTATGATTTTATTTCAAATTTTGATCCTATGTCTATTCAAGTA
+adenovirus_gentoo_penguin_2       GACAAAACTTATAGACAGTATGATTTTATTTCAAATTTTGATCCTATGTCTATTCAAGTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CCACAATATGGTTCAGAAGCTTATGATTTACTTTCAGAATCTTTCAAACAAAATGTTAGT
+adenovirus_gentoo_penguin_1       CCACAATATGGTTCAGAAGCTTATGATTTACTTGCAGAATCTTTCAGACAAAATGTTAGT
+adenovirus_gentoo_penguin_2       CCACAATATGGTTCAGAAGCTTATGATTTACTTGCAGAATCTTTCAGACAAAATGTTAGT
+                                  ********************************* ************ *************
+
+adenovirus_chinstrap_penguin      AATAATGTTATTATTAACAATTCTGGATTTGTCCCTTCTAGGGACACTGCTATAGTAGCA
+adenovirus_gentoo_penguin_1       AATAATGTTATTATTAATAATTCTGGATTTGTCCCTTCTAGGGACACTGCTATAGTAGCA
+adenovirus_gentoo_penguin_2       AATAATGTTATTATTAATAATTCTGGATTTGTCCCTTCTAGGGACACTGCTATAGTAGCA
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      GCTCAGGAGGGACATCCTTACCCAGCTAACTGGCCTATGCCTTTAATTGGGGAGCATGCT
+adenovirus_gentoo_penguin_1       GCTCAGGAGGGACATCCTTACCCAGCTAACTGGCCTATGCCTTTAATTGGGCAGCATGCT
+adenovirus_gentoo_penguin_2       GCTCAGGAGGGACATCCTTACCCAGCTAACTGGCCTATGCCTTTAATTGGGCAGCATGCT
+                                  *************************************************** ********
+
+adenovirus_chinstrap_penguin      GTAGAAGCAACTAGGACAATCAGAAAATTTTTATGTGATAAGTATCTCTGGACAATACCA
+adenovirus_gentoo_penguin_1       GTAGAAGCAACTAGGACAGTCAGAAAATTTTTGTGTGATAAGTATCTCTGGACAATACCA
+adenovirus_gentoo_penguin_2       GTAGAAGCAACTAGGACAGTCAGAAAATTTTTGTGTGATAAGTATCTCTGGACAATACCA
+                                  ****************** ************* ***************************
+
+adenovirus_chinstrap_penguin      TTTTCCAGTAACTTTTTGAACATGGGTGAATTGACTGACCTTGGACAGAGTTTGCTGTAT
+adenovirus_gentoo_penguin_1       TTTTCCAGTAACTTTTTGAACATGGGTGAATTGACTGACCTTGGACAGAGTTTGCTGTAT
+adenovirus_gentoo_penguin_2       TTTTCCAGTAACTTTTTGAACATGGGTGAATTGACTGACCTTGGACAGAGTTTGCTGTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACTGAATCTGCTCATAGCTTGCAAATAACCTTTGACCTGGACCCAATGCCTGAAACCACA
+adenovirus_gentoo_penguin_1       ACTGAATCTGCTCATAGCTTGCAAATAACCTTTGACCTGGACCCAATGCCTGAAACCACA
+adenovirus_gentoo_penguin_2       ACTGAATCTGCTCATAGCTTGCAAATAACCTTTGACCTGGACCCAATGCCTGAAACCACA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATGTTTATATGCTTTACAATGTTTTTGATGCTGTTAGGGTAAATCAACCTAATAAAAAT
+adenovirus_gentoo_penguin_1       TATGTTTATATGCTTTACAATGTTTTTGATGCTGTTAGGGTAAATCAACCTAATAAAAAT
+adenovirus_gentoo_penguin_2       TATGTTTATATGCTTTACAATGTTTTTGATGCTGTTAGGGTAAATCAACCTAATAAAAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TACTTATCTGCAGCTTATTTCAGAACTCCTTTTGCTACTGGAACTGCTTCAGCATAATGG
+adenovirus_gentoo_penguin_1       TACTTATCTGCAGCTTATTTCAGAACTCCTTTTGCTACTGGAACTGCTTCAGCATAATGG
+adenovirus_gentoo_penguin_2       TACTTATCTGCAGCTTATTTCAGAACTCCTTTTGCTACTGGAACTGCTTCAGCATAATGG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTGGAACATCAACTTCAGAGTTGATTCATATAGTGAAGTCTTTAGGTATAGATGCATATT
+adenovirus_gentoo_penguin_1       CTGGAACATCAACTTCAGAGTTGATTCATATAGTGAAGTCTTTAGGTATAGATGCATATT
+adenovirus_gentoo_penguin_2       CTGGAACATCAACTTCAGAGTTGATTCATATAGTGAAGTCTTTAGGTATAGATGCATATT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTTAGGTGTTTTTGATAAGAATTTTCCTGGATTTTTAGATGTTCATAAGGTATCGTATG
+adenovirus_gentoo_penguin_1       TTTTAGGTGTTTTTGATAAGAATTTCCCTGGATTTTTAGATGTTCATAAGGTATCGTATG
+adenovirus_gentoo_penguin_2       TTTTAGGTGTTTTTGATAAGAATTTCCCTGGATTTTTAGATGTTCATAAGGTATCGTATG
+                                  ************************* **********************************
+
+adenovirus_chinstrap_penguin      CTATTGTAAATACAGGTGATTATGTTTCTGGTGGAATGCATTGGATTGCATTTGCCTATG
+adenovirus_gentoo_penguin_1       CTATTGTGAATACAGGTGATTATGTTTCTGGTGGAATGCATTGGATTGCATTTGCCTATG
+adenovirus_gentoo_penguin_2       CTATTGTGAATACAGGTGATTATGTTTCTGGTGGAATGCATTGGATTGCATTTGCCTATG
+                                  ******* ****************************************************
+
+adenovirus_chinstrap_penguin      ATCCAAATGGAAGTTTGTTTTACATGTTTGATCCATTTGGTTGGAGTAATAAAGATTTGT
+adenovirus_gentoo_penguin_1       ATCCAAATGGAAGTTTGTTTTACATGTTTGATCCCTTTGGTTGGAGTAATAAAGATTTGT
+adenovirus_gentoo_penguin_2       ATCCAAATGGAAGTTTGTTTTACATGTTTGATCCCTTTGGTTGGAGTAATAAAGATTTGT
+                                  ********************************** *************************
+
+adenovirus_chinstrap_penguin      ATAAACACTATAAATTTCAGTATGATAGGATGCTTAAGCATACAGCTTTGCAAGGCAATA
+adenovirus_gentoo_penguin_1       ATAAACACTATAAATTTCAGTATGATAGGATGCTTAAGCATACAGCTTTGCAAGGTAATA
+adenovirus_gentoo_penguin_2       ATAAACACTATAAATTTCAGTATGATAGGATGCTTAAGCATACAGCTTTGCAAGGTAATA
+                                  ******************************************************* ****
+
+adenovirus_chinstrap_penguin      GATGTATTAGATTACTTAAATCTGTAGAAGCTGTACAGTGTTTGTGTTCTGCTGCATGTG
+adenovirus_gentoo_penguin_1       GATGTATTAGATTACTTAAATCTGTAGAAGCTGTACAGTGTTTGTGTTCTGCTGCATGTG
+adenovirus_gentoo_penguin_2       GATGTATTAGATTACTTAAATCTGTAGAAGCTGTACAGTGTTTGTGTTCTGCTGCATGTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTCTTTTTTGTTGCTTGTTTTTAGCTTCATTTTATCATTATCGGTTTAGCCCGCTTTGTA
+adenovirus_gentoo_penguin_1       GTCTTTTTTGTTGCTTGTTTTTAGCTTCATTTTATCATTATCGGTATAGCCCGCTTTGTA
+adenovirus_gentoo_penguin_2       GTCTTTTTTGTTGCTTGTTTTTAGCTTCATTTTATCATTATCGGTATAGCCCGCTTTGTA
+                                  ********************************************* **************
+
+adenovirus_chinstrap_penguin      ACAATCCAATTATTGATATTGTAACGGGTGTACCTCATTCTGTATTAAATTCACCGCGAG
+adenovirus_gentoo_penguin_1       ACAATCCAATTATTGATATTGTAACGGGTGTACCTCATTCTGTATTAAATTCACCGCGAG
+adenovirus_gentoo_penguin_2       ACAATCCAATTATTGATATTGTAACGGGTGTACCTCATTCTGTATTAAATTCACCGCGAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTATTAAAATAACACATTGTAACCAGAAAAAATTGTATGATTGGTTATATGTGAATTGTT
+adenovirus_gentoo_penguin_1       GTATTAAAATAACACATTGTAACCAGAAAAAATTGTATGATTGGTTATATGTGAATTGTC
+adenovirus_gentoo_penguin_2       GTATTAAAATAACACATTGTAACCAGAAAAAATTGTATGATTGGTTATATGTGAATTGTC
+                                  *********************************************************** 
+
+adenovirus_chinstrap_penguin      TGTATTTTAGAAAAAATGCCCGTGAAATAAAGAACAACACGAGAATAAATGCAGTTACAG
+adenovirus_gentoo_penguin_1       TGTATTTTAGAAAAAATGCCCGTGAAATAAAGAACAACACGAGAATAAATGCAGTTACAG
+adenovirus_gentoo_penguin_2       TGTATTTTAGAAAAAATGCCCGTGAAATAAAGAACAACACGAGAATAAATGCAGTTACAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CACATTATACCGTTTATTGTCTCTC--TTTTTTTTAATCAAGAGAAAGCGTCCTCATCAC
+adenovirus_gentoo_penguin_1       CACATTATACCGTTTATTGTCTCTCTTTTTTTTTTAATCAAGAGAAAGCGTCCTCATCAC
+adenovirus_gentoo_penguin_2       CACATTATACCGTTTATTGTCTCTCTTTTTTTTTTAATCAAGAGAAAGCGTCCTCATCAC
+                                  *************************  *********************************
+
+adenovirus_chinstrap_penguin      TTTCAACCTCGTGCTGAGCAACAATTGCTTGCTTGAAACAATGTTTTTTGGGGTTGAACA
+adenovirus_gentoo_penguin_1       TTTCAACCTCGTGCTGAGCAACAATTGCTTGCTTGAAACAATGTTTTTTGGGGTTGAACA
+adenovirus_gentoo_penguin_2       TTTCAACCTCGTGCTGAGCAACAATTGCTTGCTTGAAACAATGTTTTTTGGGGTTGAACA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGAAAATCGGTAGATTGATCTTAGTTGGAGAACCATCACCAAGGGTTTCTTTCAGCTTAG
+adenovirus_gentoo_penguin_1       TGAAAATCGGTAGATTGATCTTAGTTGGAGAACCATCACCAAGGGTTTCTTTCAGCTTAG
+adenovirus_gentoo_penguin_2       TGAAAATCGGTAGATTGATCTTAGTTGGAGAACCATCACCAAGGGTTTCTTTCAGCTTAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACCAGATGTCTTTGCTGATTTTCATTGCCTGCCTCAGATCAATCATTGACAGTTTGAAAT
+adenovirus_gentoo_penguin_1       ACCAGATGTCTTTGCTGATTTTCATTGCCTGCCTCAGATCAATCATTGACAGTTTGAAAT
+adenovirus_gentoo_penguin_2       ACCAGATGTCTTTGCTGATTTTCATTGCCTGCCTCAGATCAATCATTGACAGTTTGAAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CACAGTGTTTTTGGGCTTCCTTTTCCTTGGTAGTTTTTTTGTAATTCATTGGGTTGCAAC
+adenovirus_gentoo_penguin_1       CACAGTGTTTTTGGGCTTCCTTTTCCTTGGTAGTTTTTTTGTAATTCATTGGGTTGCAAC
+adenovirus_gentoo_penguin_2       CACAGTGTTTTTGGGCTTCCTTTTCCTTGGTAGTTTTTTTGTAATTCATTGGGTTGCAAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACTGGAAAACAAAGGTTTGCCTATGCTGATAAGTACACAGCATCATTTGGTCAGTGCAGG
+adenovirus_gentoo_penguin_1       ACTGGAAGACAAAGGTTTGCCTATGCTGATAGGTACACAGCATCATTTGGTCAGTGCAGG
+adenovirus_gentoo_penguin_2       ACTGGAAGACAAAGGTTTGCCTATGCTGATAGGTACACAGCATCATTTGGTCAGTGCAGG
+                                  ******* *********************** ****************************
+
+adenovirus_chinstrap_penguin      AATCAGGGTCTATATCACCTGCACCAGGAATTTCAAATGCAGTCATTTTACAGCATTGTC
+adenovirus_gentoo_penguin_1       AATCAGGGTCTATATCACCTGCACCAGGAATTTCAAATGCAGTCATTTTACAGCATTGTC
+adenovirus_gentoo_penguin_2       AATCAGGGTCTATATCACCTGCACCAGGAATTTCAAATGCAGTCATTTTACAGCATTGTC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCCCAGCTGGATGTTGTCATGACCATAGTTACAGAAACATTTGGTCACGATTATCATCT
+adenovirus_gentoo_penguin_1       TTCCCAGCTGGATGTTGTCATGACCATAGTTACAGAAACATTTGGTCACGATTATCATCT
+adenovirus_gentoo_penguin_2       TTCCCAGCTGGATGTTGTCATGACCATAGTTACAGAAACATTTGGTCACGATTATCATCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTCAGCAATTTCAGTTTTGTTAGCTTTTGGAAACATTGCAGAAGTCCAGCTAATGTTAT
+adenovirus_gentoo_penguin_1       TTTCAGCAATTTCAGTTTTGTTAGCTTTTGGAAACATTGCAGAAGTCCAGCTAATGTTAT
+adenovirus_gentoo_penguin_2       TTTCAGCAATTTCAGTTTTGTTAGCTTTTGGAAACATTGCAGAAGTCCAGCTAATGTTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCAGATATGCTGCCTTAGCTTTATCTTTGTTTCCAAAATTCATTCCGCAAGACTCAGCAG
+adenovirus_gentoo_penguin_1       GCAGATATGCTGCCTTAGCTTTATCTTTGTTTCCAAAATTCATTCCGCAAGACTCAGCAG
+adenovirus_gentoo_penguin_2       GCAGATATGCTGCCTTAGCTTTATCTTTGTTTCCAAAATTCATTCCGCAAGACTCAGCAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATGCACAACTGGCCACTGAATATTTATGTCTTCAGCACAGACAATATTGCTGTAATTAG
+adenovirus_gentoo_penguin_1       AATGCACAACTGGCCACTGAATGTTTATGTCTTCAGCACAGACAATGTTGCTGTAATTAG
+adenovirus_gentoo_penguin_2       AATGCACAACTGGCCACTGAATGTTTATGTCTTCAGCACAGACAATGTTGCTGTAATTAG
+                                  ********************** *********************** *************
+
+adenovirus_chinstrap_penguin      TCAGCTTTATCACGTCCTTTTGATTTTTGCCCTTTTCAATTTTTCCCTCTCCTGATGTAA
+adenovirus_gentoo_penguin_1       TCAGCTTTATCACGTCCTTTTGATTTTTGCCCTTTTCAATTTTTCCCTCTCCTGATGTAA
+adenovirus_gentoo_penguin_2       TCAGCTTTATCACGTCCTTTTGATTTTTGCCCTTTTCAATTTTTCCCTCTCCTGATGTAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGGCTCTTATGCCCTCATCAGATTGGGGTGAAAGATTGTACGTGATGGGCTTTGAAATCA
+adenovirus_gentoo_penguin_1       TGGCTCTTATGCCCTCATCAGATTGGGGTGAAAGATTGTACGTGATGGGCTTTGAAATCA
+adenovirus_gentoo_penguin_2       TGGCTCTTATGCCCTCATCAGATTGGGGTGAAAGATTGTACGTGATGGGCTTTGAAATCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCATTGTGCCATGAAAGCACCTGATGCTGTCTTCTTTCCAGTTATGAATCCAGATATTTG
+adenovirus_gentoo_penguin_1       TCATTGTGCCATGAAAGCACCTGATGCTGTCTTCTTTCCAGTTATGAATCCAGATATTTG
+adenovirus_gentoo_penguin_2       TCATTGTGCCATGAAAGCACCTGATGCTGTCTTCTTTCCAGTTATGAATCCAGATATTTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CACCCAGGCAGTTAAAATGGCACTCCAGCCCAGTTTCATTGTAAATGAAACTAGCTAAGA
+adenovirus_gentoo_penguin_1       CACCCAGGCAGTTAAAATGGCACTCCAGCCCAGTTTCATTGTAAATGAAACTAGCTAAGA
+adenovirus_gentoo_penguin_2       CACCCAGGCAGTTAAAATGGCACTCCAGCCCAGTTTCATTGTAAATGAAACTAGCTAAGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCCTACCACAAAAGTGATAAAACGATTTAGCGGAGGAAATTGTAAGATTAAGATCTGGTT
+adenovirus_gentoo_penguin_1       TCCTACCACAAAAGTGATAAAACGATTTAGCGGAGGAAATTGTAAGATTAAGATCTGGTT
+adenovirus_gentoo_penguin_2       TCCTACCACAAAAGTGATAAAACGATTTAGCGGAGGAAATTGTAAGATTAAGATCTGGTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TACTCTTCTTAACATAAGTTTCAACCAGCTTGGCCCAGAAATCAGAAGTCGGTAAAATAT
+adenovirus_gentoo_penguin_1       TACTCTTCTTAACATAAGTTTCAACCAGCTTGGCCCAGAAATCAGAAGTGGGTAAAATAT
+adenovirus_gentoo_penguin_2       TACTCTTCTTAACATAAGTTTCAACCAGCTTGGCCCAGAAATCAGAAGTGGGTAAAATAT
+                                  ************************************************* **********
+
+adenovirus_chinstrap_penguin      TGACATCAGTTTGACAGCCATAAAGCGCGCATAGACCTGCAGCATACTGCATGGCCTTTT
+adenovirus_gentoo_penguin_1       TGACATCAGTTTGACAGCCATAAAGCGCGCATAGACCTGCAGCATACTGCATGGCCTTTT
+adenovirus_gentoo_penguin_2       TGACATCAGTTTGACAGCCATAAAGCGCGCATAGACCTGCAGCATACTGCATGGCCTTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GGTGGCAGACTTCAATTTCATCATCCACATGCTGTTTCTTATTTGCTGGCTCCGCCTCTG
+adenovirus_gentoo_penguin_1       GGTGGCAGACTTCAATTTCATCATCCACATGCTGTTTCTTATTTGCTGGCTCCGCCTCTG
+adenovirus_gentoo_penguin_2       GGTGGCAGACTTCAATTTCATCATCCACATGCTGTTTCTTATTTGCTGGCTCCGCCTCTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTTCTATAAAAAAAATTTAAATTTTTTAGTTACGGTATTACAATAGCTGCTGGGGTGTTT
+adenovirus_gentoo_penguin_1       CTTCTATAAAAAAAATTTAAATTTTTTAGTTACGGTATTACAATAGCTGCTGGGGTGTTT
+adenovirus_gentoo_penguin_2       CTTCTATAAAAAAAATTTAAATTTTTTAGTTACGGTATTACAATAGCTGCTGGGGTGTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCTATTGGCTTTTACTTACCCTCAGCTGGGCGTTTCTCACTGCTCATGATCTATAAGAA
+adenovirus_gentoo_penguin_1       TTCTATTGGCTTTTACTTACCCTCAGCTGGGCGTTTCTCACTGCTCATGATCTATAAGAA
+adenovirus_gentoo_penguin_2       TTCTATTGGCTTTTACTTACCCTCAGCTGGGCGTTTCTCACTGCTCATGATCTATAAGAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGAGCAGAACGAGATACTTAGTAAAAGTCACAATGGCTGCTGTGGATGAACCTGCAGAAC
+adenovirus_gentoo_penguin_1       AGAGCAGAACGAGATACTTAGTAAAAGTCATAATGGCTGCTGTGGATGAACCTGCAGAAC
+adenovirus_gentoo_penguin_2       AGAGCAGAACGAGATACTTAGTAAAAGTCATAATGGCTGCTGTGGATGAACCTGCAGAAC
+                                  ****************************** *****************************
+
+adenovirus_chinstrap_penguin      AAGTGATTGAGGCTGAGACTAGTGTTGTGGAGCCTGATATTCAGAATGAAGTAGATGTTG
+adenovirus_gentoo_penguin_1       AAGTGATTGAGGCTGAGACTAATGTTGTGGAGCCTGATATTCAGAATGAAGTAGATGTTG
+adenovirus_gentoo_penguin_2       AAGTGATTGAGGCTGAGACTAATGTTGTGGAGCCTGATATTCAGAATGAAGTAGATGTTG
+                                  ********************* **************************************
+
+adenovirus_chinstrap_penguin      AGCAGCATGAGGGTGAGTGTGGACCTAATACTTTTAGCAATCACTTAAGGAGACAAGCAC
+adenovirus_gentoo_penguin_1       AGCAGCATGAGGGTGAGTGTGGACCTAATACTTTTAGCAATCACTTAAGGAGACAAGCAC
+adenovirus_gentoo_penguin_2       AGCAGCATGAGGGTGAGTGTGGACCTAATACTTTTAGCAATCACTTAAGGAGACAAGCAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTTGTGCCAATTGGCTTTATCAAAAAAGTACAAATATTTACCAGAATCTATTTCTGAAA
+adenovirus_gentoo_penguin_1       TTTTGTGCCAATTGGCTTTATCAAAAAAGTACAAATATTTACCAGAATCTATTTCTGAAA
+adenovirus_gentoo_penguin_2       TTTTGTGCCAATTGGCTTTATCAAAAAAGTACAAATATTTACCAGAATCTATTTCTGAAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGCTGAAGCGTTTGAGGATTATATTTTTAATCCTCACTGTAAATCAGATAGAATGCAGC
+adenovirus_gentoo_penguin_1       TTGCTGAAGCGTTTGAGGATTATATTTTTAATCCTCACTGTAAATCAGATAGAATGCAGC
+adenovirus_gentoo_penguin_2       TTGCTGAAGCGTTTGAGGATTATATTTTTAATCCTCACTGTAAATCAGATAGAATGCAGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGGAAGCTAGATTTAATTTTTATCCTCCATTTGCTTTGCCAGAGAGAATAGCTACCTACA
+adenovirus_gentoo_penguin_1       AGGAAGCTAGATTTAATTTTTATCCTCCATTTGCTTTGCCAGAGAGAATAGCTACCTACA
+adenovirus_gentoo_penguin_2       AGGAAGCTAGATTTAATTTTTATCCTCCATTTGCTTTGCCAGAGAGAATAGCTACCTACA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCAGTTTTTTTCAGATTGTGTCTGTGCCTTTAAGTTGTGCTGCAAATAGGACCGGCACTA
+adenovirus_gentoo_penguin_1       GCAGTTTTTTTCAGATTGTGTCTGTGCCTTTAAGTTGTGCTGCAAATAGGACCGGCACTA
+adenovirus_gentoo_penguin_2       GCAGTTTTTTTCAGATTGTGTCTGTGCCTTTAAGTTGTGCTGCAAATAGGACCGGCACTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGAAATATGTACATTTGAAAAACAAATCAAAATTTGACTTCTTACCTAAATTTGATTCAG
+adenovirus_gentoo_penguin_1       AGAAATATGTACATTTGAAAAACAAATCAAAATTTGACTTCTTACCTAAATTTGATTCAG
+adenovirus_gentoo_penguin_2       AGAAATATGTACATTTGAAAAACAAATCAAAATTTGACTTCTTACCTAAATTTGATTCAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATCTGTTTGTTATTGCAGACACACTGGGCTCAGAGGTCACAGCAACAGATTCTCTGCCAA
+adenovirus_gentoo_penguin_1       ATCTGTTTGTTATTGCAGACACACTGGGCTCAGAGGTCACAGCAACAGATTCTCTGCCAA
+adenovirus_gentoo_penguin_2       ATCTGTTTGTTATTGCAGACACACTGGGCTCAGAGGTCACAGCAACAGATTCTCTGCCAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GGAAATCCAGGTTAGTTAATTTGAAAGCAGATTATAGCAGACTTGTCATAGTTAAAGAAA
+adenovirus_gentoo_penguin_1       GGAAATCCAGGTTAGTTAATTTGAAAGCAGATTATAGCAGACTTGTCATAGTTAAAGAAA
+adenovirus_gentoo_penguin_2       GGAAATCCAGGTTAGTTAATTTGAAAGCAGATTATAGCAGACTTGTCATAGTTAAAGAAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AACTAGGACATGTTACACAATTTGCTTATCCAGCACTGAATCTGCCCCCTAAATTGTTTA
+adenovirus_gentoo_penguin_1       AACTAGGACATGTTACACAATTTGCTTATCCAGCACTGAATCTGCCCCCTAAATTGTTTA
+adenovirus_gentoo_penguin_2       AACTAGGACATGTTACACAATTTGCTTATCCAGCACTGAATCTGCCCCCTAAATTGTTTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AATTGCTTGTGACAGTCTTGTATAAGCCTATTCAGCAGGGTGATGAAAATGAAGCTGACA
+adenovirus_gentoo_penguin_1       AATTGCTTGTGACAGTCTTGTATAAGCCTATTCAGCAGGGTGATGAAAATGAAGCTGACA
+adenovirus_gentoo_penguin_2       AATTGCTTGTGACAGTCTTGTATAAGCCTATTCAGCAGGGTGATGAAAATGAAGCTGACA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGAATATGTCTATACTGATGAAGTGCTAACAAGCATTTTGAATCAGATGTTTATTGATC
+adenovirus_gentoo_penguin_1       TTGAATATGTCTATACTGATGAAGTGCTAACAAGCATTTTGAATCAGATGTTTACTGATC
+adenovirus_gentoo_penguin_2       TTGAATATGTCTATACTGATGAAGTGCTAACAAGCATTTTGAATCAGATGTTTACTGATC
+                                  ****************************************************** *****
+
+adenovirus_chinstrap_penguin      TAAAAGACAATGAGCTGACTACAATGATAAATGATTTTAGGAAAAATTTGCTTAGAGCCC
+adenovirus_gentoo_penguin_1       TAAAAGACAATGAGCTGGCTACAATGATAAATGATTTTAGGAAAAATTTGCTTAGAGCCC
+adenovirus_gentoo_penguin_2       TAAAAGACAATGAGCTGGCTACAATGATAAATGATTTTAGGAAAAATTTGCTTAGAGCCC
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      TGCAGTATGTGTTACCTCTTAAATTGATGCAGATGCTGTTTAGGCATGCTGGCTTTGTTA
+adenovirus_gentoo_penguin_1       TGCAGTATGTGTTACCTCTTAAATTGATGCAGATGCTGTTTAGGCATGCTGGCTTTGTTA
+adenovirus_gentoo_penguin_2       TGCAGTATGTGTTACCTCTTAAATTGATGCAGATGCTGTTTAGGCATGCTGGCTTTGTTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAAAGATGCAGGAGATTTTACACTATACTTTCCATCATGGTTTTATCAAACTAGTAAGTC
+adenovirus_gentoo_penguin_1       AAAAGATGCAGGAGATTTTACACTACACTTTCCATCATGGTTTTATCAAACTAGTAAGTC
+adenovirus_gentoo_penguin_2       AAAAGATGCAGGAGATTTTACACTACACTTTCCATCATGGTTTTATCAAACTAGTAAGTC
+                                  ************************* **********************************
+
+adenovirus_chinstrap_penguin      ATATCACTGGCCAAAATTTAAGCAAGTACATTACATTTCACTCTATGACTTATGAAAATA
+adenovirus_gentoo_penguin_1       ATATAACTGGCCAAAATTTAAGCAAGTACATTACATTTCACTCTATGACTTATGAAAATA
+adenovirus_gentoo_penguin_2       ATATAACTGGCCAAAATTTAAGCAAGTACATTACATTTCACTCTATGACTTATGAAAATA
+                                  **** *******************************************************
+
+adenovirus_chinstrap_penguin      ACAATAACAATGCTCATCTGCATTCAACTTTGGATCTAAATGATGGAGAGGACTATATGA
+adenovirus_gentoo_penguin_1       ACAATAACAATGCTCATCTGCATTCAACTTTGGATCTAAATGATGGAGAGGACTATATGA
+adenovirus_gentoo_penguin_2       ACAATAACAATGCTCATCTGCATTCAACTTTGGATCTAAATGATGGAGAGGACTATATGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGACACAATCTTTCTGTTTTTGACAATCACTTGGCAGACAGCAATGGGCATTTGGCAGC
+adenovirus_gentoo_penguin_1       TTGACACAATCTTTCTGTTTTTGACAATCACTTGGCAGACAGCAATGGGCATTTGGCAGC
+adenovirus_gentoo_penguin_2       TTGACACAATCTTTCTGTTTTTGACAATCACTTGGCAGACAGCAATGGGCATTTGGCAGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAAATTTGAATGAACAAAATTTGAATCAATTGCTTAAGTTGCTGAAAGCAAAAGGACCAG
+adenovirus_gentoo_penguin_1       AAAATTTGAATGAACAAAATTTGAATCAATTGCTTAAGTTGCTGAAAGCAAAAGGACCAG
+adenovirus_gentoo_penguin_2       AAAATTTGAATGAACAAAATTTGAATCAATTGCTTAAGTTGCTGAAAGCAAAAGGACCAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTTGGTCTTATGCAGGGATGCAGACTCAATGGCTGATATGCTGGCTGAATGGGTTAGTG
+adenovirus_gentoo_penguin_1       TTTTGGTCTTATGCAGGGATGCAGACTCAATGGCTGATATGCTGGCTGAATGGGTTAGTG
+adenovirus_gentoo_penguin_2       TTTTGGTCTTATGCAGGGATGCAGACTCAATGGCTGATATGCTGGCTGAATGGGTTAGTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATGATGGAATGCTTATGCAGATTTTTCAACAAGCATTACCAGATTTTACTTCTCAAGCTC
+adenovirus_gentoo_penguin_1       ATGATGGAATGCTTATGCAGATTTTTCAACAAGCATTACCAGATTTTACTTCTCAAGCTC
+adenovirus_gentoo_penguin_2       ATGATGGAATGCTTATGCAGATTTTTCAACAAGCATTACCAGATTTTACTTCTCAAGCTC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGATAAACAATTTCAGAACTTTCATTATGAGCAGGAGTAATATTGTAAGCTGTATGGTTC
+adenovirus_gentoo_penguin_1       AGATAAACAATTTCAGAACTTTTATTATGAGCAGGAGTAATATTGTAAGCTGTATGGTTC
+adenovirus_gentoo_penguin_2       AGATAAACAATTTCAGAACTTTTATTATGAGCAGGAGTAATATTGTAAGCTGTATGGTTC
+                                  ********************** *************************************
+
+adenovirus_chinstrap_penguin      CTGCTGTGGTAAAGGATTTTGTGCCAATTGATTTCAAGGAGTGTCCACCGATTCTGTGGC
+adenovirus_gentoo_penguin_1       CTGCTGTGGTAAAGGATTTTGTGCCAATTGATTTCAAGGAGTGTCCACCGATTCTGTGGC
+adenovirus_gentoo_penguin_2       CTGCTGTGGTAAAGGATTTTGTGCCAATTGATTTCAAGGAGTGTCCACCGATTCTGTGGC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CGCAAGTTTACTTGCTGCAGATTACATATTTTTTGTATAATCACGGAGATTATCAGCAGA
+adenovirus_gentoo_penguin_1       CGCAAGTTTACTTGCTGCAAATTACATATTTTTTGTATAATCACGGAGATTATCAGCAGA
+adenovirus_gentoo_penguin_2       CGCAAGTTTACTTGCTGCAAATTACATATTTTTTGTATAATCACGGAGATTATCAGCAGA
+                                  ******************* ****************************************
+
+adenovirus_chinstrap_penguin      TTTTTTTCTGCACTGATCCTGAAACAAAATGTGCTGAAAATGAAGTTTTTTGCAACTGCA
+adenovirus_gentoo_penguin_1       TTTTTTTCTGCACTGATCCTGAAACAAAATGTGCTGAAAATGAAGTTTTTTGCAACTGCA
+adenovirus_gentoo_penguin_2       TTTTTTTCTGCACTGATCCTGAAACAAAATGTGCTGAAAATGAAGTTTTTTGCAACTGCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTTGTGTTCTCCACATAGAACTCCAATGTTTAATTCAGCATTGCATAATGAAATTCTGG
+adenovirus_gentoo_penguin_1       ATTTGTGTTCTCCACATAGAACTCCAATGTTTAATTCAGCATTGCATAATGAAATTCTGG
+adenovirus_gentoo_penguin_2       ATTTGTGTTCTCCACATAGAACTCCAATGTTTAATTCAGCATTGCATAATGAAATTCTGG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CAATTGGCACATTTGATTTTTATGTGCCTAGTAAAGATGCAAATAGTTCTGGCGAGAGAA
+adenovirus_gentoo_penguin_1       CAATTGGCACATTTGATTTTTATGTGCCTAGTAAAGATGCAAATAGTTCTGGCGAGAGAA
+adenovirus_gentoo_penguin_2       CAATTGGCACATTTGATTTTTATGTGCCTAGTAAAGATGCAAATAGTTCTGGCGAGAAAA
+                                  ********************************************************* **
+
+adenovirus_chinstrap_penguin      TTACTTTGTCTGCAGGTATGTGGGCTAATAAATTTCTAGACCATTTTGTTCCTAAGGATT
+adenovirus_gentoo_penguin_1       TTACTTTGTCTGCAGGCATGTGGGCTAATAAATTTCTAGACCATTTTGTTCCTAAGGATT
+adenovirus_gentoo_penguin_2       TTACTTTGTCTGCTGGCATGTGGGCTAATAAATTTCTAGACCATTTTGTTCCTAAGGATT
+                                  ************* ** *******************************************
+
+adenovirus_chinstrap_penguin      TTCATCCTTTTGAGGTAATTAAATACTTAGATTACCCAGAAAGGTTTAAAGAACAACCTA
+adenovirus_gentoo_penguin_1       TTCATCCTTTTGAGGTAATTAAATACTTAGATTACCCAGAAAGGTTTAAAGAACAACCTA
+adenovirus_gentoo_penguin_2       TTCATCCTTTTGAGGTAATTAAATACTTACATTACCCAGAAAGGTTTAAAGAACAACCGA
+                                  ***************************** **************************** *
+
+adenovirus_chinstrap_penguin      CTGCATGCATAATTACAAAGCCTGAAATTTTGAGCACACTGAGAGACATAAAAAAGAAAA
+adenovirus_gentoo_penguin_1       CTGCATGCATAATTACAAAGCCTGAAATTTTGAGCACACTGAAAGACATAAAAAAGAAAA
+adenovirus_gentoo_penguin_2       CTGCATGCATAATTACGAAGCCATCAATTTTGAGCACACTGAAAGACATAAAAAAGAAAA
+                                  **************** *****   ***************** *****************
+
+adenovirus_chinstrap_penguin      GAGAAAAGTTTTTGCTGGAAAAAGGTTCTGGTATCTATTTGGACCCTGAAACTGGTGATA
+adenovirus_gentoo_penguin_1       GAGAAAAGTTTTTGCTGGAAAAAGGTTCTGGTATCTATTTGGATCCTGAAACTGGTGATA
+adenovirus_gentoo_penguin_2       GAGAAAAGTTTTTGCTGGAAAAAGGTTCTGGTATCTATTTGGATCCTGAAACTGGTGATA
+                                  ******************************************* ****************
+
+adenovirus_chinstrap_penguin      ACCTAAGTGATACTAAAATTGTTCCACAGCCCGCCACAAAATCACCTGAAAGAAGAAGAT
+adenovirus_gentoo_penguin_1       ACCTAAGTGATGCTAAAATTGTTCCACAGCCCGCCACAAAATCAGCTGAAAGAAGAAGAT
+adenovirus_gentoo_penguin_2       ACCTAAGTGATGCTAAAATTGTTCCACAGCCCGCCACAAAATCAGCTGAAAGAAGAAGAT
+                                  *********** ******************************** ***************
+
+adenovirus_chinstrap_penguin      CAAGTCCATAGAAAAGGAAGAAGAAAGAGAAGAATTCCAGGTAGTTATGCTAAATGGAAG
+adenovirus_gentoo_penguin_1       CAAGTCCATAGAAAAGGCAGAAGAAAGAGAAGAATTCCAGGTAGTTATGCTAAATGGAAG
+adenovirus_gentoo_penguin_2       CAAGTCCATAGAAAAGGCAGAAGAAAGAGAAGAATTCCAGGTAGTTATGCTAAATGGAAG
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      CAATACTGCACTGATGTTAAGGAAGCAATTGCAGTGGTGGGCCGCCAACCTGTTTGTGTT
+adenovirus_gentoo_penguin_1       CAATACTGCACTGATGTTAAGGAAGCAATTGCAGTGGTGGGCCGCCAACCTGTTTGTGTT
+adenovirus_gentoo_penguin_2       CAATACTGCACTGATGTTAAGGAAGCAATTGCAGTGGTGGGCCGCCAACCTGTTTGTGTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAAAGATATCTAACAGCAAAAGGAATTCACATTCCTTCATCTACAATTAATTATTATGTT
+adenovirus_gentoo_penguin_1       AAAAGATATCTAACAGCAAAAGGAATTCACATTCCTTCATCTACAATTAATTATTATGTT
+adenovirus_gentoo_penguin_2       AAAAGATATCTAACAGCAAAAGGAATTCACATTCCTTCATCTACAATTAATTATTATGTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CACAAATTTTCAGAAGACAACAGTAAATTTACTTTGTTTTAATCCTAGGGGAGCCAATTC
+adenovirus_gentoo_penguin_1       CACAAATTTTCAGAAGACAACAGTAAATTTACTTTGTTTTAATCCTAGGGGAGCCAATTC
+adenovirus_gentoo_penguin_2       CACAAATTTTCAGAAGACAACAGTAAATTTACTTTGTTTTAATCCTAGGGGAGCCAATTC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATGAAGGAACTTATCAAGAAATTTTAAAACTAAGAAAAGAAATTTGGATTACTGTCAGAG
+adenovirus_gentoo_penguin_1       ATGAAGGAACTTATCAAGAAATTTTAAAACTAAGAAAAGAAATTTGGATTACTGTCAGAG
+adenovirus_gentoo_penguin_2       ATGAAGGAACTTATCAAGAAATTTTAAAACTAAGAAAAGAAATTTGGATTACTGTCAGAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACCTTAAAGATTTAATATACCTAAATAATATTCATGAAGACTGTCATATTCAAAATAGAA
+adenovirus_gentoo_penguin_1       ACCTTAAAGATTTAATATACCTAAATAATATTCATGAAGACTGTCATATTCAAAATAGAA
+adenovirus_gentoo_penguin_2       ACCTTAAAGATTTAATATACCTAAATAATATTCATGAAGACTGTCATATTCAAAATAGAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CATTAAATTCTATTTTGGCTAAGCATACTACATGCTCAAACTTAAATTCATTGTTTAAAA
+adenovirus_gentoo_penguin_1       CATTAAATTCTATTTTGGCTAAGCATACTACATGCTCAAACTTAAATTCATTGTTTAAAA
+adenovirus_gentoo_penguin_2       CATTAAATTCTATTTTGGCTAAGCATACTACATGCTCAAACTTAAATTCATTGTTTAAAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGCACCTAGATGCACAAGCTTTAAAGTATCAGTATGAGAACAGAGCAAAATTCATACCTT
+adenovirus_gentoo_penguin_1       TGCACCTAGATGCACAAGCTTTAAAGTATCAGTATGAGAACAGAGCAAAATTCATACCTT
+adenovirus_gentoo_penguin_2       TGCACCTAGATGCACAAGCTTTAAAGTATCAGTATGAGAACAGAGCAAAATTCATACCTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CAGAGGCGTCTCAGATGAAGAGAAAATAGACACAAGACTGACTGACTTTATAGTTCAGTG
+adenovirus_gentoo_penguin_1       CAGAGACGTCTCAGATGAAGAGAAAAGAGACACAAGACTGACTGACTTTATAGTTCAGTG
+adenovirus_gentoo_penguin_2       CAGAGACGTCTCAGATGAAGAGAAAAGAGACACAAGACTGACTGACTTTATAGTTCAGTG
+                                  ***** ******************** *********************************
+
+adenovirus_chinstrap_penguin      CCAGCCCACAACGTCAGCTGATCATTTAAATTTCGCGGGCTGCTGAAATGGATGCTGTAC
+adenovirus_gentoo_penguin_1       CCAGCCCACAACGTCAGGTGATCATTTAAATTTCGCGGGCTGCTGAAATGGATGCTGTAC
+adenovirus_gentoo_penguin_2       CCAGCCCACAACGTCAGGTGATCATTTAAATTTCGCGGGCTGCTGAAATGGATGCTGTAC
+                                  ***************** ******************************************
+
+adenovirus_chinstrap_penguin      CCACTGAATATATTTGGCAATATAACCCTGTAACTGGTAGGGTTGGGGGAGCAAATCAGA
+adenovirus_gentoo_penguin_1       CCACTGAATATATTTGGCAATATAACCCTGTAACTGGTAGGGTTGGGGGAGCAAATCAGA
+adenovirus_gentoo_penguin_2       CCACTGAATATATTTGGCAATATAACCCTGTAACTGGTAGGGTTGGGGGAGCAAATCAGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATTATGGGCAGAGGATTAATATTTTGCATAGCAACCGCTACTTGTATAACAGAATGCAGG
+adenovirus_gentoo_penguin_1       ATTATGGGCAGAGGATTAATATTTTGCATAGCAACCGCTACCTGTATAACAGAATGCAGG
+adenovirus_gentoo_penguin_2       ATTATGGGCAGAGGATTAATATTTTGCATAGCAACCGCTACCTGTATAACAGAATGCAGG
+                                  ***************************************** ******************
+
+adenovirus_chinstrap_penguin      ATGTGCAAAGATACAGAAACCAACAGGTTACTGAGAGAGGACTGAACTCAATTGCTGGAG
+adenovirus_gentoo_penguin_1       ATGTGCAAAGATACAGAAACCAACAGGTTACTGAGAGAGGACTGAACTCAATTGCTGGAG
+adenovirus_gentoo_penguin_2       ATGTGCAAAGATACAGAAACCAACAGGTTACTGAGAGAGGACTGAACTCAATTGCTGGAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GAAGCTACATGCATTTTCTACCTAGCAGTTTTGAGACCTCGGAACAGCCAGAATTAGAAG
+adenovirus_gentoo_penguin_1       GAAGCTACATGCATTTTCTACCTAGCAGTTTTGAGACCTCGGAACAACCAGAATTAGAAG
+adenovirus_gentoo_penguin_2       GAAGCTACATGCATTTTCTACCTAGCAGTTTTGAGACCTCGGAACAACCAGAATTAGAAG
+                                  ********************************************** *************
+
+adenovirus_chinstrap_penguin      AATTTTATGGTGGTTCCTTTCACAACTTTCAACACCTGCAAGGAGGGTCTGTAAGGTCTG
+adenovirus_gentoo_penguin_1       AATTTTATGGTGGTTCCTTTCACAACTTTCAACACCTGCAAGGAGGGTCTGTAAGGTCTG
+adenovirus_gentoo_penguin_2       AATTTTATGGTGGTTCCTTTCACAACTTTCAACACCTGCAAGGAGGGTCTGTAAGGTCTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGGACTCAAATGATAACTTCAGCCTGTCACGCTTGAAGACTCTTGCAAGCATAGCTGAAG
+adenovirus_gentoo_penguin_1       TGGACTCAAATGATAACTTCAGCCTGTCACGCTTGAAGACTCTTGCAAGCATAGCTGAGG
+adenovirus_gentoo_penguin_2       TGGACTCAAATGATAACTTCAGCCTGTCACGCTTGAAGACTCTTGCAAGCATAGCTGAGG
+                                  ********************************************************** *
+
+adenovirus_chinstrap_penguin      AAGCTGAAGAAACTGCACCGGATCCTGACCTTCTAACTGCAGATAAGTTTGTTAAAACTT
+adenovirus_gentoo_penguin_1       AAGCTGAAGAAACTGCACCGAATCCTGACCTTCTAACTGCAGATAAGTTTGTTAAAACTT
+adenovirus_gentoo_penguin_2       AAGCTGAAGAAACTGCACCGAATCCTGACCTTCTAACTGCAGATAAGTTTGTTAAAACTT
+                                  ******************** ***************************************
+
+adenovirus_chinstrap_penguin      TTCCTCCAGTTGTATACGAGAGACCTTTCTCGGGACAGAACTTTGCACACGAATTTAATC
+adenovirus_gentoo_penguin_1       TTCCTCCAGTTGTATACGAGAGACCTTTCTCGGGACAGAACTTTGCACACGAATTTAATC
+adenovirus_gentoo_penguin_2       TTCCTCCAGTTGTATACGAGAGACCTTTCTCGGGACAGAACTTTGCACACGAATTTAATC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CTCTGTATAACCCTGCTGGCAATGAGTTCTCCCATCCCGTTAAGCCAATACAGGGAGGAG
+adenovirus_gentoo_penguin_1       CTCTGTATAACCCTGCTGGCAATGAGTTCTCCCATCCCGTTAAGCCAATACAGGGAGGAG
+adenovirus_gentoo_penguin_2       CTCTGTATAACCCTGCTGGCAATGAGTTCTCCCATCCCGTTAAGCCAATACAGGGAGGAG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CAATTATACTCCATGGAAAGAACCCAAAGCTCCACGGAGGTGCTCTTGTCCTTGCAGGAC
+adenovirus_gentoo_penguin_1       CAATTATACTCCATGGAAAGAACCCAAAGCTCCACGGAGGTGCTCTTGTCCTTGCAGGAC
+adenovirus_gentoo_penguin_2       CAATTATACTCCATGGAAAGAACCCAAAGCTCCACGGAGGTGCTCTTGTCCTTGCAGGAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGAATCCGATATTGGAATAGACATGCAAAGGACTGTAGTGCTGTTAATTGTATGACTGAA
+adenovirus_gentoo_penguin_1       AGAATCCGATATTGGAATAGACATGCAAAGGACTGTAGTGCTGTTAATTGTATGACTGAA
+adenovirus_gentoo_penguin_2       AGAATCCGATATTGGAATAGACATGCAAAGGACTGTAGTGCTGTTAATTGTATGACTGAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCAATAAGTGCTATGGACATTGTTTTTGAGTGTAATTATCCTGAATATAAATCAGGTCAG
+adenovirus_gentoo_penguin_1       TCAATAAGTGCTATGGACATTGTTTTTGAGTCTAATTATCCTGAATATAAATCAGGTCAG
+adenovirus_gentoo_penguin_2       TCAATAAGTGCTATGGACATTGTTTTTGAGTCTAATTATCCTGAATATAAATCAGGTCAG
+                                  ******************************* ****************************
+
+adenovirus_chinstrap_penguin      TCTATTGTGTTCTGTCATAGATTCTCATACATGACTACTAAATCAGCTAACTGTGATTTA
+adenovirus_gentoo_penguin_1       TCTATTGTGTTCTGTCATAGATTCTCATACATGACTACTAAAACAGCTAACTGTGATTTA
+adenovirus_gentoo_penguin_2       TCTATTGTGTTCTGTCATAGATTCTCATACATGACTACTAAAACAGCTAACTGTGATTTA
+                                  ****************************************** *****************
+
+adenovirus_chinstrap_penguin      CAATGTAATTATGAAAATGTTGACCTGTTACATGTTGATAATGACTTGTGCATCATCTTA
+adenovirus_gentoo_penguin_1       CAATGTAATTATGAAAATGTTGACTTGTTACATGTTGATAATGACTTGTGCATCATCTTA
+adenovirus_gentoo_penguin_2       CAATGTAATTATGAAAATGTTGACTTGTTACATGTTGATAATGACTTGTGCATCATCTTA
+                                  ************************ ***********************************
+
+adenovirus_chinstrap_penguin      AGGTGCTATTGTGACAATGAATTTTCAGACAAATGTATTGATTTAAATTTCAAACTTTTG
+adenovirus_gentoo_penguin_1       AGGTGCTATTGTGACAATGAATTTTCAGACAAATGTATTGATTTAAATTTGAAATTTTTG
+adenovirus_gentoo_penguin_2       AGGTGCTATTGTGACAATGAATTTTCAGACAAATGTATTGATTTAAATTTGAAATTTTTG
+                                  ************************************************** *** *****
+
+adenovirus_chinstrap_penguin      TGTAAGCTTGTAATGACAGTTCTTGATGGAACTTACCCCTTTCCTGATGGAACTTACCCC
+adenovirus_gentoo_penguin_1       TGTAAGCTTGTAATGACAGTTCTTGATGGAACTTACCCCTTTC-----------------
+adenovirus_gentoo_penguin_2       TGTAAGCTTGTAATGACAGTTCTTGATGGAACTTACCCCTTTC-----------------
+                                  *******************************************                 
+
+adenovirus_chinstrap_penguin      TTTTCTTCAACTTCAACTTCATCATTAGACTCCGGAGGCAAGCTGCAAGTGAAAATGATA
+adenovirus_gentoo_penguin_1       ----CTTCAACTTCAACTTCATCATTAGACTCCGGAGGCAAGCTGCAAGTGAAAATGACA
+adenovirus_gentoo_penguin_2       ----CTTCAACTTCAACTTCATCATTAGACTCCGGAGGCAAGCTGCAAGTGAAAATGACA
+                                      ****************************************************** *
+
+adenovirus_chinstrap_penguin      AATACTACTCAAGAGAAGATAATGAAAGATGTTTTACAGAATAAATTTTGCAGTGATTGT
+adenovirus_gentoo_penguin_1       AATACTACTCAAGAGAAGATAATGAAAGATGTTTTACAGAATAAATTTTGCAGTGATTGT
+adenovirus_gentoo_penguin_2       AATACTACTCAAGAGAAGATAATGAAAGATGTTTTACAGAATAAATTTTGCAGTGATTGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATACTCCTGTATTACTTTGCAATTGCATGGAAGAAGCTCTGACTCGTCTGGACTTTTTA
+adenovirus_gentoo_penguin_1       TATACTCCTATATTACTTTGCAATTGCATGGAAGAAGCTCTGACTCGTCTGGACTTTTTA
+adenovirus_gentoo_penguin_2       TATACTCCTATATTACTTTGCAATTGCATGGAAGAAGCTCTGACTCGTCTGGACTTTTTA
+                                  ********* **************************************************
+
+adenovirus_chinstrap_penguin      GAACAACTTTCAACCTTTCCACTTTGCAAAAATTGCTTGTCATTTCAGAAAGGATGTGAT
+adenovirus_gentoo_penguin_1       GAACAACTTTCAACCTTTCCACTTTGCAAAAATTGCTTGTCATTTCAGAAAGGATGTTAT
+adenovirus_gentoo_penguin_2       GAACAACTTTCAACCTTTCCACTTTGCAAAAATTGCTTGTCATTTCAGAAAGGATGTTAT
+                                  ********************************************************* **
+
+adenovirus_chinstrap_penguin      TGTCAGTTTGCAATTTATAAGTTGTTTCAGTTTTACTATACCAAAGTTAAAAATGGTCTT
+adenovirus_gentoo_penguin_1       TGTCCGTTTGCAATTTATAAGTTGTTTCAGTTTTACTATACTAAAGTTAAAAATGGTCTT
+adenovirus_gentoo_penguin_2       TGTCCGTTTGCAATTTATAAGTTGTTTCAGTTTTACTATACTAAAGTTAAAAATGGTCTT
+                                  **** ************************************ ******************
+
+adenovirus_chinstrap_penguin      GTTAGGAAAAGATTAAATGATGTAAAGCGGCTAGCTTACTTGGCATCTTGTAATGTGCCA
+adenovirus_gentoo_penguin_1       GTTAGGAAAAGATTAAATGATGTAAAGCGGCTAGCTTACTTGGCATCTTGTAATGTGCCA
+adenovirus_gentoo_penguin_2       GTTAGGAAAAGATTAAATGATGTAAAGCGGCTAGCTTACTTGGCATCTTGTAATGTGCCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ATGTGCTTTAATTGTAACAGAAGTTACATGCATTGCTTATGCTGTGATGAATATCAAATT
+adenovirus_gentoo_penguin_1       ATGTGCTTTAATTGTAACAGAAGTTACATGCATTGCTTATGCTGTGATGAATATCAAATT
+adenovirus_gentoo_penguin_2       ATGTGCTTTAATTGTAACAGAAGTTACATGCATTGCTTATGCTGTGATGAATATCAAATT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGTACAAATAAATCATTTACTTACCCCTCTACTTGGTCGTGTATTGATGGAAAAAGAGT
+adenovirus_gentoo_penguin_1       TTGTACAAATAAATCATTTACTTACCCCTCTACTTGGTCGTGTATTGATGGAAAAAGAGT
+adenovirus_gentoo_penguin_2       TTGTACAAATAAATCATTTACTTACCCCTCTACTTGGTCGTGTATTGATGGAAAAAGAGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTCTAAAATTAAATCTGAGTTCTGTATGCAGTACCTTATCAGCCAGTAAAGGCAAGTTTG
+adenovirus_gentoo_penguin_1       TTCTAAAATTAAATCTGAGTTCTGTATGCAGTACCTTATCAGCCAGTAAAGGCAAGTTTG
+adenovirus_gentoo_penguin_2       TTCTAAAATTAAATCTGAGTTCTGTATGCAGTACCTTATCAGCCAGTAAAGGCAAGTTTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACAGAGAAGTTGTGTTGCAGTTACTCTTCTAGCTTGCATATGGGGATGTCCAGGTCCATC
+adenovirus_gentoo_penguin_1       ACAGAGAAGCTGCGTTGCAGTTACTCTTCTAGCTTGCATATGGGGATGTCCAGGTCCATC
+adenovirus_gentoo_penguin_2       ACAGAGAAGCTGCGTTGCAGTTACTCTTCTAGCTTGCATATGGGGATGTCCAGGTCCATC
+                                  ********* ** ***********************************************
+
+adenovirus_chinstrap_penguin      AATTTCATCAGTTTTTTGGGATGGTCCATCATTAGATATCCACCTCTCGTCTATTCTTTT
+adenovirus_gentoo_penguin_1       AATTTCATCAGTTTTTTGGGATGGTCCATCATTAGATATCCACCTCTCGTCTATTCTTTT
+adenovirus_gentoo_penguin_2       AATTTCATCAGTTTTTTGGGATGGTCCATCATTAGATATCCACCTCTCGTCTATTCTTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AGGTCTGCAACAGGGGCATAGTTTGGTGCAAGAATTACCC--ATTTCAAGATGGAATCAC
+adenovirus_gentoo_penguin_1       AGGTCTGCAACAGGGGCATAGTTTGGTGCAAGAATTACCCATATTTCAAGATGGAATCAC
+adenovirus_gentoo_penguin_2       AGGTCTGCAACAGGGGCATAGTTTGGTGCAAGAATTACCCATATTTCAAGATGGAATCAC
+                                  ****************************************  ******************
+
+adenovirus_chinstrap_penguin      CAAGAAAGCGCGCAGCACCTGAGAATGAAAATGAACAAGAAGCCACAAGTGCAAAGCAGT
+adenovirus_gentoo_penguin_1       CAAGAAAGCGCGCAGCACCTGAGAATGAAAATGAACAAGAAGGCACAAGTGCAAAGCAGT
+adenovirus_gentoo_penguin_2       CAAGAAAGCGCGCAGCACCTGAGAATGAAAATGAACAAGAAGGCACAAGTGCAAAGCAGT
+                                  ****************************************** *****************
+
+adenovirus_chinstrap_penguin      CTAAATTAAACATGGTATATCCTTTCACAACAACACAAAGTTTTAACATAACTCCCCCAT
+adenovirus_gentoo_penguin_1       CTAAATTAAACATGGTATATCCTTTCACAACAACACAAAGTTTTAACATAACTCCCCCAT
+adenovirus_gentoo_penguin_2       CTAAATTAAACATGGTATATCCTTTCACAACAACACAAAGTTTTAACATAACTCCCCCAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTATTGGTGTAGGTAATGGGTTGGATATTTCAAATTTAACACTTAACTTAAAGATAGGTA
+adenovirus_gentoo_penguin_1       TTATTGGTGTAGGTAATGGGTTGGATATTTCAAATTTAACACTTAACTTAAAGATAGGTA
+adenovirus_gentoo_penguin_2       TTATTGGTGTAGGTAATGGGTTGGATATTTCAAATTTAACACTTAACTTAAAGATAGGTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAGGTTTATATTTTGATAATGGTGATTTATCTGTTGTAAATTCAAATGAGTTTAATGTTT
+adenovirus_gentoo_penguin_1       AAGGTTTATATTTTGACAATGGTGATTTATCTGTTGTAAATTCAAATGAGTTTAATGTTT
+adenovirus_gentoo_penguin_2       AAGGTTTATATTTTGACAATGGTGATTTATCTGTTGTAAATTCAAATGAGTTTAATGTTT
+                                  **************** *******************************************
+
+adenovirus_chinstrap_penguin      CACCACCACTAAGTAACCAAAATGGAACAATTATTTTAAAATTCAACCCTCAGCTGTTAT
+adenovirus_gentoo_penguin_1       CACCACCACTAAGTAACCAAAATGGAACAATTATTTTAAAATTCAACCCTCAGCTGTTAT
+adenovirus_gentoo_penguin_2       CACCACCACTAAGTAACCAAAATGGAACAATTATTTTAAAATTCAACCCTCAGCTGTTAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTATAAATGATGATGGTGAATTAGCTCTGCCTGGAGTAACTAGACCATTAGAAATTTTGA
+adenovirus_gentoo_penguin_1       TTATAAATGATGATGGTGAATTAGCTCTGCCTGGAGTAACTAGACCATTAGAAATTTTGA
+adenovirus_gentoo_penguin_2       TTATAAATGATGATGGTGAATTAGCTCTGCCTGGAGTAACTAGACCATTAGAAATTTTGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACAAACAATTAATGCTAAGTATGTCAAAGGGCTTAACAACTGATTCTGCAGGACTAACAT
+adenovirus_gentoo_penguin_1       ACAAACAATTAATGCTAAGTATGTCAAAGGGCTTAACAACTGATTCTGCAGGACTAACAT
+adenovirus_gentoo_penguin_2       ACAAACAATTAATGCTAAGTATGTCAAAGGGCTTAACAACTGATTCTGCAGGACTAACAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TAGATATGGATCCTATATTTTATACAGACAACAATAAATACATGATGAATGTTGCCTTAC
+adenovirus_gentoo_penguin_1       TAGATATGGATCCTATATTTTATACAGACAAAAATAAATACATGATGAATGTTGCCTTAC
+adenovirus_gentoo_penguin_2       TAGATATGGATCCTATATTTTATACAGACAAAAATAAATACATGATGAATGTTGCCTTAC
+                                  ******************************* ****************************
+
+adenovirus_chinstrap_penguin      CTTTGGACAAAGCAGATAATATTTTGCAGCTGAAGTTTGCTAATGGGTTAGGTCTATTAA
+adenovirus_gentoo_penguin_1       CTTTGGACAAAGCAGACAATATTTTGCAGCTGAAGTTTGCTAATGGGTTAGGTCTATTAA
+adenovirus_gentoo_penguin_2       CTTTGGACAAAGCAGACAATATTTTGCAGCTGAAGTTTGCTAATGGGTTAGGTCTATTAA
+                                  **************** *******************************************
+
+adenovirus_chinstrap_penguin      ATAGCCAATTAGAATGCACAATGCAGGCTGATTTCCCTTTGTTAAGAACTGGAGATAGAT
+adenovirus_gentoo_penguin_1       ATAGCCCATTAGAATGCACAATGCAGGCTGATTTCCCTTTGTTAAGAACTGGAGATAGAT
+adenovirus_gentoo_penguin_2       ATAGCCAATTAGAATGCACAATGCAGGCTGATTTCCCTTTGTTAAGAACTGGAGATAGAT
+                                  ****** *****************************************************
+
+adenovirus_chinstrap_penguin      TTCATTTACTTACCAGTAACCCTTTAGTGGTTGAAAACTCAAGGTTAGGTATCAGGACTA
+adenovirus_gentoo_penguin_1       TTCATTTACTTACCAGTAACCCTTTAATGGTTGAAAATTCAAGGTTAGGTATCAGGACTA
+adenovirus_gentoo_penguin_2       TTCATTTACTTACCAGTAACCCTTTAATGGTTGAAAATTCAAGGTTAGGTATCAGGACTA
+                                  ************************** ********** **********************
+
+adenovirus_chinstrap_penguin      CTTTGCCCTTACATGTGGCTGATACAAGTCTTAAGTTAAAATACAAAGCACCACTGCACT
+adenovirus_gentoo_penguin_1       CTTTGCCCTTACATGTGGCTGATACAAGTCTTAAGTTAAAATACAAAGCACCACTGCACT
+adenovirus_gentoo_penguin_2       CTTTGCCCTTACATGTGGCTGATACAAGTCTTAAGTTAAAATACAAAGCACCACTGCACT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TGCATACAGAGGGATTAGGACTTCAAATTGATAGAACTCTAAAAATTAGTAATAGTACTA
+adenovirus_gentoo_penguin_1       TGCATACAGAGGGATTAGGACTTCAAATTGATAGAACTCTAAAAATTAGTAATAGTACTA
+adenovirus_gentoo_penguin_2       TGCATACAGAGGGATTAGGACTTCAAATTGATAGAACTCTAAAAATTAGTAATAGTACTA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CCTTGGCAGTTAGAATAGATCCTAATGGTGGTCTCGTTACAAGCCCGCAGGGAATAGGTT
+adenovirus_gentoo_penguin_1       CCTTGGCAGTTAGAATAGATCCTAATGGTGGTCTCGTTACAAGCCCACAGGGAATAGGTT
+adenovirus_gentoo_penguin_2       CCTTGGCAGTTAGAATAGATCCTAATGGTGGTCTCGTTACAAGCCCACAGGGAATAGGTT
+                                  ********************************************** *************
+
+adenovirus_chinstrap_penguin      TGAATTTTAGTAGTTTAACTTTAAGCAGTACCGCTCCTAGAGCATTATCCATTTCAACTC
+adenovirus_gentoo_penguin_1       TGAATTTTAGCAGTTTAACTTTGAGCAGTGCCGCTCCTAGAGCATTATCTATTTCAACTC
+adenovirus_gentoo_penguin_2       TGAATTTTAGCAGTTTAACTTTGAGCAGTGCCGCTCCTAGAGCATTATCTATTTCAACTC
+                                  ********** *********** ****** ******************* **********
+
+adenovirus_chinstrap_penguin      CAACTAAACCTGTACTAGGTCATTTTACAACTCAAACTAATCAAAGAATTAGATATAAAT
+adenovirus_gentoo_penguin_1       CAACTAAACCTGTACTAGGTCATTTTACAACTCAAACTAATCAAAGAATTAGATATAAAT
+adenovirus_gentoo_penguin_2       CAACTAAACCTGTACTAGGTCATTTTACAACTCAAACTAATCAAAGAATTAGATATAAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGCTAGGAATGAGAGCATGGCATTTTTATTACTTACAGAAAGTGTGGGCACAATAGATG
+adenovirus_gentoo_penguin_1       TTGCTAGGAATGAGACCATGGCATTTTTATTACTTACAGAAAGTGTGGGCACAATAGATG
+adenovirus_gentoo_penguin_2       TTGCTAGGAATGAGACCATGGCATTTTTATTACTTACAGAAAGTGTGGGCACAATAGATG
+                                  *************** ********************************************
+
+adenovirus_chinstrap_penguin      ATGCCTTTATCTACCGTAACAAATATTTGGAAATTGCTGGTGCAGACATAGCAAATCCTG
+adenovirus_gentoo_penguin_1       ATGCCTTTATCTACCGTAACAAATATTTGGAAATTGCTGGTGCAGACATAGCAAATCCTG
+adenovirus_gentoo_penguin_2       ATGCCTTTATCTACCGTAACAAATATTTGGAAATTGCTGGTGCAGACATAGCAAATCCTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTTTAAATACAACATTTGTAGTGCCATTAACTGGTAGTATTAAACCTGAGACAGGTTCTG
+adenovirus_gentoo_penguin_1       GTTTAAATACAACATTTGTAGTGCCATTAACTGGTAGTATTAAACCTGAGACAGGTTCTG
+adenovirus_gentoo_penguin_2       GTTTAAATACAACATTTGTAGTGCCATTAACTGGTAGTATTAAACCTGAGACAGGTTCTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TACCAGCTTTGGTAGAATTTGTAGCAGATTCTGGTGTTCAAGTTGACATAGCTCTTATAA
+adenovirus_gentoo_penguin_1       TACCAGCTTTGGTAGAATTTGTAGCAGATTCTGGTGTTCAAGTTGACATAGCTCTTATAA
+adenovirus_gentoo_penguin_2       TACCAGCTTTGGTAGAATTTGTAGCAGATTCTGGTGTTCAAGTTGACATAGCTCTTATAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GAATAACTACTAAAAGTTCCCCAGCTTTAATTATAGAGACAGTGTCTCTACCCTCAAGGG
+adenovirus_gentoo_penguin_1       GAATAACTACTAAAAGTTCCCCAGCTTTAATTATAGAGACAGTGTCTCTACCCTCAAGGG
+adenovirus_gentoo_penguin_2       GAATAACTACTAAAAGTTCCCCAGCTTTAATTATAGAGACAGTGTCTCTACCCTCAAGGG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      CAATAACATCCTTGAGAATCAGAACAGCTTTACAGTTCACATACTTTTCAGGTTAACAGC
+adenovirus_gentoo_penguin_1       CAATAACATCCTTGAGAATTAGAACAGCTTTACAGTTCACATACTTTTCAGGTTAACAGC
+adenovirus_gentoo_penguin_2       CAATAACATCCTTGAGAATTAGAACAGCTTTACAGTTCACATACTTTTCAGGTTAACAGC
+                                  ******************* ****************************************
+
+adenovirus_chinstrap_penguin      TGTTAGTTTCAAATCCTATTTTGCTTCTGTGAGCCTGAGAAATGTGCTTTACCAGCAGAA
+adenovirus_gentoo_penguin_1       TGTTAGTTTCAAATCCTATTTTGCTTCTGTGAGCCTGAGAAATGTGCTTTACCAGCAGAA
+adenovirus_gentoo_penguin_2       TGTTAGTTTCAAATCCTATTTTGCTTCTGTGAGCCTGAGAAATGTGCTTTACCAGCAGAA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAACATCAGGTGCGTGTTTCAGTTCATGTTTTTCTTAACGCGGGAAAGAAACAGTCAGTT
+adenovirus_gentoo_penguin_1       AAACATCAGGTGCGTGTTTCAGTTCATGTTTTTCTTAACGCGGGAAAGAAACAGTCAGTT
+adenovirus_gentoo_penguin_2       AAACATCAGGTGCGTGTTTCAGTTCATGTTTTTCTTAACGCGGGAAAGAAACAGTCAGTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCTCAACATATTTATAACATTTAGTTTCTAACCTTTAACCATTAGCTCAAATCTATTGGC
+adenovirus_gentoo_penguin_1       TCTCAATATATTTATAACATTTAGTTTCTAACCTTTAACCATTAGCTCAAATCTATTGGC
+adenovirus_gentoo_penguin_2       TCTCAATATATTTATAACATTTAGTTTCTAACCTTTAACCATTAGCTCAAATCTATTGGC
+                                  ****** *****************************************************
+
+adenovirus_chinstrap_penguin      TGGAAATTGTGGCGGGTACCTTACTTATTTGCTTGTGGCCTTTTCTCAGAATTTTTAACT
+adenovirus_gentoo_penguin_1       TGGAAATTGTGGCGGGTACCTTACTTATTTGCTTGTGGCCTTTTCTCAGAATTTTTAACT
+adenovirus_gentoo_penguin_2       TGGAAATTGTGGCGGGTACCTTACTTATTTGCTTGTGGCCTTTTCTCAGAATTTTTAACT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTGTGGA-----------ACCAAAAAGTAATTACTGTACTTTGAACTATAGCCAGCATGT
+adenovirus_gentoo_penguin_1       GTGTGGAACAAATTATAGACCAAAAAGTAATTACTGTACTTTGAACTATAGCCAGCATGT
+adenovirus_gentoo_penguin_2       GTGTGGAACAAATTATAGACCAAAAAGTAATTACTGTACTTTGAACTATAGCCAGCATGT
+                                  *******           ******************************************
+
+adenovirus_chinstrap_penguin      CAGGGTATAAAGCCAGCATGTGAGCGTATAAAACCATACATGTTAACTGTTTGGTACAAT
+adenovirus_gentoo_penguin_1       CAGGGTATAAAGCCAGCATGTGAGGGAATAAAACCATACATGTT-------------AAT
+adenovirus_gentoo_penguin_2       CAGGGTATAAAGCCAGCATGTGAGGGAATAAAACCATACATGTT-------------AAT
+                                  ************************ * *****************             ***
+
+adenovirus_chinstrap_penguin      CATGCCTCTTACCTGGTGGCTGCAAGCTGAACTTCACATCAATGAAGAGGACCATTTTCA
+adenovirus_gentoo_penguin_1       CATGCCTCTTACCTGGTGGCTGCAAGCTGAACTTCACATCAATGAAGAGGACCATTTTCA
+adenovirus_gentoo_penguin_2       CATGCCTCTTACCTGGTGGCTGCAAGCTGAACTTCACATCAATGAAGAGGACCATTTTCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      ACAGAATTTGTCTTTAACTTTGCAAGCCATGGCTGCGGACAAAGATGAAAGAGACTTTAA
+adenovirus_gentoo_penguin_1       ACAGAATTTGTCCTTAACTTTGCAAGCCATGGCTGCGGACAAAGATGAAAGAGACTTTAA
+adenovirus_gentoo_penguin_2       ACAGAATTTGTCCTTAACTTTGCAAGCCATGGCTGCGGACAAAGATGAAAGAGACTTTAA
+                                  ************ ***********************************************
+
+adenovirus_chinstrap_penguin      GGTTAGAATTTCTATTCATAAAGAAGTTGAAGGAGAAATTAACATTCTTTATGACTCTCA
+adenovirus_gentoo_penguin_1       GGTTAGAATTTCTATTCATAAAGAAGTTGAAGGAGAAATTAACATTCTTTATGACTCTCA
+adenovirus_gentoo_penguin_2       GGTTAGAATTTCTATTCATAAAGAAGTTGAAGGAGAAATTAACATTCTTTATGACTCTCA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GATTGATGTTTGGCTTCGAGCCATGATGACTAAAATGACTGTTTTTACTACTGGCAAAGG
+adenovirus_gentoo_penguin_1       GATTGATGTTTGGCTTCGAGCCATGATGACTAAAATGACTGTTTTTACTGCTGGCAAAGG
+adenovirus_gentoo_penguin_2       GATTGATGTTTGGCTTCGAGCCATGATGACTAAAATGACTGTTTTTACTGCTGGCAAAGG
+                                  ************************************************* **********
+
+adenovirus_chinstrap_penguin      AGATATTTTATTAAAGATGCTGTGTTCAACTACTGCAACTACCTACTCACAAGCTGAAAT
+adenovirus_gentoo_penguin_1       AGATATTTTATTAAAGATGCTGTGTTCAACTGCTGCAACTACCTACTCACAAGCTGAAAT
+adenovirus_gentoo_penguin_2       AGATATTTTATTAAAGATGCTGTGTTCAACTGCTGCAACTACCTACTCACAAGCTGAAAT
+                                  ******************************* ****************************
+
+adenovirus_chinstrap_penguin      TGAAGCTAAGAAATTGAAATCGCAATTGGAAGCTGGAATCTACAGAACATTTGGACTTTG
+adenovirus_gentoo_penguin_1       TGAAGCTAAGAAATTGAAATCGCAATTGGAAGCTGGAATCTACAGAACATTTGGACTTTG
+adenovirus_gentoo_penguin_2       TGAAGCTAAGAAATTGAAATCGCAATTGGAAGCTGGAATCTACAGAACATTTGGACTTTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATATCTCCTAAATTTTGCAGAGTAGCATGTATTGCTATTCAAGGCAATACAATTCCAAC
+adenovirus_gentoo_penguin_1       TATATCTCCTAAATTTTGCAGAGTAGCATGTATTGCTATTCAAGGCAATACAATTCCAAC
+adenovirus_gentoo_penguin_2       TATATCTCCTAAATTTTGCAGAGTAGCATGTATTGCTATTCAAGGCAATACAATTCCAAC
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TATTGACTGTGCAAATACAGGAAAACCACTCGTGTTACTGATTTCAACTGTTGACCAGCC
+adenovirus_gentoo_penguin_1       TATTGACTGTGCAAATACAGGAAAACCACTGGTGTTACTGATTTCAACTGTTGACCAGCC
+adenovirus_gentoo_penguin_2       TATTGACTGTGCAAATACAGGAAAACCACTGGTGTTACTGATTTCAACTGTTGACCAGCC
+                                  ****************************** *****************************
+
+adenovirus_chinstrap_penguin      TCGGTTCAAAGAAGTAAAAGGGGATTATATTAAGGACTGTATTTTTCATTTTAAAAATTT
+adenovirus_gentoo_penguin_1       TCGGTTCAAAGAAGTAAAAGGGGATTATATTAAGGACTGTATTTTTCATTTTAAAAATTT
+adenovirus_gentoo_penguin_2       TCGGTTCAAAGAAGTAAAAGGGGATTATATTAAGGACTGTATTTTTCATTTTAAAAATTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAATGTGAAAGATGTTGAAGATGATATTGCTCAGTTTTATGCTACTGTATACCCTTGTGT
+adenovirus_gentoo_penguin_1       AAATGTGAAAGATGTTGAAGATGATATTGCTCAGTTTTATGCTACTGTATACCCTTGTGT
+adenovirus_gentoo_penguin_2       AAATGTGAAAGATGTTGAAGATGATATTGCTCAGTTTTATGCTACTGTATACCCTTGTGT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GAGCAACCCTAATTCATCTGATTTTGATCCCAATGTTGTACCCGACCTTGACATGTTAGA
+adenovirus_gentoo_penguin_1       GAGCAACCCTAATTCATCTGATTTTGATCCCAATGTTGTACCCGACCTTGACATGTTAGA
+adenovirus_gentoo_penguin_2       GAGCAACCCTAATTCATCTGATTTTGATCCCAATGTTGTACCCGACCTTGACATGTTAGA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTTATTTGAAT-AAAAAACTTTTATTTGAAACAACTGTATCTTTATTTCATGCAAATATT
+adenovirus_gentoo_penguin_1       TTTATTTGAATAAAAAAACTTTTATTTGAAACAACTGTATCTTTATTTCATGCAAATATT
+adenovirus_gentoo_penguin_2       TTTATTTGAATAAAAAAACTTTTATTTGAAACAACTGTATCTTTATTTCATGCAAATATT
+                                  *********** ************************************************
+
+adenovirus_chinstrap_penguin      GTTCCATAAGGACATCCTTCATCATCCTCATTTAACAGTCTGACATACTGAAAGAAATTA
+adenovirus_gentoo_penguin_1       GTTCCATAAGGAAATCCTTCATCATCCTCATTTAACAGTCTGACATACTGAAAGAAATTA
+adenovirus_gentoo_penguin_2       GTTCCATAAGGAAATCCTTCATCATCCTCATTTAACAGTCTGACATACTGAAAGAAATTA
+                                  ************ ***********************************************
+
+adenovirus_chinstrap_penguin      ATCCCGTTAGAATTACATTGCCATGCAAACCAGGCCAAAATAGTAGGCCAGTAATCAGCA
+adenovirus_gentoo_penguin_1       ATCCCGTTAGCATTACATTGCCATGCAAACCAGGCCAAAATAGTAGGCCAGTAATCAGCA
+adenovirus_gentoo_penguin_2       ATCCCGTTAGCATTACATTGCCATGCAAACCAGGCCAAAATAGTAGGCCAGTAATCAGCA
+                                  ********** *************************************************
+
+adenovirus_chinstrap_penguin      TTGCTTAAGTCATAAATTGCAATTCTCCTGTCTGTATAAACATTAACAGAGTATTCAAAG
+adenovirus_gentoo_penguin_1       TTGGTTAAGTCATAAATTGCAATTCTCCTGTCTGTATAAACATTAACAGAGTATTCAAAG
+adenovirus_gentoo_penguin_2       TTGGTTAAGTCATAAATTGCAATTCTCCTGTCTGTATAAACATTAACAGAGTATTCAAAG
+                                  *** ********************************************************
+
+adenovirus_chinstrap_penguin      TCAGCATTAGGCCATTTAAAATCAAGCATGCAGTCAAACATGTAATGAAAGTCAAGTTGC
+adenovirus_gentoo_penguin_1       TCAGCATTAGGCCATTTAAAATCAAGCATGCAGTCAAACATGTAATGAAATTCAAGTTGC
+adenovirus_gentoo_penguin_2       TCAGCATTAGGCCATTTAAAATCAAGCATGCAGTCAAACATGTAATGAAATTCAAGTTGC
+                                  ************************************************** *********
+
+adenovirus_chinstrap_penguin      ATTTCTAACGTGACATCATTAAAACCAGAGAACAGAGTCCCAAAGTTATACTCAGAAAAT
+adenovirus_gentoo_penguin_1       ATTTCTAACGTGACATCATTAAAACCAGAGAACAGAGTCCCAAAGTTATACTCAGAAAAT
+adenovirus_gentoo_penguin_2       ATTTCTAACGTGACATCATTAAAACCAGAGAACAGAGTCCCAAAGTTATACTCAGAAAAT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TTGAATTGTCCATTTGACTCAATAAATACTGTTTTTCCTGTAGGTGTTTTAAAATTGTAA
+adenovirus_gentoo_penguin_1       TTGAATTGTCCATTTGACTCAATAAATACTGTTTCTCCTGTAGGTGTTTTAAAATTGTAA
+adenovirus_gentoo_penguin_2       TTGAATTGTCCATTTGACTCAATAAATACTGTTTCTCCTGTAGGTGTTTTAAAATTGTAA
+                                  ********************************** *************************
+
+adenovirus_chinstrap_penguin      ACGAAACAGTTGTCAGTCATACTTGGTAAGTCCAACACAGTCCCAGACGTGAATCTATTT
+adenovirus_gentoo_penguin_1       ACGAAACAGTTGTCAGTCATACTTGGTAAGTCCAACACAGTCCCAGACGTAAATCTATTT
+adenovirus_gentoo_penguin_2       ACGAAACAGTTGTCAGTCATACTTGGTAAGTCCAACACAGTCCCAGACGTAAATCTATTT
+                                  ************************************************** *********
+
+adenovirus_chinstrap_penguin      GTAGAAGAGATACGGTGTACTTGCAAAGGCGGCAGCATGACCGGTGCTTTTAATTCATCT
+adenovirus_gentoo_penguin_1       GTAGAAGAGATACGGTGTACTTGCAAAGGCGGCAGCATGACCGGTCCTTCTAATTCATCT
+adenovirus_gentoo_penguin_2       GTAGAAGAGATACGGTGTACTTGCAAAGGCGGCAGCATGACCGGTCCTTCTAATTCATCT
+                                  ********************************************* *** **********
+
+adenovirus_chinstrap_penguin      TCACTATCCATCTACAAGTAGAGATGAACATAAATTACACGTAGTTTGTTGCCATGCATA
+adenovirus_gentoo_penguin_1       TCACTATCCATCTACAAGTAGAGATGAACATAAATTACACGTAGTTTGTTGCCATGCATA
+adenovirus_gentoo_penguin_2       TCACTATCCATCTACAAGTAGAGATGAACATAAATTACACGTAGTTTGTTGCCATGCATA
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GCAGAACAAAGTGTGCGGTTTTTGCCTACATATACATTCAGCATTAACATAAATTGGTTG
+adenovirus_gentoo_penguin_1       GCAGAACAAAGTGTGCGGTTTTTGCCTACACATACATTCAGCATTAACATAAATTGGTTG
+adenovirus_gentoo_penguin_2       GCAGAACAAAGTGTGCGGTTTTTGCCTACACATACATTCAGCATTAACATAAATTGGTTG
+                                  ****************************** *****************************
+
+adenovirus_chinstrap_penguin      ATTTTTTACTAATACAAGTATAGCACCAATTTTGGTTTGACATTTAGTTCTAATAGCACT
+adenovirus_gentoo_penguin_1       ATTTTCTACTAATACAAGTATAGCACCAATTTTGGTTTGACAATTAGTTCTAATAGCACT
+adenovirus_gentoo_penguin_2       ATTTTCTACTAATACAAGTATAGCACCAATTTTGGTTTGACAATTAGTTCTAATAGCACT
+                                  ***** ************************************ *****************
+
+adenovirus_chinstrap_penguin      TTGTAGGCCCGGTGGAAATGATTTTATGATTATAGTCAAGGGTACATAAACCACTGATGG
+adenovirus_gentoo_penguin_1       TTGTAGACCCGGTGGAAATGATTTTATGATTATAGTCAAGGGTACATAAACCACTGATGG
+adenovirus_gentoo_penguin_2       TTGTAGACCCGGTGGAAATGATTTTATGATTATAGTCAAGGGTACATAAACCACTGATGG
+                                  ****** *****************************************************
+
+adenovirus_chinstrap_penguin      CGGATTCAGGGGAATGACAAAGGGTTCCGGTAAATTTCCACTCTGTATCATTTTCACCCT
+adenovirus_gentoo_penguin_1       CGGATTCAGGGGAATGACAAAGGGTTCCGGTAAATTTCCACTCTGTATCATTTTCACCCT
+adenovirus_gentoo_penguin_2       CGGATTCAGGGGAATGACAAAGGGTTCCGGTAAATTTCCACTCTGTATCATTTTCACCCT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      GTTAGAATATTTTAAAGTAAATAATTTAATACAATCTGTTCTAAATACATTTAAAAATTG
+adenovirus_gentoo_penguin_1       GTTAGGATATTTTAAAGTAAATAATTTAATACAATCTGTTCTAAATACATTTAAAAATTG
+adenovirus_gentoo_penguin_2       GTTAGGATATTTTAAAGTAAATAATTTAATACAATCTGTTCTAAATACATTTAAAAATTG
+                                  ***** ******************************************************
+
+adenovirus_chinstrap_penguin      ATTTTTTAAAAAAAAAAATTTTGTACTTACGGTTTTTGGGTGGATTTTATGAAATTTTTG
+adenovirus_gentoo_penguin_1       ATTTTTTAAAAAAAAAAATTTTGTACTTACGGTTTTTGGGTGGATTTTATGAAATTTTTG
+adenovirus_gentoo_penguin_2       ATTTTTTAAAAAAAAAAATTTTGTACTTACGGTTTTTGGGTGGATTTTATGAAATTTTTG
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      AAAGAACCGAGGCAGATGTTAGCGTGGTTTTCACAAAATGGACGTACATCCGTCTTCTTT
+adenovirus_gentoo_penguin_1       AAAGAACCGAGGCAGATGTTAGCGTGGTTTTCACAAAATGGACGTACATCCGTCTTCTTT
+adenovirus_gentoo_penguin_2       AAAGAACCGAGGCAGATGTTAGCGTGGTTTTCACAAAATGGACGTACATCCGTCTTCTTT
+                                  ************************************************************
+
+adenovirus_chinstrap_penguin      TCCGCATTGACATTTATGACGGTTTTGGTCTTAGGAGGGACTTTTATTTGTCAGACTGAT
+adenovirus_gentoo_penguin_1       TCCGCATTGACATTTATGACGGTTTTCGTCTTAGGAGGGACTTTTATTTGTCAGACTGAT
+adenovirus_gentoo_penguin_2       TCCGCATTGACATTTATGACGGTTTTCGTCTTAGGAGGGACTTTTATTTGTCAGACTGAT
+                                  ************************** *********************************
+
+adenovirus_chinstrap_penguin      TGGTTAAATTCGTTTTCAATCATTTAGTCTGACAATATGTAATATCCTCTCCCGGACATG
+adenovirus_gentoo_penguin_1       TGGTTAAATTCGTTTTCAATCATTTAGTCTGACAATATGTAATATCCTCTCCCGAACATG
+adenovirus_gentoo_penguin_2       TGGTTAAATTCGTTTTCAATCATTTAGTCTGACAATATGTAATATCCTCTCCCGAACATG
+                                  ****************************************************** *****
+
+adenovirus_chinstrap_penguin      CGGTATCAATTTTGATTG
+adenovirus_gentoo_penguin_1       CGGTATCAATTTTGATTG
+adenovirus_gentoo_penguin_2       CGGTATCAATTTTGATTG
+                                  ******************

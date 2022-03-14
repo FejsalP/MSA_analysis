@@ -1,0 +1,10 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+"viral segment","NC_039199.1",40,1224,"+",37626968,"N","D1Y22_gp1","YP_009513265.1",394,"nucleoprotein"
+"viral segment","NC_039199.1",1248,2132,"+",37626964,"P","D1Y22_gp2","YP_009513266.1",294,"phosphoprotein"
+"viral segment","NC_039199.1",2165,2929,"+",37626965,"M","D1Y22_gp3","YP_009513267.1",254,"matrix protein"
+"viral segment","NC_039199.1",3052,4671,"+",37626966,"F","D1Y22_gp4","YP_009513268.1",539,"fusion protein"
+"viral segment","NC_039199.1",4737,5300,"+",37626967,"M2","D1Y22_gp5","YP_009513269.1",187,"matrix protein 2-1"
+"viral segment","NC_039199.1",5248,5463,"+",37626967,"M2","D1Y22_gp5","YP_009513270.1",71,"matrix protein 2-2"
+"viral segment","NC_039199.1",5494,6045,"+",37626961,"SH","D1Y22_gp6","YP_009513271.1",183,"small hydrophobic protein"
+"viral segment","NC_039199.1",6247,6957,"+",37626962,"G","D1Y22_gp7","YP_009513272.1",236,"attachment glycoprotein"
+"viral segment","NC_039199.1",7167,13184,"+",37626963,"L","D1Y22_gp8","YP_009513273.1",2005,"RNA-dependent RNA polymerase"

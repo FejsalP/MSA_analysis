@@ -1,0 +1,12 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+viral segment,NC_038235.1,99,518,+,37607636,NS1,DZD21_gp01,YP_009518850.1,139,nonstructural protein 1
+viral segment,NC_038235.1,628,1002,+,37607637,NS2,DZD21_gp02,YP_009518851.1,124,nonstructural protein 2
+viral segment,NC_038235.1,1140,2315,+,37607638,N,DZD21_gp03,YP_009518852.1,391,nucleoprotein
+viral segment,NC_038235.1,2346,3071,+,37607639,P,DZD21_gp04,YP_009518853.1,241,phosphoprotein
+viral segment,NC_038235.1,3261,4031,+,37607640,M,DZD21_gp05,YP_009518854.1,256,matrix protein
+viral segment,NC_038235.1,4303,4497,+,37607641,SH,DZD21_gp06,YP_009518855.1,64,small hydrophobic protein
+viral segment,NC_038235.1,4688,5584,+,37607642,G,DZD21_gp07,YP_009518856.1,298,attachment glycoprotein
+viral segment,NC_038235.1,5661,7385,+,37607643,F,DZD21_gp08,YP_009518857.1,574,fusion glycoprotein
+viral segment,NC_038235.1,7606,8190,+,37607644,M2,DZD21_gp09,YP_009518858.1,194,M2-1 protein
+viral segment,NC_038235.1,8159,8431,+,37607644,M2,DZD21_gp09,YP_009518859.1,90,M2-2 protein
+viral segment,NC_038235.1,8498,14995,+,37607645,L,DZD21_gp10,YP_009518860.1,2165,polymerase protein

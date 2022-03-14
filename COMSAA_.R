@@ -1,0 +1,446 @@
+library(stringr) #needed to split columns in dataframe
+library(dplyr) 
+
+################################################################################
+############################# FUNCTIONS ########################################
+################################################################################
+
+# Creates sequence based on start and stop values
+create_sequence <- function (start, end){
+  return (seq(start, end))
+}
+
+# Returns the number of the strand, 
+# e.g. virus_2020 returns 2020
+get_ordered <- function (name){
+  name <- strsplit(name, split='_')
+  return(name[[1]][2])
+}
+# Trims leading white space 
+trim_leading <- function (x)  sub("^\\s+", "", x)
+
+# Add leading white space
+add_leading_spaces <- function (x, y){
+  length_of_asterisk <- nchar(x)
+  length_of_sequence <- y
+  leading_spaces <- paste(replicate(length_of_sequence - length_of_asterisk, " "), collapse = "")
+  new_string <- paste(leading_spaces, x)
+  new_string <- substr(new_string, 2, 61)
+  return (new_string)
+}
+initialize_df <- function (number_of_strands, strand_names){
+  df <- data.frame(matrix(ncol = number_of_strands, 
+                          nrow = number_of_strands), 
+                   row.names = strand_names)
+  colnames(df) <- strand_names
+  return (df)
+}
+
+# Setting the directory
+setwd('C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input')
+
+# Get all clustal files from the given directory
+clustalFiles <- list.files(pattern='clustal')
+codingSequenceFiles <- list.files(pattern='csv')
+
+# Read all .clustal files
+data_frame_list <- lapply(clustalFiles, read.delim)
+# Read all .csv files (for separating coding and noncoding)
+coding_sequence_list <- lapply(codingSequenceFiles, read.csv)
+
+for (i in seq(1, length(clustalFiles))){
+  print(i)
+  print(clustalFiles[i])
+  #Getting the name of virus, needed for the output files
+  name_of_virus <- unlist(strsplit(clustalFiles[i], split='.', fixed=TRUE))[1]
+  print(name_of_virus)
+  ### 
+  first_df <- data_frame_list[[i]]
+  first_coding_sequence <- coding_sequence_list[[i]]
+  
+  #Splitting rows on strands and sequences
+  first_df[c('strand', 'sequence')] <- 
+    str_split_fixed(first_df$CLUSTAL.O.1.2.4..multiple.sequence.alignment, ' ', 2)
+  # Changing the name of the rows with only asterisks
+  first_df$strand[first_df$strand == ''] <- 'asterisk'
+  
+  #drop first column that has everything combined
+  first_df_cleaned <- subset(first_df, select = -c(1))
+  
+  #clean leading spaces
+  first_df_cleaned$sequence <- lapply(first_df_cleaned$sequence, trim_leading)
+  
+  # calculate number of characters for each line, 
+  # all except the last one should be of length 60
+  first_strand <- first_df_cleaned[1,1]
+  length_of_lines <- 
+    lapply(first_df_cleaned[first_df_cleaned$strand==first_strand,2],nchar)
+  length_of_sequence <- nchar(first_df_cleaned$sequence[1])
+  
+  asterisk_only <- first_df_cleaned$sequence[first_df_cleaned$strand=='asterisk']
+  
+  # Fixing the length of rows with asterisks
+  # All rows have the same length as the rows with sequences
+  first_df_cleaned$sequence[first_df_cleaned$strand=='asterisk'] <- 
+    mapply (add_leading_spaces, asterisk_only, length_of_lines)
+  
+  # groups sequences based on strand
+  # strands are now in one line
+  first_df_cleaned <- first_df_cleaned %>%
+    group_by(strand) %>%
+    summarise(sequence = paste(sequence, collapse = ""))
+  
+  #indices with mutations
+  indices_with_mutations <- 
+    which(strsplit(first_df_cleaned$sequence[first_df_cleaned$strand == 'asterisk'], "")[[1]] == " ") 
+  #indices with no mutations
+  indices_without_mutations <- 
+    which(strsplit(first_df_cleaned$sequence[first_df_cleaned$strand == 'asterisk'], "")[[1]] == "*") 
+  
+  # # checking that all strands and "asterisk" have the same length
+  # lapply(first_df_cleaned, nchar)
+  
+  # extracting asterisk row
+  asterisk_df <- strsplit(first_df_cleaned$sequence[1], split='')
+  first_df_cleaned <- subset(first_df_cleaned,strand != "asterisk" )
+  
+  # Get numbers of t
+  mutation_numbers <- as.numeric(unlist(lapply(first_df_cleaned$strand, get_ordered)))
+  # Orders strands in ascending order
+  first_df_cleaned <- first_df_cleaned[order(mutation_numbers),]
+  
+  # Get names and number of strands
+  strand_names <- first_df_cleaned$strand
+  number_of_strands <- nrow(first_df_cleaned)
+  
+  # percent identity matrix
+  MSA_similarity <- initialize_df(number_of_strands, strand_names)
+  # mutation number matrix
+  MSA_mutation_num <- initialize_df(number_of_strands, strand_names)
+  # transitions number matrix
+  MSA_transition_num <- initialize_df(number_of_strands, strand_names)
+  # transversions number matrix
+  MSA_transversion_num <- initialize_df(number_of_strands, strand_names)
+  # transition/transvertion ratio matrix
+  MSA_tt_ratio <- initialize_df(number_of_strands, strand_names)
+  # number of gaps matrix
+  MSA_gaps = initialize_df(number_of_strands, strand_names)
+  # number of insertions matrix 
+  MSA_insertions <- initialize_df(number_of_strands, strand_names)
+  # number of deletions matrix
+  MSA_deletions <- initialize_df(number_of_strands, strand_names)
+  
+  # Iterate over all strands
+  
+  for (i in seq(1, number_of_strands)){
+    sequence1 <- first_df_cleaned[i, 2]
+    length <- nchar(sequence1)
+    for (j in seq(1, number_of_strands)){
+      sequence2 <- first_df_cleaned[j, 2]
+      mutations <- 0
+      transitions <- 0
+      transversions <- 0
+      gaps <- 0
+      insertions <- 0
+      deletions <- 0
+      Ns <- 0
+      # iterate over all characters in a strand, all strands have same length
+      for (k in indices_with_mutations){
+        if (substr(sequence1, k, k) == 'N' || substr(sequence2, k, k) == 'N'){
+          Ns <- Ns + 1
+        }
+        if(substr(sequence1, k, k) != substr(sequence2, k, k)){
+          mutations <- mutations + 1
+          if (substr(sequence1, k, k) == '-'){
+            gaps <- gaps + 1
+            insertions <- insertions + 1
+          }
+          else if(substr(sequence2, k, k) == '-'){
+            gaps <- gaps + 1
+            deletions <- deletions + 1
+          }
+          else if ((substr(sequence1, k, k) == 'A' && substr(sequence2, k, k) == 'G') || 
+                   (substr(sequence1, k, k) == 'G' && substr(sequence2, k, k) == 'A')){
+            transitions <- transitions + 1
+          }
+          else if ((substr(sequence1, k, k) == 'T' && substr(sequence2, k, k) == 'C') || 
+                   (substr(sequence1, k, k) == 'C' && substr(sequence2, k, k) == 'T')){
+            transitions <- transitions + 1
+          }
+          else{
+            transversions <- transversions + 1
+          }
+        }
+      }
+      MSA_similarity[i, j] <- 1 - (mutations/length)
+      MSA_mutation_num[i, j] <- mutations
+      MSA_transition_num[i, j] <- transitions
+      MSA_transversion_num [i, j] <- transversions
+      if(transversions != 0){
+        MSA_tt_ratio[i, j] <- transitions/transversions
+      }
+      else{
+        MSA_tt_ratio[i, j] <- 0
+      }
+      MSA_gaps [i, j] <- gaps
+      MSA_insertions[i,j] <- insertions
+      MSA_deletions[i, j] <- deletions
+    }
+  }
+  ################################################################################
+  ############################ CODING SEQUENCE ###################################
+  ################################################################################
+  
+  first_coding_sequence <- coding_sequence_list[[1]]
+  start_end <- subset(first_coding_sequence, select = c('Start', 'Stop'))
+  start_end <- start_end[order(start_end$Start),]
+  
+  start_end$Sequences <- mapply(create_sequence, start_end$Start, start_end$Stop)
+  
+  coding_sequence_index <- c()
+  
+  for (i in seq(1, nrow(start_end))){
+    coding_sequence_index <- append(coding_sequence_index, unlist(start_end[i, ]$Sequences))
+  }
+  coding_sequence_index <- unlist(coding_sequence_index)
+  coding_sequence_index <- unique(coding_sequence_index)
+  
+  noncoding_sequence_index <- setdiff(seq(1, nchar(first_df_cleaned[1, 2])), coding_sequence_index)
+  
+  # percent identity matrix
+  CDS_similarity <- initialize_df(number_of_strands, strand_names)
+  # mutation number matrix
+  CDS_mutation_num <- initialize_df(number_of_strands, strand_names)
+  # transitions number matrix
+  CDS_transition_num <- initialize_df(number_of_strands, strand_names)
+  # transversions number matrix
+  CDS_transversion_num <- initialize_df(number_of_strands, strand_names)
+  # transition/transvertion ratio matrix
+  CDS_tt_ratio <- initialize_df(number_of_strands, strand_names)
+  # number of gaps matrix
+  CDS_gaps = initialize_df(number_of_strands, strand_names)
+  # number of insertions matrix 
+  CDS_insertions <- initialize_df(number_of_strands, strand_names)
+  # number of deletions matrix
+  CDS_deletions <- initialize_df(number_of_strands, strand_names)
+  length(coding_sequence_index)
+  
+  for (i in seq(1, number_of_strands)){
+    sequence1 <- first_df_cleaned[i, 2]
+    length <- nchar(sequence1)
+    for (j in seq(1, number_of_strands)){
+      sequence2 <- first_df_cleaned[j, 2]
+      mutations <- 0
+      transitions <- 0
+      transversions <- 0
+      gaps <- 0
+      insertions <- 0
+      deletions <- 0
+      Ns <- 0
+      # iterate over all characters in a strand, all strands have same length
+      for (k in coding_sequence_index){
+        if (!(k %in% indices_with_mutations)){
+          next
+        }
+        if (substr(sequence1, k, k) == 'N' || substr(sequence2, k, k) == 'N'){
+          Ns <- Ns + 1
+        }
+        if(substr(sequence1, k, k) != substr(sequence2, k, k)){
+          mutations <- mutations + 1
+          if (substr(sequence1, k, k) == '-'){
+            gaps <- gaps + 1
+            insertions <- insertions + 1
+          }
+          else if(substr(sequence2, k, k) == '-'){
+            gaps <- gaps + 1
+            deletions <- deletions + 1
+          }
+          else if ((substr(sequence1, k, k) == 'A' && substr(sequence2, k, k) == 'G') || 
+                   (substr(sequence1, k, k) == 'G' && substr(sequence2, k, k) == 'A')){
+            transitions <- transitions + 1
+          }
+          else if ((substr(sequence1, k, k) == 'T' && substr(sequence2, k, k) == 'C') || 
+                   (substr(sequence1, k, k) == 'C' && substr(sequence2, k, k) == 'T')){
+            transitions <- transitions + 1
+          }
+          else{
+            transversions <- transversions + 1
+          }
+        }
+      }
+      CDS_similarity[i, j] <- 1 - (mutations/length)
+      CDS_mutation_num[i, j] <- mutations
+      CDS_transition_num[i, j] <- transitions
+      CDS_transversion_num [i, j] <- transversions
+      if(transversions != 0){
+        CDS_tt_ratio[i, j] <- transitions/transversions
+      }
+      else{
+        CDS_tt_ratio[i, j] <- 0
+      }
+      CDS_gaps [i, j] <- gaps
+      CDS_insertions[i,j] <- insertions
+      CDS_deletions[i, j] <- deletions
+    }
+  }
+  
+  ################################################################################
+  ############################ NON CODING SEQUECE ################################
+  ################################################################################
+  
+  # percent identity matrix
+  nonCDS_similarity <- initialize_df(number_of_strands, strand_names)
+  # mutation number matrix
+  nonCDS_mutation_num <- initialize_df(number_of_strands, strand_names)
+  # transitions number matrix
+  nonCDS_transition_num <- initialize_df(number_of_strands, strand_names)
+  # transversions number matrix
+  nonCDS_transversion_num <- initialize_df(number_of_strands, strand_names)
+  # transition/transvertion ratio matrix
+  nonCDS_tt_ratio <- initialize_df(number_of_strands, strand_names)
+  # number of gaps matrix
+  nonCDS_gaps = initialize_df(number_of_strands, strand_names)
+  # number of insertions matrix 
+  nonCDS_insertions <- initialize_df(number_of_strands, strand_names)
+  # number of deletions matrix
+  nonCDS_deletions <- initialize_df(number_of_strands, strand_names)
+  
+  
+  for (i in seq(1, number_of_strands)){
+    sequence1 <- first_df_cleaned[i, 2]
+    length <- nchar(sequence1)
+    for (j in seq(1, number_of_strands)){
+      sequence2 <- first_df_cleaned[j, 2]
+      mutations <- 0
+      transitions <- 0
+      transversions <- 0
+      gaps <- 0
+      insertions <- 0
+      deletions <- 0
+      Ns <- 0
+      # iterate over all characters in a strand, all strands have same length
+      for (k in noncoding_sequence_index){
+        if(!(k %in% indices_with_mutations))
+          if (substr(sequence1, k, k) == 'N' || substr(sequence2, k, k) == 'N'){
+            Ns <- Ns + 1
+          }
+        if(substr(sequence1, k, k) != substr(sequence2, k, k)){
+          mutations <- mutations + 1
+          if (substr(sequence1, k, k) == '-'){
+            gaps <- gaps + 1
+            insertions <- insertions + 1
+          }
+          else if(substr(sequence2, k, k) == '-'){
+            gaps <- gaps + 1
+            deletions <- deletions + 1
+          }
+          else if ((substr(sequence1, k, k) == 'A' && substr(sequence2, k, k) == 'G') || 
+                   (substr(sequence1, k, k) == 'G' && substr(sequence2, k, k) == 'A')){
+            transitions <- transitions + 1
+          }
+          else if ((substr(sequence1, k, k) == 'T' && substr(sequence2, k, k) == 'C') || 
+                   (substr(sequence1, k, k) == 'C' && substr(sequence2, k, k) == 'T')){
+            transitions <- transitions + 1
+          }
+          else{
+            transversions <- transversions + 1
+          }
+        }
+      }
+      nonCDS_similarity[i, j] <- 1 - (mutations/length)
+      nonCDS_mutation_num[i, j] <- mutations
+      nonCDS_transition_num[i, j] <- transitions
+      nonCDS_transversion_num [i, j] <- transversions
+      if(transversions != 0){
+        nonCDS_tt_ratio[i, j] <- transitions/transversions
+      }
+      else{
+        nonCDS_tt_ratio[i, j] <- 0
+      }
+      nonCDS_gaps [i, j] <- gaps
+      nonCDS_insertions[i,j] <- insertions
+      nonCDS_deletions[i, j] <- deletions
+    }
+  }
+  
+  length_of_sequence <- length(indices_with_mutations) + 
+    length(indices_without_mutations)
+  
+  #Getting Mutations frequency
+  MSA_mutation_frequency <- MSA_mutation_num/length_of_sequence
+  CDS_mutation_frequency <- CDS_mutation_num/length(coding_sequence_index)
+  nonCDS_mutation_frequency <- nonCDS_mutation_num/length(noncoding_sequence_index)
+  #Creating summary dataframe
+  summary <- cbind(MSA_similarity[1], MSA_mutation_num[1], 
+                   MSA_mutation_frequency[1],MSA_transition_num[1], 
+                   MSA_transversion_num[1], MSA_tt_ratio[1], MSA_gaps[1], 
+                   MSA_insertions[1], MSA_deletions[1],
+                   CDS_similarity[1], CDS_mutation_num[1], 
+                   CDS_mutation_frequency[1],CDS_transition_num[1], 
+                   CDS_transversion_num[1], CDS_tt_ratio[1], CDS_gaps[1], 
+                   CDS_insertions[1], CDS_deletions[1],
+                   nonCDS_similarity[1], nonCDS_mutation_num[1], 
+                   nonCDS_mutation_frequency[1],nonCDS_transition_num[1], 
+                   nonCDS_transversion_num[1], nonCDS_tt_ratio[1], nonCDS_gaps[1], 
+                   nonCDS_insertions[1], nonCDS_deletions[1])
+  summary_column_names <- c('Similarity', "Mutations", "Mutation_Frequency", 
+                            "Transitions", "Transversions", "TT_ratio", "Gaps", 
+                            "Insertions", "Deletions",
+                            'CDS_Similarity', "CDS_Mutations", "CDS_Mutation_Frequency", 
+                            "CDS_Transitions", "CDS_Transversions", "CDS_TT_ratio", 
+                            "CDS_Gaps", "CDS_Insertions", "CDS_Deletions",
+                            'nonCDS_Similarity', "nonCDS_Mutations", 
+                            "nonCDS_Mutation_Frequency", "nonCDS_Transitions", 
+                            "nonCDS_Transversions", "nonCDS_TT_ratio", "nonCDS_Gaps", 
+                            "nonCDS_Insertions", "nonCDS_Deletions") 
+  colnames(summary) <- summary_column_names
+  summary_pairwise = df <- data.frame(matrix(ncol = 27,
+                                             nrow = number_of_strands-1), #except first strand 
+                                      row.names = strand_names[2:length(strand_names)])
+  colnames(summary_pairwise) <- summary_column_names
+  ## Filling the summary_pairwise dataframe
+  for (i in seq(1,length(strand_names)-1)){
+    summary_pairwise[i, 1] = MSA_similarity[i+1, i]
+    summary_pairwise[i, 2] = MSA_mutation_num[i+1, i]
+    summary_pairwise[i, 3] = MSA_mutation_frequency[i+1, i]
+    summary_pairwise[i, 4] = MSA_transition_num[i+1, i]
+    summary_pairwise[i, 5] = MSA_transversion_num[i+1, i]
+    summary_pairwise[i, 6] = MSA_tt_ratio[i+1, i]
+    summary_pairwise[i, 7] = MSA_gaps[i+1, i]
+    summary_pairwise[i, 8] = MSA_insertions[i+1, i]
+    summary_pairwise[i, 9] = MSA_deletions[i+1, i]
+    summary_pairwise[i, 10] = CDS_similarity[i+1, i]
+    summary_pairwise[i, 11] = CDS_mutation_num[i+1, i]
+    summary_pairwise[i, 12] = CDS_mutation_frequency[i+1, i]
+    summary_pairwise[i, 13] = CDS_transition_num[i+1, i]
+    summary_pairwise[i, 14] = CDS_transversion_num[i+1, i]
+    summary_pairwise[i, 15] = CDS_tt_ratio[i+1, i]
+    summary_pairwise[i, 16] = CDS_gaps[i+1, i]
+    summary_pairwise[i, 17] = CDS_insertions[i+1, i]
+    summary_pairwise[i, 18] = CDS_deletions[i+1, i]
+    summary_pairwise[i, 19] = nonCDS_similarity[i+1, i]
+    summary_pairwise[i, 20] = nonCDS_mutation_num[i+1, i]
+    summary_pairwise[i, 21] = nonCDS_mutation_frequency[i+1, i]
+    summary_pairwise[i, 22] = nonCDS_transition_num[i+1, i]
+    summary_pairwise[i, 23] = nonCDS_transversion_num[i+1, i]
+    summary_pairwise[i, 24] = nonCDS_tt_ratio[i+1, i]
+    summary_pairwise[i, 25] = nonCDS_gaps[i+1, i]
+    summary_pairwise[i, 26] = nonCDS_insertions[i+1, i]
+    summary_pairwise[i, 27] = nonCDS_deletions[i+1, i]
+  }
+
+  #Getting the output location for summary
+  output_location_summary <- paste0("../output_test/", 
+                                    name_of_virus, "_", "summary", ".csv")
+  # Saving to .csv
+  write.csv(summary, output_location_summary)
+  
+  #Getting the output location for summary pairwise
+  output_location_summary_pairwise <- paste0("../output_test/", 
+                                             name_of_virus, "_", "summary_pairwise", 
+                                             ".csv")
+  # Saving to .csv
+  write.csv(summary_pairwise, output_location_summary_pairwise) 
+}
+
+

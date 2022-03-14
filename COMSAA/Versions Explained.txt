@@ -1,0 +1,3 @@
+COMSAA_0.9 - skimmed down version 1 forcing students to calculate Transition/Transversion ratio and Mutation Frequency
+COMSAA_1 - base version summarizing the comparison between all the sequences and the first one
+COMSAA_2 - summarizes the comparison between all the sequences in the hierarchy (e.g. 2nd to the 1st, 3rd to the 2nd, etc.)

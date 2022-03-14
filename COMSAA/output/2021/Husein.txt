@@ -1,0 +1,2 @@
+coding sequence length: 6404
+non-coding sequence length: 768

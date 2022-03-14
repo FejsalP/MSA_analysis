@@ -1,0 +1,13 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+"viral segment 5","NC_007381.1",1,1497,"+",3655111,"NP","FLUAVH2N2_s5p1","YP_308871.1",498,"nucleoprotein"
+"viral segment 6","NC_007382.1",1,1410,"+",3655112,"NA","FLUAVH2N2_s6p1","YP_308872.1",469,"neuraminidase"
+"viral segment 8","NC_007380.1",1,838,"+",3655110,"NEP","FLUAVH2N2_s8p2","YP_308869.1",121,"nonstructural protein 2"
+"viral segment 8","NC_007380.1",1,714,"+",23301357,"NS1","FLUAVH2N2_s8p1","YP_308870.1",237,"nonstructural protein 1"
+"viral segment 2","NC_007375.1",25,2298,"+",3655105,"PB1","FLUAVH2N2_s2p1","YP_308851.1",757,"PB1 polymerase subunit"
+"viral segment 2","NC_007375.1",119,391,"+",3655104,"PB1-F2","FLUAVH2N2_s2p2","YP_308877.1",90,"PB1-F2 protein"
+"viral segment 4","NC_007374.1",44,1732,"-",3655103,"HA","FLUAVH2N2_s4p1","YP_308850.1",562,"hemagglutinin"
+"viral segment 3","NC_007376.1",25,2175,"+",3655106,"PA","FLUAVH2N2_s3p1","YP_308852.1",716,"polymerase PA"
+"viral segment 3","NC_007376.1",25,784,"+",13229461,"PA-X","FLUAVH2N2_s3p2","YP_006495803.1",252,"PA-X protein"
+"viral segment 1","NC_007378.1",28,2307,"-",3655109,"PB2","FLUAVH2N2_s1p1","YP_308855.1",759,"polymerase PB2"
+"viral segment 7","NC_007377.1",26,1007,"+",3655107,"M2","FLUAVH2N2_s7p1","YP_308853.1",97,"membrane protein M2"
+"viral segment 7","NC_007377.1",26,784,"+",3655108,"M1","FLUAVH2N2_s7p2","YP_308854.1",252,"membrane protein M1"

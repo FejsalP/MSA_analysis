@@ -1,0 +1,12 @@
+#Name,Accession,Start,Stop,Strand,GeneID,Locus,Locus tag,Protein product,Length,Protein Name
+"viral segment Unknown","NC_019843.3",279,21514,"+",14254602,"orf1ab","G128_gp01","YP_009047202.1",7078,"1AB polyprotein"
+"viral segment Unknown","NC_019843.3",279,13454,"+",14254602,"orf1ab","G128_gp01","YP_009047203.1",4391,"1A polyprotein"
+"viral segment Unknown","NC_019843.3",21456,25517,"+",14254594,"S","G128_gp02","YP_009047204.1",1353,"spike protein"
+"viral segment Unknown","NC_019843.3",25532,25843,"+",14254595,"orf3","G128_gp03","YP_009047205.1",103,"NS3 protein"
+"viral segment Unknown","NC_019843.3",25852,26181,"+",14254596,"orf4a","G128_gp04","YP_009047206.1",109,"NS4A protein"
+"viral segment Unknown","NC_019843.3",26093,26833,"+",14254597,"orf4b","G128_gp05","YP_009047207.1",246,"NS4B protein"
+"viral segment Unknown","NC_019843.3",26840,27514,"+",14254598,"orf5","G128_gp06","YP_009047208.1",224,"NS5 protein"
+"viral segment Unknown","NC_019843.3",27590,27838,"+",14254599,"E","G128_gp07","YP_009047209.1",82,"envelope protein"
+"viral segment Unknown","NC_019843.3",27853,28512,"+",14254600,"M","G128_gp08","YP_009047210.1",219,"membrane protein"
+"viral segment Unknown","NC_019843.3",28566,29807,"+",14254601,"N","G128_gp09","YP_009047211.1",413,"nucleoprotein"
+"viral segment Unknown","NC_019843.3",28762,29100,"+",19910005,"orf8b","G128_gp10","YP_009047212.1",112,"ORF8b protein"
