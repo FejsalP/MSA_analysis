@@ -49,8 +49,6 @@ data_frame_list <- lapply(clustalFiles, read.delim)
 coding_sequence_list <- lapply(codingSequenceFiles, read.csv)
 
 for (i in seq(1, length(clustalFiles))){
-  print(i)
-  print(clustalFiles[i])
   #Getting the name of virus, needed for the output files
   name_of_virus <- unlist(strsplit(clustalFiles[i], split='.', fixed=TRUE))[1]
   print(name_of_virus)
@@ -104,7 +102,7 @@ for (i in seq(1, length(clustalFiles))){
   asterisk_df <- strsplit(first_df_cleaned$sequence[1], split='')
   first_df_cleaned <- subset(first_df_cleaned,strand != "asterisk" )
   
-  # Get numbers of t
+  # Get numbers of strands; #e.g. seq1997 => 1997
   mutation_numbers <- as.numeric(unlist(lapply(first_df_cleaned$strand, get_ordered)))
   # Orders strands in ascending order
   first_df_cleaned <- first_df_cleaned[order(mutation_numbers),]
@@ -190,13 +188,17 @@ for (i in seq(1, length(clustalFiles))){
   ################################################################################
   ############################ CODING SEQUENCE ###################################
   ################################################################################
-  
-  first_coding_sequence <- coding_sequence_list[[1]]
+
   start_end <- subset(first_coding_sequence, select = c('Start', 'Stop'))
   start_end <- start_end[order(start_end$Start),]
   
-  start_end$Sequences <- mapply(create_sequence, start_end$Start, start_end$Stop)
-  
+  #if there is only one row then mapply unlists the sequence
+  if(nrow(start_end) > 1){
+    start_end$Sequences <- mapply(create_sequence, start_end$Start, start_end$Stop)
+  }
+  else{
+    start_end$Sequences <- list(mapply(create_sequence, start_end$Start, start_end$Stop)) 
+  }
   coding_sequence_index <- c()
   
   for (i in seq(1, nrow(start_end))){
@@ -224,7 +226,6 @@ for (i in seq(1, length(clustalFiles))){
   # number of deletions matrix
   CDS_deletions <- initialize_df(number_of_strands, strand_names)
   length(coding_sequence_index)
-  
   for (i in seq(1, number_of_strands)){
     sequence1 <- first_df_cleaned[i, 2]
     length <- nchar(sequence1)
@@ -365,7 +366,6 @@ for (i in seq(1, length(clustalFiles))){
   
   length_of_sequence <- length(indices_with_mutations) + 
     length(indices_without_mutations)
-  
   #Getting Mutations frequency
   MSA_mutation_frequency <- MSA_mutation_num/length_of_sequence
   CDS_mutation_frequency <- CDS_mutation_num/length(coding_sequence_index)
