@@ -220,7 +220,7 @@ for (i in seq(1, length(clustalFiles))){
   # transition/transvertion ratio matrix
   CDS_tt_ratio <- initialize_df(number_of_strands, strand_names)
   # number of gaps matrix
-  CDS_gaps = initialize_df(number_of_strands, strand_names)
+  CDS_gaps <- initialize_df(number_of_strands, strand_names)
   # number of insertions matrix 
   CDS_insertions <- initialize_df(number_of_strands, strand_names)
   # number of deletions matrix
@@ -394,9 +394,9 @@ for (i in seq(1, length(clustalFiles))){
                             "nonCDS_Transversions", "nonCDS_TT_ratio", "nonCDS_Gaps", 
                             "nonCDS_Insertions", "nonCDS_Deletions") 
   colnames(summary) <- summary_column_names
-  summary_pairwise = df <- data.frame(matrix(ncol = 27,
-                                             nrow = number_of_strands-1), #except first strand 
-                                      row.names = strand_names[2:length(strand_names)])
+  summary_pairwise <- data.frame(matrix(ncol = 27,
+                                nrow = number_of_strands-1), #except first strand 
+                                row.names = strand_names[2:length(strand_names)])
   colnames(summary_pairwise) <- summary_column_names
   ## Filling the summary_pairwise dataframe
   for (i in seq(1,length(strand_names)-1)){

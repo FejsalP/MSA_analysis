@@ -50,24 +50,40 @@ ui <- fluidPage(
   selectInput(inputId = 'metric', 
               label = 'Select the metric',
               choices =
-                c('Similarity', 'Mutation Number')),
-  plotOutput("plot")
+                c('Similarity', 'Mutations')),
+  actionButton(inputId ='update', label ='Process'),
+  plotOutput("plot"),
+  plotOutput("plot2")
   )
 
 server <- function (input, output) {
   setwd('C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input')
+  #Load .csv file and store it into start_stop reactive expression
   
-  
-  output$plot <- renderPlot({
-    #Getting the file names from the fileInput()
-    clustalFile <- input$clustalFile[1,1]
-    csvFile <- input$csvFile[1,1]
+  # Processes the .clustal file and .csv file when button is clicked
+  observeEvent(input$update, {
+    start_stop <- reactive({
+      
+    })
+    df_clustal <- reactive({
+      
+      
+    })
     
-    df_clustal <- read.delim(clustalFile) #first_df equivalent
+  })
+  
+  #Load .clustal file and store it into start_stop reactive expression
+  
+  summary1 <- eventReactive(input$update, {
+    #Load .csv file
+    csvFile <- input$csvFile[1,1]
     start_stop <- read.csv(csvFile)
-
+    #Load .clustal file
+    clustalFile <- input$clustalFile[1,1]
+    df_clustal <- read.delim(clustalFile) #first_df equivalent
+    
     #Getting the name of the virus
-    name_of_virus <- unlist(strsplit(clustalFile, split='.', fixed=TRUE))[1]
+    name_of_virus <- unlist(strsplit(csvFile, split='.', fixed=TRUE))[1]
     #Splitting rows on strands and sequences
     df_clustal[c('strand', 'sequence')] <- 
       str_split_fixed(df_clustal$CLUSTAL.O.1.2.4..multiple.sequence.alignment, ' ', 2)
@@ -209,7 +225,6 @@ server <- function (input, output) {
     }
     coding_sequence_index <- c()
     
-    print('212 LINE')
     for (i in seq(1, nrow(start_stop))){
       coding_sequence_index <- append(coding_sequence_index, unlist(start_stop[i, ]$Sequences))
     }
@@ -373,7 +388,6 @@ server <- function (input, output) {
         nonCDS_deletions[i, j] <- deletions
       }
     }
-    print('376 LINE')
     length_of_sequence <- length(indices_with_mutations) + 
       length(indices_without_mutations)
     
@@ -405,9 +419,8 @@ server <- function (input, output) {
                               "nonCDS_Transversions", "nonCDS_TT_ratio", "nonCDS_Gaps", 
                               "nonCDS_Insertions", "nonCDS_Deletions") 
     colnames(summary) <- summary_column_names
-    summary_pairwise = df <- data.frame(matrix(ncol = 27,
-                                               nrow = number_of_strands-1), #except first strand 
-                                        row.names = strand_names[2:length(strand_names)])
+    summary_pairwise <- data.frame(matrix(ncol = 27, nrow = number_of_strands-1), #except first strand 
+                                   row.names = strand_names[2:length(strand_names)])
     colnames(summary_pairwise) <- summary_column_names
     ## Filling the summary_pairwise dataframe
     for (i in seq(1,length(strand_names)-1)){
@@ -440,10 +453,13 @@ server <- function (input, output) {
       summary_pairwise[i, 27] = nonCDS_deletions[i+1, i]
     }
     View(summary)
-    
-    
-    
-    hist(indices_with_mutations, breaks = input$num)
+    summary
+  })
+  
+  output$plot <- renderPlot({
+    metric <- input$metric
+    sum <- summary1()
+    hist(sum[,metric], breaks = input$num)
   })
 }
 
