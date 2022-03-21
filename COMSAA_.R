@@ -49,6 +49,7 @@ data_frame_list <- lapply(clustalFiles, read.delim)
 coding_sequence_list <- lapply(codingSequenceFiles, read.csv)
 
 for (i in seq(1, length(clustalFiles))){
+  print(i)
   #Getting the name of virus, needed for the output files
   name_of_virus <- unlist(strsplit(clustalFiles[i], split='.', fixed=TRUE))[1]
   print(name_of_virus)
@@ -443,4 +444,69 @@ for (i in seq(1, length(clustalFiles))){
   write.csv(summary_pairwise, output_location_summary_pairwise) 
 }
 
+rownames(summary)
+summary <- cbind(summary, rownames(summary))
+colnames(summary)[colnames(summary) == "rownames(summary)"] <- "strands"
 
+library(ggplot2)
+
+#lines where the mutations happen
+ggplot(summary, aes(x = Mutations)) + 
+  geom_bar()
+
+
+ggplot(summary,                                      # Grouped barplot using ggplot2
+       aes(x = strands,
+           y = CDS_Transversions,
+           fill= CDS_Transversions)) +
+  geom_bar(stat = "identity",
+           position = "dodge")+ 
+  labs(title = 'Title', x = "Strands", y = colnames(summary)[which(colnames(summary) == "CDS_Transversions")]) +
+  theme(axis.ticks.x = element_blank(),
+        axis.text.x = element_blank()) +
+  scale_fill_viridis_c()
+
+ggplot(data=summary, 
+       aes(x=strands, y=CDS_Transversions, fill=strands)) +
+  geom_bar(stat="identity", position=position_dodge())+
+  scale_fill_brewer(palette="Paired")
+  #theme_minimal()
+
+
+
+noncoding_sequence <- 
+  ggplot(summary,                                      # Grouped barplot using ggplot2
+         aes(x = strands,
+             y = CDS_Transversions,
+             fill= strands)) +
+  geom_bar(stat = 'identity',
+           position = 'dodge') + 
+  #labs(title = 'Title', x = 'Strands', y = colnames(sum)[which(colnames(sum) == selected_names_of_columns[3])]) +
+  theme(axis.ticks.x = element_blank(),
+        axis.text.x = element_blank())
+which(colnames(summary) == "CDS_Transversions")
+
+
+c(summary[,1], summary[,10], summary[,19])
+rep(strand_names, 3)
+
+
+View(sum_test)
+ggplot(sum_test,                                      # Grouped barplot using ggplot2
+       aes(x = Strands,
+           y = Values,
+           fill= Strands)) +
+  geom_bar(stat = 'identity',
+           position = 'dodge') + 
+  #labs(title = 'Title', x = 'Strands', y = colnames(sum)[which(colnames(sum) == selected_names_of_columns[3])]) +
+  theme(axis.ticks.x = element_blank(),
+        axis.text.x = element_blank())
+
+
+############# MSA-CDS-NONCDS SIDE BY SIDE
+
+sum_test <- data.frame ('Values' = c(summary[,1], summary[,10], summary[,19]),
+                        'Strands' = rep(strand_names, 3),
+                        'Sequence' = c(rep('MSA',10), rep('CDS', 10), rep('nonCDS',10)))
+ggplot(data=sum_test, aes(x=Sequence, y=Values, fill=Strands)) +
+  geom_bar(stat="identity", position=position_dodge())
