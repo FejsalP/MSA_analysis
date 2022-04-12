@@ -1,5 +1,6 @@
 source('variables_and_functions_and_libraries.R')
-
+#set max size limit to 30MB
+options(shiny.maxRequestSize = 30*1024^2)
 ui <- fluidPage(
   sliderInput(inputId='num',
               label = 'Choose a number',
@@ -13,7 +14,7 @@ ui <- fluidPage(
   selectInput(inputId = 'metric', 
               label = 'Select the metric',
               choices = metrics),
-  actionButton(inputId ='update', label ='Process'),
+  actionButton(inputId ='processButton', label ='Process'),
   textInput(inputId='title', label = 'Title'),
   radioButtons(inputId='plot_type', label = 'Select the type of plot',
               choices=c('Histogram', 'Bar chart')), #violin, boxplot, dotplot, stem and leaf?
@@ -23,7 +24,7 @@ ui <- fluidPage(
 
 server <- function (input, output) {  #Load .clustal file and store it into start_stop reactive expression
   
-  summary1 <- eventReactive(input$update, {
+  summary1 <- eventReactive(input$processButton, {
     #Load .csv file
     start_stop <- read.csv(input$csvFile$datapath)
     #Load .clustal file
@@ -122,7 +123,7 @@ server <- function (input, output) {  #Load .clustal file and store it into star
                                     indices_with_mutations, noncoding_sequence_index)
     
     #Creating summary dataframe
-    summary <- cbind(MSA_metrics[[1]][,1], MSA_metrics[[2]][,1], 
+    summary <- data.frame(cbind(MSA_metrics[[1]][,1], MSA_metrics[[2]][,1], 
                      MSA_metrics[[3]][,1], MSA_metrics[[4]][,1], 
                      MSA_metrics[[5]][,1], MSA_metrics[[6]][,1],
                      MSA_metrics[[7]][,1], MSA_metrics[[8]][,1], 
@@ -136,13 +137,13 @@ server <- function (input, output) {  #Load .clustal file and store it into star
                      nonCDS_metrics[[3]][,1], nonCDS_metrics[[4]][,1], 
                      nonCDS_metrics[[5]][,1], nonCDS_metrics[[6]][,1],
                      nonCDS_metrics[[7]][,1], nonCDS_metrics[[8]][,1], 
-                     nonCDS_metrics[[9]][,1])
+                     nonCDS_metrics[[9]][,1]))
     summary_column_names <- metrics
     colnames(summary) <- summary_column_names
     
     ## Create and fill the summary_pairwise dataframe
     summary_pairwise <- fill_summary_pairwise(MSA_metrics, CDS_metrics, nonCDS_metrics, number_of_strands, strand_names)
-    
+    colnames(summary_pairwise) <- summary_column_names
     summary <- cbind(summary, rownames(summary))
     colnames(summary)[colnames(summary) == 'rownames(summary)'] <- 'strands'
     summary
@@ -161,7 +162,6 @@ server <- function (input, output) {  #Load .clustal file and store it into star
       selected_names_of_columns <- colnames(sum)[selected_columns]
       new_sum <- as.matrix(sum[,selected_columns[c(1,2,3)]])
       colors <- rainbow(nrow(sum))
-
       entire_sequence <- 
         ggplot(sum,                                      # Grouped barplot using ggplot2
                aes(x = strands,
@@ -173,6 +173,7 @@ server <- function (input, output) {  #Load .clustal file and store it into star
         theme(axis.ticks.x = element_blank(),
               axis.text.x = element_blank()) + 
         scale_fill_brewer(palette="Paired")
+      
       coding_sequence <- 
         ggplot(sum,                                      # Grouped barplot using ggplot2
                aes(x = strands,
@@ -184,6 +185,7 @@ server <- function (input, output) {  #Load .clustal file and store it into star
         theme(axis.ticks.x = element_blank(),
               axis.text.x = element_blank()) +
         scale_fill_brewer(palette="Paired")
+
       noncoding_sequence <- 
         ggplot(sum,                                      # Grouped barplot using ggplot2
                aes(x = strands,
@@ -197,11 +199,6 @@ server <- function (input, output) {  #Load .clustal file and store it into star
         scale_fill_brewer(palette="Paired")
       
       ggarrange(entire_sequence, coding_sequence, noncoding_sequence, nrow = 1)
-      # legend ('topleft',rownames(new_sum),
-      #         cex=1.0,
-      #         fill=colors)
-      # 
-      
     }
   })
 }

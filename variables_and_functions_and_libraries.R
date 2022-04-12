@@ -153,8 +153,6 @@ fill_metrics <- function(metrics, df_clustal, indices_with_mutations, sequence){
 fill_summary_pairwise <- function(MSA_metrics, CDS_metrics, nonCDS_metrics, number_of_strands, strand_names){
   summary_pairwise <- data.frame(matrix(ncol = 27, nrow = number_of_strands-1), #except first strand 
                                  row.names = strand_names[2:length(strand_names)])
-  colnames(summary_pairwise) <- summary_column_names
-  
   for (i in seq(1,length(strand_names)-1)){
     summary_pairwise[i, 1] = MSA_metrics[[1]][i+1, i]
     summary_pairwise[i, 2] = MSA_metrics[[2]][i+1, i]
