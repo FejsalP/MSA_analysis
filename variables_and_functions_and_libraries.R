@@ -131,19 +131,6 @@ fill_metrics <- function(metrics, df_clustal, indices_with_mutations, sequence){
       metrics[[7]][i,j] <- gaps
       metrics[[8]][i,j] <- insertions
       metrics[[9]][i,j] <- deletions
-      # MSA_similarity[i, j] <- 1 - (mutations/length)
-      # MSA_mutation_num[i, j] <- mutations
-      # MSA_transition_num[i, j] <- transitions
-      # MSA_transversion_num [i, j] <- transversions
-      # if(transversions != 0){
-      #   MSA_tt_ratio[i, j] <- transitions/transversions
-      # }
-      # else{
-      #   MSA_tt_ratio[i, j] <- 0
-      # }
-      # MSA_gaps [i, j] <- gaps
-      # MSA_insertions[i,j] <- insertions
-      # MSA_deletions[i, j] <- deletions
     }
   }
   return (metrics)
@@ -184,6 +171,98 @@ fill_summary_pairwise <- function(MSA_metrics, CDS_metrics, nonCDS_metrics, numb
   }
   return(summary_pairwise)
 }
+
+create_reference_list <- function(df, indices_with_mutations){
+  reference_list <- c()
+  original_sequence <- df$sequence[1]
+  reference_list <- rep(0, nchar(original_sequence))
+  number_of_strands <- nrow(df)
+  for (i in indices_with_mutations){
+    count <- 0
+    for (j in seq(2, number_of_strands)){
+      if (substr(df$sequence[1], i, i) != substr(df$sequence[j], i, i)){
+        count <- count + 1
+      }
+    }
+    reference_list[i] <- count
+  }
+  return (as.data.frame(reference_list))
+}
+
+create_reference_list_grouped <- function(reference_list, reference_groups){
+  reference_list$group <- c(0, rep(1:(nrow(reference_list)-1)%/%reference_groups))
+  
+  grouped_reference_list <- group_by(reference_list, group) %>%
+    summarise(number_of_mutations = sum(reference_list))
+  
+  return (grouped_reference_list)
+}
+# Given vector of numbers, return a list of consecutive numbers 
+# 1 2 3 4 9 10 15 16 - returns ((1,2,3,4), (9, 10), (15, 16))
+create_df_ranges <- function (sequence){
+  list_of_sequences <- list()
+  ranges <- list()
+  for (i in seq(1, length(sequence)-1)){
+    if ((sequence[i+1] - sequence[i]) == 1){
+      ranges <- append(ranges,sequence[i])
+      if(i != (length(sequence)-1)){
+        next
+      }
+    }
+    ranges <- append(ranges, sequence[i])
+    if (i == (length(sequence) - 1)){
+      ranges <- append(ranges, sequence[i+1])
+    }
+    list_of_sequences <- append(list_of_sequences, list(ranges))
+    ranges <- list()
+  }
+  return (list_of_sequences)
+}
+get_added_number_of_mutations <- function(start, end, reference_list){
+  number_of_mutations <- c()
+  for (i in seq(1, length(start))){
+    number_of_mutations <- append(number_of_mutations, sum(reference_list[start[i]:end[i]]))
+  }
+  print(number_of_mutations)
+  return (number_of_mutations)
+}
+
+# Creates a reference list that has separated coding and noncoding sequence
+# Given coding and noncoding sequences return a reference list
+# E.g. nonCDS1 1:300 - 50 mutations, CDS1 301:500, nonCDS2 501:700, CDS2 701:900..
+create_reference_list_separated <- function(coding_sequence_index, noncoding_sequence_index, reference_list){
+  
+    coding_sequence_indices_df <- create_df_ranges (coding_sequence_index)
+  noncoding_sequence_indices_df <- create_df_ranges (noncoding_sequence_index)
+
+  # Get starting indices of coding and noncoding sequences
+  coding_sequence_starting_indices <- lapply(coding_sequence_indices_df, function(x){return (x[[1]])})
+  noncoding_sequence_starting_indices <- lapply(noncoding_sequence_indices_df, function(x){return (x[[1]])})
+  # Get ending indices of coding and noncoding sequences
+  coding_sequence_ending_indices <- lapply(coding_sequence_indices_df, function(x){return (x[length(x)])})
+  noncoding_sequence_ending_indices <- lapply(noncoding_sequence_indices_df, function(x){return (x[length(x)])})
+  
+  # Store into a dataframe, also add Type column to reference the number of CDS/nonCDS portion
+  coding_sequence_start_end_df <- data.frame('Start' = unlist(coding_sequence_starting_indices),
+                                             'End' = unlist(coding_sequence_ending_indices),
+                                             'Type' = paste0(rep('CDS_', length(coding_sequence_starting_indices)), seq(1, length(coding_sequence_starting_indices))))
+  noncoding_sequence_start_end_df <- data.frame('Start' = unlist(noncoding_sequence_starting_indices),
+                                             'End' = unlist(noncoding_sequence_ending_indices),
+                                             'Type' = paste0(rep('nonCDS_', length(noncoding_sequence_starting_indices)), seq(1, length(noncoding_sequence_starting_indices))))
+  
+  combined_sequences <- rbind(coding_sequence_start_end_df, noncoding_sequence_start_end_df)
+  combined_sequences <- combined_sequences[order(combined_sequences$Start), ]
+  combined_sequences['Number_of_mutations'] <- get_added_number_of_mutations (combined_sequences$Start, combined_sequences$End, reference_list)
+  # Used to reorder barplot
+  combined_sequences['Count'] <- seq(1, nrow(combined_sequences))
+  # Drops start and end column, redundant
+  combined_sequences <- subset(combined_sequences, select = -c(1, 2))
+  View(combined_sequences)
+  return (combined_sequences)
+}
+
+
+
 ##### VARIABLES
 
 metrics <- c('Similarity', 'Mutations', 'Mutation_Frequency', 'Transitions', 
