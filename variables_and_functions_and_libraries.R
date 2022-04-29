@@ -172,6 +172,12 @@ fill_summary_pairwise <- function(MSA_metrics, CDS_metrics, nonCDS_metrics, numb
   return(summary_pairwise)
 }
 
+# Make a reference list, which will contain all mutation numbers at every point in the MSA. E.g., if in
+# MSA index 5, 3 sequences have a mutation, index five in the reference list will contain the number 3.
+# Ideally, five reference lists will be made, two containing transitions and transversions, one containing
+# point mutations (sum of the previous two), one containing Gaps, and the fifth being the sum of the
+# previous point mutations and gaps. This can be useful in order to observe different types of
+# mutations individually, or all mutations together.
 create_reference_list <- function(df, indices_with_mutations){
   reference_list <- c()
   original_sequence <- df$sequence[1]
@@ -188,6 +194,87 @@ create_reference_list <- function(df, indices_with_mutations){
   }
   return (as.data.frame(reference_list))
 }
+# Reference list for transitions
+#the cases where A > G, G > A, T > C, or C > T; > is symbol for mutation
+# A > G
+# G > A
+# T > C
+# C > T
+create_reference_list_transitions <- function(df, indices_with_mutations){
+  reference_list <- c()
+  original_sequence <- df$sequence[1]
+  reference_list <- rep(0, nchar(original_sequence))
+  number_of_strands <- nrow(df)
+  
+  for (i in indices_with_mutations){
+    count <- 0
+    for (j in seq(2, number_of_strands)){
+      if ((substr(df$sequence[1], i, i) == 'A' & substr(df$sequence[j], i, i) == 'G') |
+          (substr(df$sequence[1], i, i) == 'G' & substr(df$sequence[j], i, i) == 'A') |
+          (substr(df$sequence[1], i, i) == 'T' & substr(df$sequence[j], i, i) == 'C') |
+          (substr(df$sequence[1], i, i) == 'C' & substr(df$sequence[j], i, i) == 'T')
+          ){
+        count <- count + 1
+      }
+    }
+    reference_list[i] <- count
+  }
+  return (as.data.frame(reference_list))
+}
+# Reference list for transversions
+# (the cases where A > T or C, G > T or C, T > A or G, or C > A or G)
+# A > T or C
+# G > T or C
+# T > A or G
+# C > A or G
+
+create_reference_list_transversions <- function(df, indices_with_mutations){
+  reference_list <- c()
+  original_sequence <- df$sequence[1]
+  reference_list <- rep(0, nchar(original_sequence))
+  number_of_strands <- nrow(df)
+  
+  for (i in indices_with_mutations){
+    count <- 0
+    for (j in seq(2, number_of_strands)){
+      if ((substr(df$sequence[1], i, i) == 'A' & (substr(df$sequence[j], i, i) == 'T' | substr(df$sequence[j], i, i) == 'C'))  |
+          (substr(df$sequence[1], i, i) == 'G' & (substr(df$sequence[j], i, i) == 'T' | substr(df$sequence[j], i, i) == 'C'))  |
+          (substr(df$sequence[1], i, i) == 'T' & (substr(df$sequence[j], i, i) == 'A' | substr(df$sequence[j], i, i) == 'G'))  |
+          (substr(df$sequence[1], i, i) == 'C' & (substr(df$sequence[j], i, i) == 'A' | substr(df$sequence[j], i, i) == 'G'))
+      ){
+        count <- count + 1
+      }
+    }
+    reference_list[i] <- count
+  }
+  return (as.data.frame(reference_list))
+}
+
+
+
+# Reference list for gaps
+# a gap existing in one letter, where there is a letter in another sequence
+
+create_reference_list_gaps <- function(df, indices_with_mutations){
+  reference_list <- c()
+  original_sequence <- df$sequence[1]
+  reference_list <- rep(0, nchar(original_sequence))
+  number_of_strands <- nrow(df)
+  
+  for (i in indices_with_mutations){
+    count <- 0
+    for (j in seq(2, number_of_strands)){
+      if ((substr(df$sequence[1], i, i) == '-' & substr(df$sequence[j], i, i) != '-') | #insertion?
+          (substr(df$sequence[1], i, i) != '-' & substr(df$sequence[j], i, i) == '-')   #deletion
+      ){
+        count <- count + 1
+      }
+    }
+    reference_list[i] <- count
+  }
+  return (as.data.frame(reference_list))
+}
+  
 
 create_reference_list_grouped <- function(reference_list, reference_groups){
   reference_list$group <- c(0, rep(1:(nrow(reference_list)-1)%/%reference_groups))
@@ -223,7 +310,6 @@ get_added_number_of_mutations <- function(start, end, reference_list){
   for (i in seq(1, length(start))){
     number_of_mutations <- append(number_of_mutations, sum(reference_list[start[i]:end[i]]))
   }
-  print(number_of_mutations)
   return (number_of_mutations)
 }
 
@@ -232,7 +318,7 @@ get_added_number_of_mutations <- function(start, end, reference_list){
 # E.g. nonCDS1 1:300 - 50 mutations, CDS1 301:500, nonCDS2 501:700, CDS2 701:900..
 create_reference_list_separated <- function(coding_sequence_index, noncoding_sequence_index, reference_list){
   
-    coding_sequence_indices_df <- create_df_ranges (coding_sequence_index)
+  coding_sequence_indices_df <- create_df_ranges (coding_sequence_index)
   noncoding_sequence_indices_df <- create_df_ranges (noncoding_sequence_index)
 
   # Get starting indices of coding and noncoding sequences
@@ -257,10 +343,31 @@ create_reference_list_separated <- function(coding_sequence_index, noncoding_seq
   combined_sequences['Count'] <- seq(1, nrow(combined_sequences))
   # Drops start and end column, redundant
   combined_sequences <- subset(combined_sequences, select = -c(1, 2))
-  View(combined_sequences)
   return (combined_sequences)
 }
 
+# Creates histogram for reference lists, ungrouped
+
+create_reference_list_histogram <- function (values, breaks, title) {
+  reference_list_grouped <- create_reference_list_grouped(values, breaks)
+  histogram <- ggplot(reference_list_grouped,
+         aes(x = group,
+             y = number_of_mutations,
+             fill = 'red'))+
+    geom_bar(stat='identity', position ='dodge')+
+    theme_dark()
+  return (histogram)
+}
+
+
+create_reference_list_separated_histogram <- function (values, title) {
+  ggplot(values,
+         aes(x = reorder(Type, Count),
+             y = Number_of_mutations,
+             fill = 'red'))+
+    geom_bar(stat='identity', position ='dodge')+
+    theme_dark()
+}
 
 
 ##### VARIABLES
