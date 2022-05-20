@@ -11,9 +11,9 @@ ui <- fluidPage(
       sliderInput(inputId='reference_list_bins',
                   label = 'Choose the number of genes per bin for reference list',
                   value = 25, min = 1, max = 1000),
-      sliderInput(inputId='reference_list_separated_bins', 
-                  label = 'Choose the number of genes per bin for separated reference list', 
-                  value = 30, min = 1, max = 1000),
+      sliderInput(inputId='axis_text_size', 
+                  label = 'Choose the size of text', 
+                  value = 12, min = 1, max = 25),
       fileInput(inputId = 'clustalFile', 
                 label = 'Choose a .clustal file',
                 accept = '.clustal'), #can be used to accept two files instead of two separate fileInputs
@@ -25,27 +25,23 @@ ui <- fluidPage(
                   choices = metrics),
       actionButton(inputId ='processButton', label ='Process'),
       textInput(inputId='title', label = 'Title'),
-      radioButtons(inputId='plot_type', label = 'Select the type of plot',
-                   choices=c('Histogram', 'Bar chart')), #violin, boxplot, dotplot, stem and leaf?
       #scatter plot?
       selectInput(inputId= 'reference_list_type',
                   label = 'Select type of reference list',
                   choices = c('Transition', 'Transversion',
                               'Point mutations', 'Gaps',
                               'Mutations')),
-      radioButtons(inputId='reference_plot', label = 'Select the type of reference list plot',
-                   choices=c('Normal', 'Grouped')),
       "Click here to download summary : ",
       downloadButton("downloadData", "Download"),
     ),
   # Show a plot and dataframe
     mainPanel(
       plotOutput('plot', width='1200px', height='500px'),
-      tableOutput('summary_dataframe'),
-      tableOutput('df_clustal'),
+      #tableOutput('summary_dataframe'),
+      #tableOutput('df_clustal'),
       plotOutput('reference_list_plot', width='1200px', height='500px'),
       plotOutput('reference_list_separated_plot', width='1200px', height='500px'),
-      
+      plotOutput('mutations_type_plot', width='1200px', height = '500px'),
   )
   )
 )
@@ -57,7 +53,8 @@ server <- function (input, output) {  #Load .clustal file and store it into star
                               indices_without_mutations = '',
                               reference_list = NULL, #for the entire list (mutations)
                               reference_list_separated = NULL, #for separated NONCDS and CDS (mutations)
-                              chosenMetric = 'Similarity')
+                              chosenMetric = 'Similarity',
+                              summary_pairwise = NULL)
   reference_lists <- reactiveValues(transitions = NULL,
                                     transitions_separated = NULL,
                                     transversions = NULL,
@@ -72,9 +69,13 @@ server <- function (input, output) {  #Load .clustal file and store it into star
   ##### INPUTS #####
   # clustal file, csv file, chosen metric
   observe({
+    #"C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input\\MERS MSA.clustal"
+    # input$clustalFile$datapath
     variables$clustal_file <- input$clustalFile$datapath
   })
   observe({
+    #"C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input\\MERS MSA.csv"
+    # input$csvFile$datapath
     variables$csv_file <- input$csvFile$datapath
   })
   observe({
@@ -139,7 +140,7 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     
     
     # Creates 5 reference lists 
-    # TODO
+
     reference_lists$transitions <- create_reference_list_transitions(df_clustal, variables$indices_with_mutations)
     reference_lists$transversions <- create_reference_list_transversions(df_clustal, variables$indices_with_mutations)
     reference_lists$point_mutations <- reference_lists$transitions + reference_lists$transversions
@@ -180,7 +181,6 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     else{
       start_stop$Sequences <- list(mapply(create_sequence, start_stop$Start, start_stop$Stop))
     }
-
     coding_sequence_index <- c()
 
     for (i in seq(1, nrow(start_stop))){
@@ -189,8 +189,16 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     coding_sequence_index <- unlist(coding_sequence_index)
     coding_sequence_index <- unique(coding_sequence_index)
 
+    # change to how coding and noncoding indices are calculated
+    # ignore gaps in the reference sequence, find new indices
+    # CDI - coding sequence index
+    reference_sequence <- as.character(df_clustal[1,2])
+    coding_sequence_index <- new_CDI(coding_sequence_index, reference_sequence)
+    
+    
     noncoding_sequence_index <- setdiff(seq(1, nchar(df_clustal[1, 2])), coding_sequence_index)
-
+    
+    
     # Creating reference lists that separate based on coding and non-coding regions
     reference_lists$transitions_separated <- create_reference_list_separated(coding_sequence_index, noncoding_sequence_index, reference_lists$transitions$reference_list)
     reference_lists$transversions_separated <- create_reference_list_separated(coding_sequence_index, noncoding_sequence_index, reference_lists$transversions$reference_list)
@@ -228,76 +236,38 @@ server <- function (input, output) {  #Load .clustal file and store it into star
                      nonCDS_metrics[[9]][,1]))
     summary_column_names <- metrics
     colnames(summary) <- summary_column_names
-
+    
     ## Create and fill the summary_pairwise dataframe
-    summary_pairwise <- fill_summary_pairwise(MSA_metrics, CDS_metrics, nonCDS_metrics, number_of_strands, strand_names)
-    colnames(summary_pairwise) <- summary_column_names
+    variables$summary_pairwise <- fill_summary_pairwise(MSA_metrics, CDS_metrics, nonCDS_metrics, number_of_strands, strand_names)
+    colnames(variables$summary_pairwise) <- summary_column_names
+    
+    
+
+    summary <- cbind(summary, strand_names)
+    colnames(summary)[colnames(summary) == 'strand_names'] <- 'Strands'
+    
     summary <- cbind(summary, rownames(summary))
-    colnames(summary)[colnames(summary) == 'rownames(summary)'] <- 'strands'
+    colnames(summary)[colnames(summary) == 'rownames(summary)'] <- 'Count'
+
     summary
   })
   
-
   # OUTPUTS
   #####
-  output$df_clustal <- renderTable({
-    df_clustal()
-  })
-  output$summary_dataframe <- renderTable({
-    df <- summary1()
-  })
   output$plot <- renderPlot({
     metric <- variables$chosenMetric
     sum <- summary1()
-    if (input$plot_type == 'Histogram'){
-      hist(sum[,metric],
-           breaks = input$num,
-           main = isolate(input$title))
-    }
-    else {
-      selected_column <- which(colnames(sum) == metric)
-      selected_columns <- get_selected_columns(selected_column)
-      selected_names_of_columns <- colnames(sum)[selected_columns]
-      new_sum <- as.matrix(sum[,selected_columns[c(1,2,3)]])
-      colors <- rainbow(nrow(sum))
-      entire_sequence <-
-        ggplot(sum,                                      # Grouped barplot using ggplot2
-               aes(x = strands,
-                   y = sum[,selected_columns[1]],
-                   fill= strands)) +
-        geom_bar(stat = 'identity',
-                 position = 'dodge') +
-        labs(title = 'Title', x = 'Strands', y = colnames(sum)[which(colnames(sum) == selected_names_of_columns[1])]) +
-        theme(axis.ticks.x = element_blank(),
-              axis.text.x = element_blank()) +
-        scale_fill_brewer(palette="Paired")
+  
+    selected_column <- which(colnames(sum) == metric)
+    selected_columns <- get_selected_columns(selected_column)
+    selected_names_of_columns <- colnames(sum)[selected_columns]
 
-      coding_sequence <-
-        ggplot(sum,                                      # Grouped barplot using ggplot2
-               aes(x = strands,
-                   y = sum[,selected_columns[2]],
-                   fill= strands)) +
-        geom_bar(stat = 'identity',
-                 position = 'dodge') +
-        labs(title = 'Title', x = 'Strands', y = colnames(sum)[which(colnames(sum) == selected_names_of_columns[2])]) +
-        theme(axis.ticks.x = element_blank(),
-              axis.text.x = element_blank()) +
-        scale_fill_brewer(palette="Paired")
-
-      noncoding_sequence <-
-        ggplot(sum,                                      # Grouped barplot using ggplot2
-               aes(x = strands,
-                   y = sum[,selected_columns[3]],
-                   fill= strands)) +
-        geom_bar(stat = 'identity',
-                 position = 'dodge') +
-        labs(title = 'Title', x = 'Strands', y = colnames(sum)[which(colnames(sum) == selected_names_of_columns[3])]) +
-        theme(axis.ticks.x = element_blank(),
-              axis.text.x = element_blank()) +
-        scale_fill_brewer(palette="Paired")
-
-      ggarrange(entire_sequence, coding_sequence, noncoding_sequence, nrow = 1)
-    }
+    entire_sequence <- create_bar_plot(sum, input$title, selected_columns[1], selected_names_of_columns[1])
+    coding_sequence <- create_bar_plot(sum, input$title, selected_columns[2], selected_names_of_columns[2])
+    noncoding_sequence <- create_bar_plot(sum, input$title, selected_columns[3], selected_names_of_columns[3])
+        
+    ggarrange(entire_sequence, coding_sequence, noncoding_sequence, nrow = 1)
+    
   })
 
   output$reference_list_plot <- renderPlot({
@@ -309,27 +279,32 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     if(input$reference_list_type == 'Transition'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$transitions, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title))
+                                                                  isolate(input$title),
+                                                                  'transitions')
     }
     else if(input$reference_list_type == 'Transversion'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$transversions, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title))
+                                                                  isolate(input$title),
+                                                                  'transversions')
     }
     else if(input$reference_list_type == 'Point mutations'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$point_mutations, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title))
+                                                                  isolate(input$title),
+                                                                  'point mutations')
     }
     else if(input$reference_list_type == 'Gaps'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$gaps, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title))
+                                                                  isolate(input$title),
+                                                                  'gaps')
     }
     else if(input$reference_list_type == 'Mutations'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$mutations, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title))
+                                                                  isolate(input$title),
+                                                                  'mutations')
     }
     plot(reference_list_histogram)
   })
@@ -342,52 +317,58 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     )
     if(input$reference_list_type == 'Transition'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$transitions_separated, 
-                                                                  isolate(input$title))
+                                                                                      input$axis_text_size,
+                                                                                      isolate(input$title),
+                                                                                      'transitions')
     }
     else if(input$reference_list_type == 'Transversion'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$transversions_separated, 
-                                                                  isolate(input$title))
+                                                                                      input$axis_text_size,
+                                                                                      isolate(input$title),
+                                                                                      'transversions')
     }
     else if(input$reference_list_type == 'Point mutations'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$point_mutations_separated, 
-                                                                  isolate(input$title))
+                                                                                      input$axis_text_size,
+                                                                                      isolate(input$title),
+                                                                                      'point mutations')
     }
     else if(input$reference_list_type == 'Gaps'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$gaps_separated, 
-                                                                  isolate(input$title))
+                                                                                      input$axis_text_size,
+                                                                                      isolate(input$title),
+                                                                                      'gaps')
     }
     else if(input$reference_list_type == 'Mutations'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$mutations_separated, 
-                                                                  isolate(input$title))
+                                                                                      input$axis_text_size,
+                                                                                      isolate(input$title),
+                                                                                      'mutations')
     }
     plot(reference_list_separated_histogram)
   })
   
-
-  output$reference_list_grouped_plot <- renderPlot({
+  output$mutations_type_plot <- renderPlot({
     validate(
-      need(variables$reference_list != "", "Please select a data set - dotplot")
+      need(reference_lists$transitions_separated != "" | reference_lists$transversions_separated != "" 
+             | reference_lists$gaps_separated != "", "Please select a data set"),
     )
-    reference_list_grouped <- create_reference_list_grouped(variables$reference_list, input$reference_groups)
-    ggplot(reference_list_grouped,
-           aes(x = group,
-               y = number_of_mutations,
-               fill = 'red'))+
-      geom_bar(stat='identity', position ='dodge')+
-      theme_dark()
+    mutations_types <- create_mutations_type_bar_plot(reference_lists$transitions_separated,
+                                           reference_lists$transversions_separated,
+                                           reference_lists$gaps_separated)
+    plot(mutations_types)
+    
   })
-
-  # output$reference_list_separated_plot <- renderPlot({
-  #   validate(
-  #     need(variables$reference_list_separated != "", "Needs to be processed first")
-  #   )
-  #   ggplot(variables$reference_list_separated,
-  #          aes(x = reorder(Type, Count),
-  #              y = Number_of_mutations,
-  #              fill = 'red'))+
-  #     geom_bar(stat='identity', position ='dodge')+
-  #     theme_dark()
-  # })
+  
+  
+  output$downloadData <- downloadHandler(
+    filename = function() {
+      paste(".csv", sep="")
+    },
+    content = function(file) {
+      write.csv(summary1(), file)
+    }
+  )
 }
 
 

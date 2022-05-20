@@ -3,7 +3,8 @@ library(stringr) #needed to split columns in dataframe
 library(dplyr) 
 library(ggplot2)
 library(ggpubr)
-
+library(ggthemes)
+library(tidyr)
 ################################################################################
 ############################# FUNCTIONS ########################################
 ################################################################################
@@ -250,8 +251,6 @@ create_reference_list_transversions <- function(df, indices_with_mutations){
   return (as.data.frame(reference_list))
 }
 
-
-
 # Reference list for gaps
 # a gap existing in one letter, where there is a letter in another sequence
 
@@ -305,6 +304,7 @@ create_df_ranges <- function (sequence){
   }
   return (list_of_sequences)
 }
+
 get_added_number_of_mutations <- function(start, end, reference_list){
   number_of_mutations <- c()
   for (i in seq(1, length(start))){
@@ -346,29 +346,132 @@ create_reference_list_separated <- function(coding_sequence_index, noncoding_seq
   return (combined_sequences)
 }
 
+# Creates barplot for strands 
+
+create_bar_plot <- function(df, title, selected_columns, selected_names_of_columns){
+
+  ggplot(df,      
+         aes(x = Strands,
+             y = df[,selected_columns],
+             fill= Strands)) +
+    geom_bar(stat = 'identity',
+             position = 'dodge') +
+    labs(title = title, x = 'Strands', y = colnames(df)[which(colnames(df) == selected_names_of_columns)]) +
+    theme(axis.ticks.x = element_blank(),
+          axis.text.x = element_blank()) +
+    scale_fill_brewer(palette="Paired")
+}
+
 # Creates histogram for reference lists, ungrouped
 
-create_reference_list_histogram <- function (values, breaks, title) {
+create_reference_list_histogram <- function (values, breaks, title, y_axis_name) {
   reference_list_grouped <- create_reference_list_grouped(values, breaks)
   histogram <- ggplot(reference_list_grouped,
          aes(x = group,
              y = number_of_mutations,
              fill = 'red'))+
     geom_bar(stat='identity', position ='dodge')+
-    theme_dark()
+    theme_clean() +
+    theme(legend.position = "none") + 
+    ggtitle (title) +
+    ylab(paste('Number of', y_axis_name)) +
+    xlab("  ")
   return (histogram)
 }
 
-
-create_reference_list_separated_histogram <- function (values, title) {
-  ggplot(values,
-         aes(x = reorder(Type, Count),
-             y = Number_of_mutations,
-             fill = 'red'))+
-    geom_bar(stat='identity', position ='dodge')+
-    theme_dark()
+create_reference_list_separated_histogram <- function (values_df, text_size, title, y_axis_name) {
+  values_df <- transform (values_df, group = ifelse(substr(Type, 1, 3) == 'non', 'nonCDS', 'CDS'))
+  ggplot(
+    values_df,
+    aes(x = reorder(Type, Count),
+        y = Number_of_mutations,
+        fill = group))+
+    geom_bar(stat='identity', position ='dodge') +
+    theme_classic() +
+    theme(axis.text.x = element_text(size = text_size),
+          axis.title=element_text(size = 15,face = "bold")) +
+    ggtitle(title) + 
+    ylab(paste('Number of', y_axis_name)) +
+    xlab("  ")
 }
 
+create_mutations_type_bar_plot <- function(transitions, transversions, gaps){
+  mutations_types <- cbind(transitions, transversions, gaps)
+  
+  # count <- subset(mutations_types, select = c(3))
+  mutations_types <- subset(mutations_types, select = c(1, 2, 5, 8,3 ))
+  types <- mutations_types$Type
+  mutations_types<- unite(mutations_types, Type, c(Type, Count), sep = '-')
+
+  mutations_types <- subset(mutations_types, select = -c(5))
+  
+
+  colnames(mutations_types) <- c('Type', 'Transitions', 'Transversions', 'Gaps')
+  
+  
+  mutations_types <- mutations_types %>%
+    pivot_longer(!Type, names_to = "Mutations", values_to = "Mutations_count")
+
+  
+  mutations_types <- separate(mutations_types, col=Type, into=c('Type', 'Count'), sep='-')
+  mutations_types$Type <- as.factor(mutations_types$Type)
+  levels(mutations_types$Type) <- types
+  ggplot(mutations_types, aes(x = Type, y = Mutations_count, fill = Mutations)) + 
+    geom_bar(stat = 'identity')
+  }
+
+
+new_CDI <- function (coding_indices, sequence){
+  
+  # to be returned
+  # stores gaps as 0, starts counting from the first nucleobase
+  
+  
+  coding_sequence_indices_df <- create_df_ranges (coding_indices)
+  # Get starting indices 
+  coding_sequence_starting_indices <- lapply(coding_sequence_indices_df, function(x){return (x[[1]])})
+  # Get ending indices of coding 
+  coding_sequence_ending_indices <- lapply(coding_sequence_indices_df, function(x){return (x[length(x)])})
+
+  # Store into a dataframe
+  coding_sequence_start_end_df <- data.frame('Start' = unlist(coding_sequence_starting_indices),
+                                             'Stop' = unlist(coding_sequence_ending_indices))
+  
+  new_coding_sequence_start_end <- data.frame(matrix(ncol = 2, nrow = ))
+  coding_indices_2 <- c() 
+  count <- 1
+  for (i in seq(1, nchar(sequence))){
+    if(substr(sequence, i, i) == '-'){
+      coding_indices_2 <- append(coding_indices_2, 0)
+    }
+    else{
+      coding_indices_2 <- append(coding_indices_2, count)
+      count <- count + 1
+    }
+  }
+  for (i in seq(1, nrow(coding_sequence_start_end_df))){
+    coding_sequence_start_end_df[i, 1] <- which(coding_sequence_start_end_df[i, 1] == coding_indices_2)[[1]]
+    coding_sequence_start_end_df[i, 2] <- which(coding_sequence_start_end_df[i, 2] == coding_indices_2)[[1]]
+  }
+
+  # Creates Sequences column that has sequence from start to end for each row
+  if(nrow(coding_sequence_start_end_df) > 1){
+    coding_sequence_start_end_df$Sequences <- mapply(create_sequence, coding_sequence_start_end_df$Start, coding_sequence_start_end_df$Stop)
+  }
+  else{
+    coding_sequence_start_end_df$Sequences <- list(mapply(create_sequence, coding_sequence_start_end_df$Start, coding_sequence_start_end_df$Stop))
+  }
+  # Creates new coding sequence index 
+  coding_sequence_index <- c()
+  
+  for (i in seq(1, nrow(coding_sequence_start_end_df))){
+    coding_sequence_index <- append(coding_sequence_index, unlist(coding_sequence_start_end_df[i, ]$Sequences))
+  }
+  coding_sequence_index <- unlist(coding_sequence_index)
+  coding_sequence_index <- unique(coding_sequence_index)
+  
+  return (coding_sequence_index)
+}
 
 ##### VARIABLES
 
