@@ -3,45 +3,134 @@ source('variables_and_functions_and_libraries.R')
 #set max size limit to 30MB
 options(shiny.maxRequestSize = 30*1024^2)
 ui <- fluidPage(
+  
   sidebarLayout(
     sidebarPanel(
-      sliderInput(inputId='num',
-                  label = 'Choose the number of bins for reference list',
-                  value = 25, min = 1, max = 100),
-      sliderInput(inputId='reference_list_bins',
-                  label = 'Choose the number of genes per bin for reference list',
-                  value = 25, min = 1, max = 1000),
-      sliderInput(inputId='axis_text_size', 
-                  label = 'Choose the size of text', 
-                  value = 12, min = 1, max = 25),
-      fileInput(inputId = 'clustalFile', 
+      # FILE INPUTS
+      fileInput(inputId = 'clustalFile',
                 label = 'Choose a .clustal file',
                 accept = '.clustal'), #can be used to accept two files instead of two separate fileInputs
-      fileInput(inputId = 'csvFile', 
+      fileInput(inputId = 'csvFile',
                 label = 'Choose a .csv file',
                 accept = '.csv'),
-      selectInput(inputId = 'metric', 
+
+      actionButton(inputId ='processButton', label ='Process'),
+
+      ## GRAPHS
+
+      # GRAPH 1 OPTIONS - METRIC GRAPH
+      tags$h4("Metric graph"),
+
+      selectInput(inputId = 'metric',
                   label = 'Select the metric',
                   choices = metrics),
-      actionButton(inputId ='processButton', label ='Process'),
-      textInput(inputId='title', label = 'Title'),
-      #scatter plot?
+      checkboxGroupInput("chosen_graphs", "Graphs to show:", # CHOOSE how many plots, 1, 2, or 3
+                         c("Entire" = "entire",
+                           "Coding" = "CDS",
+                           "Non-Coding" = "nonCDS")),
+      # # # names and sizes
+      textInput(inputId='metric_graph_title', label = 'Title'),
+      textInput(inputId='metric_graph_x_axis', label = 'X axis name'),
+      textInput(inputId='metric_graph_y_axis', label = 'Y axis name'),
+      sliderInput(inputId='metric_graph_x_axis_text_size',
+                  label = 'Choose the size of text on X axis',
+                  value = 12, min = 1, max = 20),
+      sliderInput(inputId='metric_graph_title_text_size',
+                  label = 'Choose the size of text on title',
+                  value = 12, min = 1, max = 35),
+
+      # # GRAPH 2 OPTIONS - REFERENCE LIST
+      tags$h4("Reference list graph"),
+
       selectInput(inputId= 'reference_list_type',
                   label = 'Select type of reference list',
                   choices = c('Transition', 'Transversion',
                               'Point mutations', 'Gaps',
                               'Mutations')),
-      "Click here to download summary : ",
-      downloadButton("downloadData", "Download"),
+      sliderInput(inputId='reference_list_bins',
+                  label = 'Choose the number of genes per bin for reference list',
+                  value = 25, min = 1, max = 1000),
+
+      # names and sizes
+      textInput(inputId='reference_list_graph_title', label = 'Title'),
+      textInput(inputId='reference_list_graph_x_axis', label = 'X axis name'),
+      sliderInput(inputId='reference_list_graph_x_axis_text_size',
+                  label = 'Choose the size of text on X axis',
+                  value = 12, min = 1, max = 20),
+      sliderInput(inputId='reference_list_graph_y_axis_text_size',
+                  label = 'Choose the size of text on Y axis',
+                  value = 12, min = 1, max = 20),
+      sliderInput(inputId='reference_list_graph_title_text_size',
+                  label = 'Choose the size of text on title',
+                  value = 12, min = 1, max = 35),
+
+      # GRAPH 3 OPTIONS - REFERENCE LIST GROUPED
+      tags$h4("Reference list grouped graph"),
+
+      selectInput(inputId= 'reference_list_grouped_type',
+                  label = 'Select type of reference list',
+                  choices = c('Transition', 'Transversion',
+                              'Point mutations', 'Gaps',
+                              'Mutations')),
+      textInput(inputId='reference_list_grouped_graph_title', label = 'Title'),
+      textInput(inputId='reference_list_grouped_graph_x_axis', label = 'X axis name'),
+      sliderInput(inputId='reference_list_grouped_graph_x_axis_text_size',
+                  label = 'Choose the size of text on X axis',
+                  value = 12, min = 1, max = 20),
+      sliderInput(inputId='reference_list_grouped_graph_y_axis_text_size',
+                  label = 'Choose the size of text on Y axis',
+                  value = 12, min = 1, max = 20),
+      sliderInput(inputId='reference_list_grouped_graph_title_text_size',
+                  label = 'Choose the size of text on title',
+                  value = 12, min = 1, max = 35),
+      sliderInput(inputId='reference_list_grouped_graph_x_axis_text_ticks_size',
+                 label = 'Choose the size of text on X axis ticks',
+                 value = 12, min = 1, max = 20),
+      # GRAPH 4 OPTIONS - REFERENCE LIST GROUPED - TYPES OF MUTATIONS
+      tags$h4("Reference list grouped (types of mutations) graph"),
+
+      textInput(inputId='reference_list_grouped_mutations_type_graph_title', label = 'Title'),
+      textInput(inputId='reference_list_grouped_mutations_type_graph_x_axis', label = 'X axis name'),
+      sliderInput(inputId='reference_list_grouped_mutations_type_graph_x_axis_text_size',
+                  label = 'Choose the size of text on X axis',
+                  value = 12, min = 1, max = 20),
+      sliderInput(inputId='reference_list_grouped_mutations_type_graph_y_axis_text_size',
+                  label = 'Choose the size of text on Y axis',
+                  value = 12, min = 1, max = 20),
+      sliderInput(inputId='reference_list_grouped_mutations_type_graph_title_text_size',
+                  label = 'Choose the size of text on title',
+                  value = 12, min = 1, max = 35),
+      sliderInput(inputId='reference_list_grouped_mutations_type_graph_x_axis_text_ticks_size',
+                  label = 'Choose the size of text on X axis',
+                  value = 12, min = 1, max = 20),
+
+      # # DOWNLOAD BUTTONS
+      "Click here to download summary table: ",
+      downloadButton("download_summary", "Summary"),
+      br(),
+      "Click here to download sequences: ",
+      downloadButton("download_sequences", "Sequences"),
+
+      width = 2,
     ),
   # Show a plot and dataframe
     mainPanel(
-      plotOutput('plot', width='1200px', height='500px'),
+      tags$h1("Plots"),
+      fluidRow(
+        plotOutput('plot')
+      ),
+      br(),
+      fluidRow(
+        plotOutput('reference_list_plot')
+      ),
+      br(),
+      fluidRow(
+        column(6, plotOutput('reference_list_separated_plot')),
+        column(6, plotOutput('mutations_type_plot'))
+      ),
+      width = 10
       #tableOutput('summary_dataframe'),
       #tableOutput('df_clustal'),
-      plotOutput('reference_list_plot', width='1200px', height='500px'),
-      plotOutput('reference_list_separated_plot', width='1200px', height='500px'),
-      plotOutput('mutations_type_plot', width='1200px', height = '500px'),
   )
   )
 )
@@ -54,7 +143,8 @@ server <- function (input, output) {  #Load .clustal file and store it into star
                               reference_list = NULL, #for the entire list (mutations)
                               reference_list_separated = NULL, #for separated NONCDS and CDS (mutations)
                               chosenMetric = 'Similarity',
-                              summary_pairwise = NULL)
+                              summary_pairwise = NULL,
+                              plotCheck = '')
   reference_lists <- reactiveValues(transitions = NULL,
                                     transitions_separated = NULL,
                                     transversions = NULL,
@@ -71,12 +161,12 @@ server <- function (input, output) {  #Load .clustal file and store it into star
   observe({
     #"C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input\\MERS MSA.clustal"
     # input$clustalFile$datapath
-    variables$clustal_file <- input$clustalFile$datapath
+    variables$clustal_file <- "C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input\\MERS MSA.clustal"
   })
   observe({
     #"C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input\\MERS MSA.csv"
     # input$csvFile$datapath
-    variables$csv_file <- input$csvFile$datapath
+    variables$csv_file <- "C:\\Users\\fejsa\\OneDrive\\Desktop\\Graduation project\\COMSAA\\input\\MERS MSA.csv"
   })
   observe({
     variables$chosenMetric <- input$metric
@@ -86,9 +176,9 @@ server <- function (input, output) {  #Load .clustal file and store it into star
   
   df_clustal <- reactive({
     validate(
-      need(variables$clustal_file != "", "Please select a data set123")
+      need(variables$clustal_file != "", "Please select a data set")
     )
-    
+
     #Load .clustal file
     df_clustal <- read.delim(variables$clustal_file)
     
@@ -122,7 +212,7 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     df_clustal <- df_clustal %>%
       group_by(strand) %>%
       summarise(sequence = paste(sequence, collapse = ''))
-    
+
     #indices with mutations
     variables$indices_with_mutations <-
       which(strsplit(df_clustal$sequence[df_clustal$strand == 'asterisk'], '')[[1]] == ' ')
@@ -168,7 +258,6 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     ################################################################################
     ############################ CODING SEQUENCE ###################################
     ################################################################################
-
     #Load .csv file
     start_stop <- read.csv(variables$csv_file)
 
@@ -209,7 +298,6 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     CDS_metrics <- initialize_dataframes(number_of_strands, strand_names, 9)
     CDS_metrics <- fill_metrics (MSA_metrics, df_clustal, variables$indices_with_mutations,
                                  coding_sequence_index)
-
     ################################################################################
     ############################ NON CODING SEQUECE ################################
     ################################################################################
@@ -242,68 +330,111 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     colnames(variables$summary_pairwise) <- summary_column_names
     
     
-
     summary <- cbind(summary, strand_names)
     colnames(summary)[colnames(summary) == 'strand_names'] <- 'Strands'
     
     summary <- cbind(summary, rownames(summary))
     colnames(summary)[colnames(summary) == 'rownames(summary)'] <- 'Count'
-
+    variables$plotCheck <- 'Pass'
     summary
   })
   
   # OUTPUTS
   #####
   output$plot <- renderPlot({
+#     validate(need(variables$plotCheck != "", "Please select a data set"),
+# )
     metric <- variables$chosenMetric
     sum <- summary1()
-  
+
     selected_column <- which(colnames(sum) == metric)
     selected_columns <- get_selected_columns(selected_column)
     selected_names_of_columns <- colnames(sum)[selected_columns]
-
-    entire_sequence <- create_bar_plot(sum, input$title, selected_columns[1], selected_names_of_columns[1])
-    coding_sequence <- create_bar_plot(sum, input$title, selected_columns[2], selected_names_of_columns[2])
-    noncoding_sequence <- create_bar_plot(sum, input$title, selected_columns[3], selected_names_of_columns[3])
-        
-    ggarrange(entire_sequence, coding_sequence, noncoding_sequence, nrow = 1)
+    entire_sequence <- create_bar_plot(sum,
+                                       selected_columns[1],
+                                       selected_names_of_columns[1],
+                                       input$metric_graph_title,
+                                       input$metric_graph_x_axis,
+                                       input$metric_graph_y_axis,
+                                       input$metric_graph_title_text_size,
+                                       input$metric_graph_x_axis_text_size,
+                                       '')
+    coding_sequence <- create_bar_plot(sum,
+                                       selected_columns[2],
+                                       selected_names_of_columns[2],
+                                       input$metric_graph_title,
+                                       input$metric_graph_x_axis,
+                                       input$metric_graph_y_axis,
+                                       input$metric_graph_title_text_size,
+                                       input$metric_graph_x_axis_text_size,
+                                       'CDS')
+    noncoding_sequence <- create_bar_plot(sum,
+                                          selected_columns[3],
+                                          selected_names_of_columns[3],
+                                          input$metric_graph_title,
+                                          input$metric_graph_x_axis,
+                                          input$metric_graph_y_axis,
+                                          input$metric_graph_title_text_size,
+                                          input$metric_graph_x_axis_text_size,
+                                          'nonCDS')
+    ggarrange(entire_sequence, coding_sequence, noncoding_sequence, nrow=1)
     
   })
 
   output$reference_list_plot <- renderPlot({
     validate(
-      need(reference_lists$transitions != "" | reference_lists$transversions != "" | 
-           reference_lists$point_mutations != "" | reference_lists$gaps != "" | 
+      need(reference_lists$transitions != "" | reference_lists$transversions != "" |
+           reference_lists$point_mutations != "" | reference_lists$gaps != "" |
            reference_lists$mutations != "", "Please select a data set"),
     )
     if(input$reference_list_type == 'Transition'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$transitions, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title),
+                                                                  input$reference_list_graph_title,
+                                                                  input$reference_list_graph_x_axis,
+                                                                  input$reference_list_graph_x_axis_text_size,
+                                                                  input$reference_list_graph_y_axis_text_size,
+                                                                  input$reference_list_graph_title_text_size,
                                                                   'transitions')
     }
     else if(input$reference_list_type == 'Transversion'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$transversions, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title),
+                                                                  input$reference_list_graph_title,
+                                                                  input$reference_list_graph_x_axis,
+                                                                  input$reference_list_graph_x_axis_text_size,
+                                                                  input$reference_list_graph_y_axis_text_size,
+                                                                  input$reference_list_graph_title_text_size,
                                                                   'transversions')
     }
     else if(input$reference_list_type == 'Point mutations'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$point_mutations, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title),
+                                                                  input$reference_list_graph_title,
+                                                                  input$reference_list_graph_x_axis,
+                                                                  input$reference_list_graph_x_axis_text_size,
+                                                                  input$reference_list_graph_y_axis_text_size,
+                                                                  input$reference_list_graph_title_text_size,
                                                                   'point mutations')
     }
     else if(input$reference_list_type == 'Gaps'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$gaps, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title),
+                                                                  input$reference_list_graph_title,
+                                                                  input$reference_list_graph_x_axis,
+                                                                  input$reference_list_graph_x_axis_text_size,
+                                                                  input$reference_list_graph_y_axis_text_size,
+                                                                  input$reference_list_graph_title_text_size,
                                                                   'gaps')
     }
     else if(input$reference_list_type == 'Mutations'){
       reference_list_histogram <- create_reference_list_histogram(reference_lists$mutations, 
                                                                   input$reference_list_bins, 
-                                                                  isolate(input$title),
+                                                                  input$reference_list_graph_title,
+                                                                  input$reference_list_graph_x_axis,
+                                                                  input$reference_list_graph_x_axis_text_size,
+                                                                  input$reference_list_graph_y_axis_text_size,
+                                                                  input$reference_list_graph_title_text_size,
                                                                   'mutations')
     }
     plot(reference_list_histogram)
@@ -317,32 +448,52 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     )
     if(input$reference_list_type == 'Transition'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$transitions_separated, 
-                                                                                      input$axis_text_size,
-                                                                                      isolate(input$title),
+                                                                                      input$reference_list_grouped_graph_title,
+                                                                                      input$reference_list_grouped_graph_x_axis,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_y_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_title_text_size,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_ticks_size,
                                                                                       'transitions')
     }
     else if(input$reference_list_type == 'Transversion'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$transversions_separated, 
-                                                                                      input$axis_text_size,
-                                                                                      isolate(input$title),
+                                                                                      input$reference_list_grouped_graph_title,
+                                                                                      input$reference_list_grouped_graph_x_axis,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_y_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_title_text_size,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_ticks_size,
                                                                                       'transversions')
     }
     else if(input$reference_list_type == 'Point mutations'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$point_mutations_separated, 
-                                                                                      input$axis_text_size,
-                                                                                      isolate(input$title),
+                                                                                      input$reference_list_grouped_graph_title,
+                                                                                      input$reference_list_grouped_graph_x_axis,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_y_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_title_text_size,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_ticks_size,
                                                                                       'point mutations')
     }
     else if(input$reference_list_type == 'Gaps'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$gaps_separated, 
-                                                                                      input$axis_text_size,
-                                                                                      isolate(input$title),
+                                                                                      input$reference_list_grouped_graph_title,
+                                                                                      input$reference_list_grouped_graph_x_axis,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_y_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_title_text_size,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_ticks_size,
                                                                                       'gaps')
     }
     else if(input$reference_list_type == 'Mutations'){
       reference_list_separated_histogram <- create_reference_list_separated_histogram(reference_lists$mutations_separated, 
-                                                                                      input$axis_text_size,
-                                                                                      isolate(input$title),
+                                                                                      input$reference_list_grouped_graph_title,
+                                                                                      input$reference_list_grouped_graph_x_axis,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_y_axis_text_size,
+                                                                                      input$reference_list_grouped_graph_title_text_size,
+                                                                                      input$reference_list_grouped_graph_x_axis_text_ticks_size,
                                                                                       'mutations')
     }
     plot(reference_list_separated_histogram)
@@ -355,13 +506,20 @@ server <- function (input, output) {  #Load .clustal file and store it into star
     )
     mutations_types <- create_mutations_type_bar_plot(reference_lists$transitions_separated,
                                            reference_lists$transversions_separated,
-                                           reference_lists$gaps_separated)
+                                           reference_lists$gaps_separated,
+                                           input$reference_list_grouped_mutations_type_graph_title,
+                                           input$reference_list_grouped_mutations_type_graph_x_axis,
+                                           input$reference_list_grouped_mutations_type_graph_x_axis_text_size,
+                                           input$reference_list_grouped_mutations_type_graph_x_axis_text_size,
+                                           input$reference_list_grouped_mutations_type_graph_title_text_size,
+                                           input$reference_list_grouped_mutations_type_graph_x_axis_text_ticks_size
+    )
     plot(mutations_types)
     
   })
   
   
-  output$downloadData <- downloadHandler(
+  output$download_summary <- downloadHandler(
     filename = function() {
       paste(".csv", sep="")
     },

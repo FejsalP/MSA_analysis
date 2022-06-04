@@ -345,26 +345,57 @@ create_reference_list_separated <- function(coding_sequence_index, noncoding_seq
   combined_sequences <- subset(combined_sequences, select = -c(1, 2))
   return (combined_sequences)
 }
-
+# create_bar_plot <- function(df, title, selected_columns, selected_names_of_columns){
+#   
+#   ggplot(df,      
+#          aes(x = Strands,
+#              y = df[,selected_columns],
+#              fill= Strands)) +
+#     geom_bar(stat = 'identity',
+#              position = 'dodge') +
+#     labs(title = title, x = 'Strands', y = colnames(df)[which(colnames(df) == selected_names_of_columns)]) +
+#     theme(axis.ticks.x = element_blank(),
+#           axis.text.x = element_blank()) +
+#     scale_fill_brewer(palette="Paired")
+# }
 # Creates barplot for strands 
 
-create_bar_plot <- function(df, title, selected_columns, selected_names_of_columns){
-
-  ggplot(df,      
+create_bar_plot <- function(df, 
+                            selected_columns, 
+                            selected_names_of_columns, 
+                            title, 
+                            x_axis, 
+                            y_axis, 
+                            title_size, 
+                            x_axis_size,
+                            type){
+  ggplot(df,
          aes(x = Strands,
              y = df[,selected_columns],
              fill= Strands)) +
     geom_bar(stat = 'identity',
              position = 'dodge') +
-    labs(title = title, x = 'Strands', y = colnames(df)[which(colnames(df) == selected_names_of_columns)]) +
-    theme(axis.ticks.x = element_blank(),
-          axis.text.x = element_blank()) +
+    labs(title = title, x = x_axis, y = paste(y_axis, ' - ', type)) + #  bilo  title = title, x = 'Strands', y = colnames(df)[which(colnames(df) == selected_names_of_columns)]
+    theme(axis.text.x = element_blank(),
+          axis.ticks.x = element_blank(),
+          axis.title.y = element_text (size = 12, face = 'bold'),
+          axis.title.x = element_text(size = x_axis_size,face = "bold"),
+          plot.title = element_text(size = title_size, face = "bold", hjust = 0.5))+
+    # theme(axis.ticks.x = element_blank(),
+    #       axis.text.x = element_blank()) +
     scale_fill_brewer(palette="Paired")
 }
 
 # Creates histogram for reference lists, ungrouped
 
-create_reference_list_histogram <- function (values, breaks, title, y_axis_name) {
+create_reference_list_histogram <- function (values, 
+                                             breaks, 
+                                             title,
+                                             x_axis,
+                                             x_axis_size,
+                                             y_axis_size,
+                                             title_size,
+                                             y_axis_name) {
   reference_list_grouped <- create_reference_list_grouped(values, breaks)
   histogram <- ggplot(reference_list_grouped,
          aes(x = group,
@@ -372,14 +403,24 @@ create_reference_list_histogram <- function (values, breaks, title, y_axis_name)
              fill = 'red'))+
     geom_bar(stat='identity', position ='dodge')+
     theme_clean() +
-    theme(legend.position = "none") + 
-    ggtitle (title) +
-    ylab(paste('Number of', y_axis_name)) +
-    xlab("  ")
+    theme(legend.position = "none",
+          axis.title.y = element_text(size = y_axis_size, face = 'bold'),
+          axis.title.x = element_text(size = x_axis_size,face = "bold"),
+          plot.title = element_text(size = title_size, face = "bold", hjust = 0.5))+
+    labs(title = title, x = x_axis, y = paste('Number of', y_axis_name)) 
+    
+    
   return (histogram)
 }
 
-create_reference_list_separated_histogram <- function (values_df, text_size, title, y_axis_name) {
+create_reference_list_separated_histogram <- function (values_df, 
+                                                       title, 
+                                                       x_axis,
+                                                       x_axis_size,
+                                                       y_axis_size,
+                                                       title_size,
+                                                       x_axis_ticks_size,
+                                                       y_axis_name) {
   values_df <- transform (values_df, group = ifelse(substr(Type, 1, 3) == 'non', 'nonCDS', 'CDS'))
   ggplot(
     values_df,
@@ -388,14 +429,23 @@ create_reference_list_separated_histogram <- function (values_df, text_size, tit
         fill = group))+
     geom_bar(stat='identity', position ='dodge') +
     theme_classic() +
-    theme(axis.text.x = element_text(size = text_size),
-          axis.title=element_text(size = 15,face = "bold")) +
-    ggtitle(title) + 
-    ylab(paste('Number of', y_axis_name)) +
-    xlab("  ")
+    theme(axis.text.x = element_text(size = x_axis_ticks_size),
+          axis.title.x = element_text(size = x_axis_size,face = "bold"),
+          axis.title.y = element_text(size = y_axis_size,face = "bold"),
+          plot.title = element_text(size = title_size,face = "bold", hjust = 0.5),
+          )+ 
+    labs(title = title, x = x_axis, y = paste('Number of', y_axis_name))
 }
 
-create_mutations_type_bar_plot <- function(transitions, transversions, gaps){
+create_mutations_type_bar_plot <- function(transitions, 
+                                           transversions, 
+                                           gaps,
+                                           title,
+                                           x_axis,
+                                           x_axis_size,
+                                           y_axis_size,
+                                           title_size,
+                                           x_axis_ticks_size){
   mutations_types <- cbind(transitions, transversions, gaps)
   
   # count <- subset(mutations_types, select = c(3))
@@ -417,7 +467,14 @@ create_mutations_type_bar_plot <- function(transitions, transversions, gaps){
   mutations_types$Type <- as.factor(mutations_types$Type)
   levels(mutations_types$Type) <- types
   ggplot(mutations_types, aes(x = Type, y = Mutations_count, fill = Mutations)) + 
-    geom_bar(stat = 'identity')
+    geom_bar(stat = 'identity')+
+    labs(title = title, x = x_axis, y = 'Number of mutations') + 
+    theme(axis.text.x = element_text(size = x_axis_ticks_size),
+          axis.title.x = element_text(size = x_axis_size,face = "bold"),
+          axis.title.y = element_text(size = y_axis_size,face = "bold"),
+          plot.title = element_text(size = title_size,face = "bold", hjust = 0.5),
+    )
+  
   }
 
 
