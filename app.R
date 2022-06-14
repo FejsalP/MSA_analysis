@@ -17,7 +17,9 @@ ui <- fluidPage(
         accept = ".csv"
       ),
       actionButton(inputId = "processButton", label = "Process"),
-
+      
+      textOutput('test'),
+      
       ## GRAPHS
 
       # GRAPH 1 OPTIONS - METRIC GRAPH
@@ -27,14 +29,14 @@ ui <- fluidPage(
         label = "Select the metric",
         choices = metrics
       ),
-      checkboxGroupInput(
-        "chosen_graphs", "Graphs to show:", # CHOOSE how many plots, 1, 2, or 3
-        c(
-          "Entire" = "entire",
-          "Coding" = "CDS",
-          "Non-Coding" = "nonCDS"
-        )
-      ),
+      # checkboxGroupInput(
+      #   "chosen_graphs", "Graphs to show:", # CHOOSE how many plots, 1, 2, or 3
+      #   c(
+      #     "Entire" = "entire",
+      #     "Coding" = "CDS",
+      #     "Non-Coding" = "nonCDS"
+      #   )
+      # ),
       # # # names and sizes
       textInput(inputId = "metric_graph_title", label = "Title"),
       textInput(inputId = "metric_graph_x_axis", label = "X axis name"),
@@ -69,7 +71,7 @@ ui <- fluidPage(
       ),
       sliderInput(
         inputId = "reference_list_bins",
-        label = "Choose the number of genes per bin for reference list",
+        label = "Choose the number of nucleotides per bin for reference list",
         value = 25,
         min = 1,
         max = 1000
@@ -221,7 +223,8 @@ server <- function(input, output) { # Load .clustal file and store it into start
     # for separated NONCDS and CDS (mutations)
     chosenMetric = "Similarity",
     summary_pairwise = NULL,
-    plotCheck = ""
+    plotCheck = "",
+    progress = "Start"
   )
   reference_lists <- reactiveValues(
     transitions = NULL,
@@ -236,7 +239,10 @@ server <- function(input, output) { # Load .clustal file and store it into start
     mutations_separated = NULL
   )
 
-
+  output$test <- renderText({
+    variables$progress
+  })
+  
   ##### INPUTS #####
   # clustal file, csv file, chosen metric
   observe({
@@ -333,11 +339,14 @@ server <- function(input, output) { # Load .clustal file and store it into start
       df_clustal,
       variables$indices_with_mutations
     )
+    variables$progress <- "Created DF"
     df_clustal
   })
 
 
   summary1 <- eventReactive(input$processButton, {
+    withProgress(message = 'Processing', value = 0, {
+    incProgress(1/5, detail = paste("Finished creating df"))
     df_clustal <- df_clustal()
     # Get names and number of strands
     strand_names <- df_clustal$strand
@@ -345,12 +354,14 @@ server <- function(input, output) { # Load .clustal file and store it into start
 
     length_of_sequence <- length(variables$indices_with_mutations) +
       length(variables$indices_without_mutations)
+    incProgress(1/5, detail = paste("Calculating entire sequence"))
     MSA_metrics <- initialize_dataframes(number_of_strands, strand_names, 9)
     MSA_metrics <- fill_metrics(MSA_metrics, df_clustal, variables$indices_with_mutations, seq(1, length_of_sequence))
-
     ################################################################################
     ############################ CODING SEQUENCE ###################################
     ################################################################################
+    incProgress(1/5, detail = paste("Loading .csv file"))
+    
     # Load .csv file
     start_stop <- read.csv(variables$csv_file)
 
@@ -386,7 +397,7 @@ server <- function(input, output) { # Load .clustal file and store it into start
     reference_lists$point_mutations_separated <- create_reference_list_separated(coding_sequence_index, noncoding_sequence_index, reference_lists$point_mutations$reference_list)
     reference_lists$gaps_separated <- create_reference_list_separated(coding_sequence_index, noncoding_sequence_index, reference_lists$gaps$reference_list)
     reference_lists$mutations_separated <- create_reference_list_separated(coding_sequence_index, noncoding_sequence_index, reference_lists$mutations$reference_list)
-
+    incProgress(1/5, detail = paste("Calculating CDS"))
     CDS_metrics <- initialize_dataframes(number_of_strands, strand_names, 9)
     CDS_metrics <- fill_metrics(
       MSA_metrics, df_clustal, variables$indices_with_mutations,
@@ -395,13 +406,12 @@ server <- function(input, output) { # Load .clustal file and store it into start
     ################################################################################
     ############################ NON CODING SEQUECE ################################
     ################################################################################
-
+    incProgress(1/5, detail = paste("Calculating nonCDS"))
     nonCDS_metrics <- initialize_dataframes(number_of_strands, strand_names, 9)
     nonCDS_metrics <- fill_metrics(
       MSA_metrics, df_clustal,
       variables$indices_with_mutations, noncoding_sequence_index
     )
-
     # Creating summary dataframe
     summary <- data.frame(cbind(
       MSA_metrics[[1]][, 1], MSA_metrics[[2]][, 1],
@@ -434,6 +444,9 @@ server <- function(input, output) { # Load .clustal file and store it into start
     summary <- cbind(summary, rownames(summary))
     colnames(summary)[colnames(summary) == "rownames(summary)"] <- "Count"
     variables$plotCheck <- "Pass"
+    variables$progress <- "Finished"
+    })
+    
     summary
   })
 
@@ -559,7 +572,7 @@ server <- function(input, output) { # Load .clustal file and store it into start
         reference_lists$point_mutations_separated != "" | reference_lists$gaps_separated != "" |
         reference_lists$mutations_separated != "", "Please select a data set"),
     )
-    if (input$reference_list_type == "Transition") {
+    if (input$reference_list_grouped_type == "Transition") {
       reference_list_separated_histogram <- create_reference_list_separated_histogram(
         reference_lists$transitions_separated,
         input$reference_list_grouped_graph_title,
@@ -570,7 +583,7 @@ server <- function(input, output) { # Load .clustal file and store it into start
         input$reference_list_grouped_graph_x_axis_text_ticks_size,
         "transitions"
       )
-    } else if (input$reference_list_type == "Transversion") {
+    } else if (input$reference_list_grouped_type == "Transversion") {
       reference_list_separated_histogram <- create_reference_list_separated_histogram(
         reference_lists$transversions_separated,
         input$reference_list_grouped_graph_title,
@@ -581,7 +594,7 @@ server <- function(input, output) { # Load .clustal file and store it into start
         input$reference_list_grouped_graph_x_axis_text_ticks_size,
         "transversions"
       )
-    } else if (input$reference_list_type == "Point mutations") {
+    } else if (input$reference_list_grouped_type == "Point mutations") {
       reference_list_separated_histogram <- create_reference_list_separated_histogram(
         reference_lists$point_mutations_separated,
         input$reference_list_grouped_graph_title,
@@ -592,7 +605,7 @@ server <- function(input, output) { # Load .clustal file and store it into start
         input$reference_list_grouped_graph_x_axis_text_ticks_size,
         "point mutations"
       )
-    } else if (input$reference_list_type == "Gaps") {
+    } else if (input$reference_list_grouped_type == "Gaps") {
       reference_list_separated_histogram <- create_reference_list_separated_histogram(
         reference_lists$gaps_separated,
         input$reference_list_grouped_graph_title,
@@ -603,7 +616,7 @@ server <- function(input, output) { # Load .clustal file and store it into start
         input$reference_list_grouped_graph_x_axis_text_ticks_size,
         "gaps"
       )
-    } else if (input$reference_list_type == "Mutations") {
+    } else if (input$reference_list_grouped_type == "Mutations") {
       reference_list_separated_histogram <- create_reference_list_separated_histogram(
         reference_lists$mutations_separated,
         input$reference_list_grouped_graph_title,
@@ -642,6 +655,14 @@ server <- function(input, output) { # Load .clustal file and store it into start
     },
     content = function(file) {
       write.csv(summary1(), file)
+    }
+  )
+  output$download_sequences <- downloadHandler(
+    filename = function() {
+      paste(".csv", sep = "")
+    },
+    content = function(file) {
+      write.csv(df_clustal(), file)
     }
   )
 }

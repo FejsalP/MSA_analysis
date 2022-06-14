@@ -377,6 +377,8 @@ create_bar_plot <- function(df,
                             title_size,
                             x_axis_size,
                             type) {
+  df$Strands <- as.factor(df$Strands)
+  levels(df$Strands) <- df$Strands
   ggplot(
     df,
     aes(
@@ -474,25 +476,39 @@ create_mutations_type_bar_plot <- function(transitions,
                                            title_size,
                                            x_axis_ticks_size) {
   mutations_types <- cbind(transitions, transversions, gaps)
-
   # count <- subset(mutations_types, select = c(3))
   mutations_types <- subset(mutations_types, select = c(1, 2, 5, 8, 3))
   types <- mutations_types$Type
   mutations_types <- unite(mutations_types, Type, c(Type, Count), sep = "-")
+  types_sep <- strsplit(as.character(mutations_types$Type), '-', perl=TRUE)
+  empty_vector <- c()
+  
+  for(i in seq(1, length(types_sep))){
+    empty_vector <- append(empty_vector, types_sep[[i]][1])
+  }
+  types_3x <- c()
+  for(i in seq(1, length(types_sep))){
+    types_3x <- append(types_3x, rep(empty_vector[i],3))
+  }
 
   mutations_types <- subset(mutations_types, select = -c(5))
-
-
   colnames(mutations_types) <- c("Type", "Transitions", "Transversions", "Gaps")
 
 
   mutations_types <- mutations_types %>%
     pivot_longer(!Type, names_to = "Mutations", values_to = "Mutations_count")
-
-
+  
+  
   mutations_types <- separate(mutations_types, col = Type, into = c("Type", "Count"), sep = "-")
-  mutations_types$Type <- as.factor(mutations_types$Type)
-  levels(mutations_types$Type) <- types
+  #mutations_types$Type <- as.factor(mutations_types$Type)
+  #levels(mutations_types$Type) <- types
+
+  mutations_types$Count <- as.numeric(mutations_types$Count)
+  mutations_types$Type <- types_3x
+  # mutations_types$Type <- as.factor(mutations_types$Type)
+  # levels(mutations_types$Type) <- types
+  
+  #View(mutations_types)
   ggplot(mutations_types, aes(x = Type, y = Mutations_count, fill = Mutations)) +
     geom_bar(stat = "identity") +
     theme_light() +
@@ -566,12 +582,12 @@ new_CDI <- function(coding_indices, sequence) {
 
 metrics <- c(
   "Similarity", "Mutations", "Mutation_Frequency", "Transitions",
-  "Transversions", "TT_ratio", "Gaps", "Insertions", "Deletions",
-  "CDS_Similarity", "CDS_Mutations", "CDS_Mutation_Frequency",
-  "CDS_Transitions", "CDS_Transversions", "CDS_TT_ratio",
-  "CDS_Gaps", "CDS_Insertions", "CDS_Deletions",
-  "nonCDS_Similarity", "nonCDS_Mutations",
-  "nonCDS_Mutation_Frequency", "nonCDS_Transitions",
-  "nonCDS_Transversions", "nonCDS_TT_ratio", "nonCDS_Gaps",
-  "nonCDS_Insertions", "nonCDS_Deletions"
+  "Transversions", "TT_ratio", "Gaps", "Insertions", "Deletions"
+  # "CDS_Similarity", "CDS_Mutations", "CDS_Mutation_Frequency",
+  # "CDS_Transitions", "CDS_Transversions", "CDS_TT_ratio",
+  # "CDS_Gaps", "CDS_Insertions", "CDS_Deletions",
+  # "nonCDS_Similarity", "nonCDS_Mutations",
+  # "nonCDS_Mutation_Frequency", "nonCDS_Transitions",
+  # "nonCDS_Transversions", "nonCDS_TT_ratio", "nonCDS_Gaps",
+  # "nonCDS_Insertions", "nonCDS_Deletions"
 )
